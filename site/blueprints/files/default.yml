@@ -1,0 +1,22 @@
+title: File
+
+fields:
+  alt:
+    label: Alt Text
+    type: text
+    width: 1/2
+    help: >
+      Alternative text for the image, used by screen readers, or if the image
+      cannot be loaded. Developer's Note: Maybe link to "Alt Text as Poetry" article.
+  caption:
+    label: Caption
+    type: textarea
+    width: 1/2
+    help: >
+      A caption for the image, displayed below it.
+  credits:
+    label: Credits
+    type: textarea
+    width: 1/2
+    help: >
+      The name of the photographer or artist.

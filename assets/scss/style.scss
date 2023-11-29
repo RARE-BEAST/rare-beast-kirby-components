@@ -1,0 +1,23 @@
+/*
+Theme Name: Rare Beast Kirby Components
+Author: Rare Beast
+Author URI: https://therarebeast.com/
+Version: 1.0
+*/
+
+// GLOBALS
+
+@import "reset";
+@import "mixins";
+@import "variables";
+@import "typography";
+@import "css-animations";
+
+@import "global";
+@import "header";
+@import "footer";
+// @import "tabs";
+
+@import "vendor/swiper-bundle";
+
+@import 'snippets/button.scss';

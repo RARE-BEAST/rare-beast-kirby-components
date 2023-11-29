@@ -1,0 +1,20 @@
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+// WRAPPERS
+$page-width: var(--page-width, 1300px);
+$desktop: 1280px; 
+$laptop: 1024px;
+$tablet: 768px;
+$mobile: 400px;
+
+// COLORS
+$black: var(--black, #000);
+$white: var(--white, #FFF);
+$gray: #E5E5E5;
+
+// TYPOGRAPHY
+$sans: 'Helvetica', 'Arial', sans-serif;
+$serif: 'Georgia', 'Times', serif;
+$mono: 'Courier', 'Courier New', monospace;
+$text--small: clamp(calc(11rem/16), 1.5vw, calc(13rem/16));
+// $text--small: calc(11rem/16);
