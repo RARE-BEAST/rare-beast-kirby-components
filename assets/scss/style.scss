@@ -11,7 +11,7 @@ Version: 1.0
 @import "mixins";
 @import "variables";
 @import "typography";
-@import "css-animations";
+@import "animations";
 
 @import "global";
 @import "header";
@@ -20,4 +20,12 @@ Version: 1.0
 
 @import "vendor/swiper-bundle";
 
-@import 'snippets/button.scss';
+@import 'snippets/accordions.scss';
+@import 'snippets/buttons.scss';
+@import 'snippets/content.scss';
+@import 'snippets/gallery.scss';
+@import 'snippets/hero.scss';
+@import 'snippets/image-slider.scss';
+@import 'snippets/marquee.scss';
+@import 'snippets/media.scss';
+@import 'snippets/split-hero.scss';

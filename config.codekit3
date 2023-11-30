@@ -426,7 +426,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/scss\/css-animations.scss" : {
+    "\/assets\/scss\/animations.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -435,7 +435,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/scss\/css-animations.css",
+      "oAP" : "\/assets\/scss\/animations.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -516,7 +516,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/scss\/snippets\/button.scss" : {
+    "\/assets\/scss\/snippets\/accordions.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -525,7 +525,127 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/scss\/snippets\/button.css",
+      "oAP" : "\/assets\/scss\/snippets\/accordions.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/snippets\/buttons.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/snippets\/buttons.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/snippets\/content.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/snippets\/content.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/snippets\/gallery.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/snippets\/gallery.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/snippets\/hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/snippets\/hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/snippets\/image-slider.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/snippets\/image-slider.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/snippets\/marquee.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/snippets\/marquee.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/snippets\/media.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/snippets\/media.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/snippets\/split-hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/snippets\/split-hero.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -7535,28 +7655,20 @@
       "oAP" : "\/site\/cache",
       "oF" : 0
     },
-    "\/site\/sessions\/1701297087.403dd541df64ce6b0a8c.sess" : {
+    "\/site\/sessions\/1701309095.e7d14d14dc6739d95211.sess" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/sessions\/1701297087.403dd541df64ce6b0a8c.sess",
+      "oAP" : "\/site\/sessions\/1701309095.e7d14d14dc6739d95211.sess",
       "oF" : 0
     },
-    "\/site\/sessions\/1701300747.a3a615a5657c0aa6a00a.sess" : {
+    "\/site\/sessions\/1701312704.3be0b2a27471133f69fe.sess" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/sessions\/1701300747.a3a615a5657c0aa6a00a.sess",
-      "oF" : 0
-    },
-    "\/site\/sessions\/1701304407.b4fd34ab3746eec061e3.sess" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/site\/sessions\/1701304407.b4fd34ab3746eec061e3.sess",
+      "oAP" : "\/site\/sessions\/1701312704.3be0b2a27471133f69fe.sess",
       "oF" : 0
     },
     "\/site\/sessions\/index.html" : {
@@ -7567,12 +7679,28 @@
       "oAP" : "\/site\/sessions\/index.html",
       "oF" : 0
     },
+    "\/site\/snippets\/accordions.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/snippets\/accordions.php",
+      "oF" : 0
+    },
     "\/site\/snippets\/buttons.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/snippets\/buttons.php",
+      "oF" : 0
+    },
+    "\/site\/snippets\/content.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/snippets\/content.php",
       "oF" : 0
     },
     "\/site\/snippets\/footer.php" : {
@@ -7583,12 +7711,36 @@
       "oAP" : "\/site\/snippets\/footer.php",
       "oF" : 0
     },
+    "\/site\/snippets\/gallery.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/snippets\/gallery.php",
+      "oF" : 0
+    },
     "\/site\/snippets\/header.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/snippets\/header.php",
+      "oF" : 0
+    },
+    "\/site\/snippets\/hero.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/snippets\/hero.php",
+      "oF" : 0
+    },
+    "\/site\/snippets\/image-slider.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/snippets\/image-slider.php",
       "oF" : 0
     },
     "\/site\/snippets\/index.html" : {
@@ -7599,12 +7751,36 @@
       "oAP" : "\/site\/snippets\/index.html",
       "oF" : 0
     },
+    "\/site\/snippets\/marquee.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/snippets\/marquee.php",
+      "oF" : 0
+    },
+    "\/site\/snippets\/media.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/snippets\/media.php",
+      "oF" : 0
+    },
     "\/site\/snippets\/menu.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/snippets\/menu.php",
+      "oF" : 0
+    },
+    "\/site\/snippets\/split-hero.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/snippets\/split-hero.php",
       "oF" : 0
     },
     "\/site\/templates\/default.php" : {
