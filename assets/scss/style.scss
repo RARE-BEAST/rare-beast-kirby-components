@@ -6,26 +6,30 @@ Version: 1.0
 */
 
 // GLOBALS
-
 @import "reset";
 @import "mixins";
 @import "variables";
 @import "typography";
 @import "animations";
-
 @import "global";
-@import "header";
-@import "footer";
-// @import "tabs";
 
+
+// SNIPPETS
+@import "snippets/header.scss";
+@import "snippets/footer.scss";
+@import 'snippets/buttons.scss';
+
+
+// VENDOR
 @import "vendor/swiper-bundle";
 
-@import 'snippets/accordions.scss';
-@import 'snippets/buttons.scss';
-@import 'snippets/content.scss';
-@import 'snippets/gallery.scss';
-@import 'snippets/hero.scss';
-@import 'snippets/image-slider.scss';
-@import 'snippets/marquee.scss';
-@import 'snippets/media.scss';
-@import 'snippets/split-hero.scss';
+
+// BLOCKS
+@import 'blocks/accordions.scss';
+@import 'blocks/content.scss';
+@import 'blocks/gallery.scss';
+@import 'blocks/hero.scss';
+@import 'blocks/image-slider.scss';
+@import 'blocks/marquee.scss';
+@import 'blocks/media.scss';
+@import 'blocks/split-hero.scss';
