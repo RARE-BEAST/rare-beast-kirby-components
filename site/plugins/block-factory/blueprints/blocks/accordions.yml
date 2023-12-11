@@ -1,0 +1,13 @@
+name: Accordions
+icon: bars
+fields:
+  summary:
+    label: Summary
+    type: writer
+    marks: false
+    placeholder: Enter summary
+  details:
+    label: Details
+    type: writer
+    marks: true
+    placeholder: Enter details

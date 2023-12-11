@@ -516,21 +516,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/scss\/blocks\/image-slider.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/scss\/blocks\/image-slider.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
     "\/assets\/scss\/blocks\/marquee.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -541,6 +526,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/scss\/blocks\/marquee.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/blocks\/media-slider.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/blocks\/media-slider.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -7820,75 +7820,68 @@
       "oAP" : "\/site\/config\/config.php",
       "oF" : 0
     },
-    "\/site\/plugins\/audio\/blueprints\/blocks\/audio.yml" : {
+    "\/site\/plugins\/block-factory\/blueprints\/blocks\/accordions.yml" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/plugins\/audio\/blueprints\/blocks\/audio.yml",
+      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/accordions.yml",
       "oF" : 0
     },
-    "\/site\/plugins\/audio\/blueprints\/files\/audio.yml" : {
+    "\/site\/plugins\/block-factory\/blueprints\/blocks\/audio.yml" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/plugins\/audio\/blueprints\/files\/audio.yml",
+      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/audio.yml",
       "oF" : 0
     },
-    "\/site\/plugins\/audio\/blueprints\/files\/poster.yml" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/site\/plugins\/audio\/blueprints\/files\/poster.yml",
-      "oF" : 0
+    "\/site\/plugins\/block-factory\/index.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/site\/plugins\/block-factory\/index-min.css",
+      "oF" : 1,
+      "pg" : 0
     },
-    "\/site\/plugins\/audio\/index.js" : {
+    "\/site\/plugins\/block-factory\/index.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 1,
-      "oAP" : "\/site\/plugins\/audio\/index-min.js",
+      "oAP" : "\/site\/plugins\/block-factory\/index-min.js",
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
     },
-    "\/site\/plugins\/audio\/index.php" : {
+    "\/site\/plugins\/block-factory\/index.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/plugins\/audio\/index.php",
+      "oAP" : "\/site\/plugins\/block-factory\/index.php",
       "oF" : 0
     },
-    "\/site\/plugins\/audio\/snippets\/blocks\/audio.php" : {
+    "\/site\/plugins\/block-factory\/snippets\/blocks\/accordions.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/plugins\/audio\/snippets\/blocks\/audio.php",
+      "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/accordions.php",
       "oF" : 0
     },
-    "\/site\/plugins\/audio\/src\/components\/Audio.vue" : {
+    "\/site\/plugins\/block-factory\/snippets\/blocks\/audio.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/plugins\/audio\/src\/components\/Audio.vue",
+      "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/audio.php",
       "oF" : 0
-    },
-    "\/site\/plugins\/audio\/src\/index.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/site\/plugins\/audio\/src\/index-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
     },
     "\/site\/sessions\/1702928188.62eccb2857dc1270c7fd.sess" : {
       "cB" : 0,

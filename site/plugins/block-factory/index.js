@@ -1,5 +1,18 @@
-panel.plugin("rarebeast/audio", {
+panel.plugin("rare-beast/block-factory", {
     blocks: {
+        accordions: `
+        <div>
+            <div v-if="content.summary">
+            <details>
+                <summary>{{ content.summary }}</summary>
+                <div v-if="content.details" v-html="content.details"></div>
+            </details>
+            </div>
+            <div v-else>
+            No content yet
+            </div>
+        </div>
+            `,
         audio: {
             computed: {
                 source() {
@@ -20,6 +33,12 @@ panel.plugin("rarebeast/audio", {
                 <div v-else>No audio selected</div>
                 </div>
             `
-        }
+        },
+        columncontent: `
+            <div @click="open">
+                {{ content.text}}
+                <h1>Column Content</h1>
+            </div>
+            `,
     }
 });

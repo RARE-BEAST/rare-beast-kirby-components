@@ -7,4 +7,6 @@ fields:
       - heading
       - text
       - image
+      - accordions
       - audio
+      - columnContent
