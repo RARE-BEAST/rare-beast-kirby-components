@@ -1,0 +1,7 @@
+title: Audio
+
+accept:
+  extension: mp3, wav, ogg, flac
+
+fields:
+  # some fields here if you want

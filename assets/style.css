@@ -2142,3 +2142,26 @@ swiper-container .swiper-notification {
   backface-visibility: hidden;
   overflow: hidden;
 }
+
+.audio-wrapper {
+  display: flex;
+  background: black;
+  color: white;
+}
+
+.audio-poster {
+  width: 12rem;
+}
+
+.audio-title {
+  font-size: 1.5rem;
+}
+
+.audio-subtitle {
+  font-size: 1rem;
+}
+
+.audio-element {
+  margin-top: 2rem;
+  height: 2rem;
+}

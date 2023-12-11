@@ -1,0 +1,13 @@
+Caption: 
+
+----
+
+Credits: 
+
+----
+
+Uuid: FhPWk3TJ2VBYjIc2
+
+----
+
+Template: blocks/image
