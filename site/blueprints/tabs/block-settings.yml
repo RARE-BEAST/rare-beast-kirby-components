@@ -1,0 +1,51 @@
+title: Block Settings
+
+fields:
+  background:
+    label: Background Color
+    type: color
+    format: hex
+    alpha: true
+    mode: options
+    options:
+      "Black": "#1E1E1E"
+      "White": "#F1F7FA"
+      "Brand Color 1": "#D92525"
+      "Brand Color 2": "#EBE722"
+      "Brand Color 3": "#66AB56"
+      "Brand Color 4": "#F0E794"
+      "Brand Color 5": "#C8C4BC"
+  foreground:
+    label: Foreground Color
+    type: color
+    format: hex
+    alpha: true
+    mode: options
+    options:
+      "Black": "#1E1E1E"
+      "White": "#F1F7FA"
+      "Brand Color 1": "#D92525"
+      "Brand Color 2": "#EBE722"
+      "Brand Color 3": "#66AB56"
+      "Brand Color 4": "#F0E794"
+      "Brand Color 5": "#C8C4BC"
+  padding_top:
+    label: Padding Top
+    type: number
+    after: rem
+    min: 0
+    max: 25
+  padding_bottom:
+    label: Padding Bottom
+    type: number
+    after: rem
+    min: 0
+    max: 25
+  wrapper:
+    label: Wrapper
+    type: select
+    options:
+      fullscreen: Full Screen
+      page-width: Page Width
+      wide: Wide
+      narrow: Narrow

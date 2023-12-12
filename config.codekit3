@@ -7952,6 +7952,14 @@
       "oAP" : "\/site\/blueprints\/site.yml",
       "oF" : 0
     },
+    "\/site\/blueprints\/tabs\/block-settings.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/blueprints\/tabs\/block-settings.yml",
+      "oF" : 0
+    },
     "\/site\/cache" : {
       "ft" : 65536,
       "oA" : 1,
