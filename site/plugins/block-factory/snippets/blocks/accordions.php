@@ -1,10 +1,10 @@
 <?php 
 $accordions = $block->content()->get('accordions');
-$bg = "background";
-$fg = "foreground";
-$padding_top = "padding-top";
-$padding_bottom = "padding-bottom";
-$wrapper = "wrapper";
+$bg = $block->background()->value();
+$fg = $block->foreground()->value();
+$padding_top = $block->padding_top()->value();
+$padding_bottom = $block->padding_bottom()->value();
+$wrapper = $block->wrapper()->value();
 ?>
 
 <?php if (!empty($accordions)) : ?>

@@ -1,25 +1,31 @@
 name: Accordions
 icon: bars
-fields:
-  accordions:
-    label: Accordions
-    type: structure
-    help: Add as many accordions as you need! Accordions are collapsed by default, so the 'Accordion Title' is what visitors will see first. The 'Accordion Content' will become visible when the accordion is expanded.
+tabs:
+  main:
+    label: Block Content
     fields:
-      title: 
-        label: Accordion Title
-        type: textarea
-        size: small
-        buttons: 
-          - bold
-          - italic
-      content:
-        label: Accordion Content
-        type: textarea
-        size: medium
-        buttons:
-          - bold
-          - italic
-          - "|"
-          - link
-          - email
+      accordions:
+        label: Accordions
+        type: structure
+        help: Add as many accordions as you need! Accordions are collapsed by default, so the 'Accordion Title' is what visitors will see first. The 'Accordion Content' will become visible when the accordion is expanded.
+        fields:
+          title: 
+            label: Accordion Title
+            type: textarea
+            size: small
+            buttons: 
+              - bold
+              - italic
+          content:
+            label: Accordion Content
+            type: textarea
+            size: medium
+            buttons:
+              - bold
+              - italic
+              - "|"
+              - link
+              - email
+  settings:
+    label: Block Settings
+    extends: tabs/block-settings
