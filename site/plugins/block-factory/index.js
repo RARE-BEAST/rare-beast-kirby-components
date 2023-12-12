@@ -1,17 +1,16 @@
 panel.plugin("rare-beast/block-factory", {
     blocks: {
         accordions: `
-        <div>
-            <div v-if="content.summary">
-            <details>
-                <summary>{{ content.summary }}</summary>
-                <div v-if="content.details" v-html="content.details"></div>
-            </details>
-            </div>
-            <div v-else>
-            No content yet
-            </div>
+        <div @dblclick="open">
+        <h1>Accordions</h1><br />
+        <div v-if="content.accordions.length">
+          <details v-for="(item, index) in content.accordions" class="k-block-type-accordions-item" :key="index">
+            <summary>{{ item.title }}</summary>
+            <div v-html="item.content"></div>
+          </details>
         </div>
+        <div v-else>No Accordions yet. Go ahead and add some.</div>
+      </div>
             `,
         audio: {
             computed: {
@@ -25,7 +24,7 @@ panel.plugin("rare-beast/block-factory", {
             template: `
                 <div>
                 <div v-if="source.url">
-                    <h1>{{ content.title }}</h1>
+                    <h1>{{ content.title }}</h1><br/><br/>
                     <audio controls>
                         <source :src="source.url" type="audio/mpeg">
                     </audio>

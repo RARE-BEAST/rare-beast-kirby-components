@@ -2,4 +2,8 @@ Title: Projects
 
 ----
 
+Blocks: [{"content":{"level":"h1","text":"Sample heading on the projects page."},"id":"997763bb-4274-4f79-8457-4a00e01a66e5","isHidden":false,"type":"heading"},{"content":{"heading":"Frequently Asked Questions","accordions":[{"title":"Are these accordions working?","content":"<p>Yeah man, they're working just fine. Look how they just expand and collapse whenever you tell 'em to. You're the king of the universe.</p>"}]},"id":"44194e52-9c2d-4725-bfbf-e31425c6bfb0","isHidden":false,"type":"accordions"}]
+
+----
+
 Uuid: Li9IhmT8MTstJVh8

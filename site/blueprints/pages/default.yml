@@ -7,9 +7,16 @@ columns:
       fields:
         type: fields
         fields:
-          text:
-            type: textarea
-            size: huge
+          Blocks:
+            type: blocks
+            fieldsets:
+              - heading
+              - text
+              - image
+              - accordions
+              - audio
+              - column_content
+
   sidebar:
     width: 1/3
     sections:
