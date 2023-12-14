@@ -28,15 +28,54 @@ Type-custom:
 
 ----
 
+Background-1: #f7f5e8
+
+----
+
+Background-2: #d3d3d3
+
+----
+
+Background-3: #d4a9d8
+
+----
+
+Foreground-light: #f7f5e8
+
+----
+
+Foreground-dark: #232220
+
+----
+
+Accent-1: #e8d722
+
+----
+
+Accent-2: #3a8e0f
+
+----
+
+Accent-3: #ef0f00
+
+----
+
+Accent-4: #434cf9
+
+----
+
 Brand-palette:
 
 - 
+  _id: 0a52fd5c-375d-4ffc-ada7-d36545c1fa9e
   color_name: Asphalt
   color_value: '#1e1d1d'
 - 
+  _id: edc928d0-64dc-4014-82a2-4b18e720fe80
   color_name: Spackle
   color_value: '#ffffed'
 - 
+  _id: 37f664c0-6959-49a7-9912-ef82c4d1a480
   color_name: Lawn
   color_value: '#4c6833eb'
   black: '#ffffff'
@@ -44,6 +83,7 @@ Brand-palette:
   brandcolor1: '#3daef4'
   brandcolor2: ""
 - 
+  _id: ed2aa6d4-2fec-4786-81b7-3113fade8411
   color_name: Reflector
   color_value: '#ffff28'
 

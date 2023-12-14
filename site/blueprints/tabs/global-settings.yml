@@ -7,6 +7,9 @@ columns:
       page_width:
         type: fields
         fields:
+          column_1_header:
+            label: Page Width & Typography
+            type: headline
 
           page_width:
             label: Page Width
@@ -112,16 +115,60 @@ columns:
       brand_palette:
         type: fields
         fields:
-          brand_palette:
+          column_2_header:
             label: Brand Palette
-            type: structure
-            fields:
-              color_name:
-                label: Color Name
-                type: text
-              color_value:
-                label: Color Value
-                type: color
-                format: hex
-                alpha: true
-                mode: picker
+            type: headline
+          background_1:
+            label: Background 1
+            type: color
+            format: hex
+            alpha: true
+            mode: picker
+          background_2:
+            label: Background 2
+            type: color
+            format: hex
+            alpha: true
+            mode: picker
+          background_3:
+            label: Background 3
+            type: color
+            format: hex
+            alpha: true
+            mode: picker
+          foreground_light:
+            label: Foreground Light
+            type: color
+            format: hex
+            alpha: true
+            mode: picker
+          foreground_dark:
+            label: Foreground Dark
+            type: color
+            format: hex
+            alpha: true
+            mode: picker
+          accent_1:
+            label: Accent 1
+            type: color
+            format: hex
+            alpha: true
+            mode: picker
+          accent_2:
+            label: Accent 2
+            type: color
+            format: hex
+            alpha: true
+            mode: picker
+          accent_3:
+            label: Accent 3
+            type: color
+            format: hex
+            alpha: true
+            mode: picker
+          accent_4:
+            label: Accent 4
+            type: color
+            format: hex
+            alpha: true
+            mode: picker

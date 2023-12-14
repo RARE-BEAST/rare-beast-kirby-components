@@ -4,34 +4,14 @@ icon: cog
 fields:
   background:
     label: Background Color
-    type: color
-    format: hex
-    alpha: true
-    mode: options
-    options:
-      "Black": "#1E1E1E"
-      "White": "#F1F7FA"
-      "Brand Color 1": "#D92525"
-      "Brand Color 2": "#EBE722"
-      "Brand Color 3": "#66AB56"
-      "Brand Color 4": "#F0E794"
-      "Brand Color 5": "#C8C4BC"
-    default: "#F1F7FA"
+    type: select
+    options: query
+    query: site.getBrandPalette
   foreground:
     label: Foreground Color
-    type: color
-    format: hex
-    alpha: true
-    mode: options
-    options:
-      "Black": "#1E1E1E"
-      "White": "#F1F7FA"
-      "Brand Color 1": "#D92525"
-      "Brand Color 2": "#EBE722"
-      "Brand Color 3": "#66AB56"
-      "Brand Color 4": "#F0E794"
-      "Brand Color 5": "#C8C4BC"
-    default: "#1E1E1E"
+    type: select
+    options: query
+    query: site.getBrandPalette
   padding_top:
     label: Padding Top
     type: number

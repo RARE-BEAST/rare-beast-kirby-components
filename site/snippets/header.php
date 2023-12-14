@@ -34,8 +34,31 @@ $type_custom = site()->type_custom();
 endif;
 ?>
 
+
+<!-- BRAND PALETTE -->
+<?php
+$background_1 = site()->background_1()->value();
+$background_2 = site()->background_2()->value();
+$background_3 = site()->background_3()->value();
+$foreground_light = site()->foreground_light()->value();
+$foreground_dark = site()->foreground_dark()->value();
+$accent_1 = site()->accent_1()->value();
+$accent_2 = site()->accent_2()->value();
+$accent_3 = site()->accent_3()->value();
+$accent_4 = site()->accent_4()->value();
+?>
+
 <style>
 :root {
+    --background-1: <?= $background_1 ?>;
+    --background-2: <?= $background_2 ?>;
+    --background-3: <?= $background_3 ?>;
+    --foreground-light: <?= $foreground_light ?>;
+    --foreground-dark: <?= $foreground_dark ?>;
+    --accent-1: <?= $accent_1 ?>;
+    --accent-2: <?= $accent_2 ?>;
+    --accent-3: <?= $accent_3 ?>;
+    --accent-4: <?= $accent_4 ?>;
     --page-width: <?= $page_width ?>px;
     --base-size-percent: <?= ($base_size / 16) * 100 ?>%;
     --rem: <?= $base_size ?>px;
