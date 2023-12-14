@@ -897,12 +897,57 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/content\/01_projects\/01_rare-beast\/rare-beast_wordmark-w.jpg" : {
+    "\/content\/1_home\/home.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/home.txt",
+      "oF" : 0
+    },
+    "\/content\/1_home\/kirby-audio-sample.mp3" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/kirby-audio-sample.mp3",
+      "oF" : 0
+    },
+    "\/content\/1_home\/kirby-audio-sample.mp3.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/kirby-audio-sample.mp3.txt",
+      "oF" : 0
+    },
+    "\/content\/1_home\/peder_and_hendrik_at_revolve.jpg" : {
+      "ft" : 16384,
+      "iS" : 973343,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/peder_and_hendrik_at_revolve.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/content\/1_home\/peder_and_hendrik_at_revolve.jpg.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/peder_and_hendrik_at_revolve.jpg.txt",
+      "oF" : 0
+    },
+    "\/content\/1_home\/rare-beast-wordmark.jpg" : {
       "ft" : 16384,
       "iS" : 57661,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/content\/01_projects\/01_rare-beast\/rare-beast_wordmark-w.jpg",
+      "oAP" : "\/content\/1_home\/rare-beast-wordmark.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -910,81 +955,44 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/content\/01_projects\/01_rare-beast\/rare-beast.txt" : {
+    "\/content\/1_home\/rare-beast-wordmark.jpg.txt" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/content\/01_projects\/01_rare-beast\/rare-beast.txt",
+      "oAP" : "\/content\/1_home\/rare-beast-wordmark.jpg.txt",
       "oF" : 0
     },
-    "\/content\/01_projects\/02_moog-music\/moog-music.txt" : {
+    "\/content\/2_about\/about.txt" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/content\/01_projects\/02_moog-music\/moog-music.txt",
+      "oAP" : "\/content\/2_about\/about.txt",
       "oF" : 0
     },
-    "\/content\/01_projects\/03_blues-for-winter-zero\/BFWZ_BROADSIDE_4x5.jpg" : {
-      "ft" : 16384,
-      "iS" : 386767,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/01_projects\/03_blues-for-winter-zero\/BFWZ_BROADSIDE_4x5.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/content\/01_projects\/03_blues-for-winter-zero\/blues-for-winter-zero.txt" : {
+    "\/content\/3_kitchen-sink\/default.txt" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/content\/01_projects\/03_blues-for-winter-zero\/blues-for-winter-zero.txt",
+      "oAP" : "\/content\/3_kitchen-sink\/default.txt",
       "oF" : 0
     },
-    "\/content\/01_projects\/projects.txt" : {
+    "\/content\/4_contact\/contact.txt" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/content\/01_projects\/projects.txt",
+      "oAP" : "\/content\/4_contact\/contact.txt",
       "oF" : 0
     },
-    "\/content\/02_about\/about.txt" : {
+    "\/content\/5_faq\/faq.txt" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/content\/02_about\/about.txt",
-      "oF" : 0
-    },
-    "\/content\/03_team\/team.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/03_team\/team.txt",
-      "oF" : 0
-    },
-    "\/content\/04_contact\/contact.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/04_contact\/contact.txt",
-      "oF" : 0
-    },
-    "\/content\/05_blog\/blog.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/05_blog\/blog.txt",
+      "oAP" : "\/content\/5_faq\/faq.txt",
       "oF" : 0
     },
     "\/content\/error\/error.txt" : {
@@ -993,80 +1001,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/content\/error\/error.txt",
-      "oF" : 0
-    },
-    "\/content\/faq\/faq.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/faq\/faq.txt",
-      "oF" : 0
-    },
-    "\/content\/home\/home.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/home\/home.txt",
-      "oF" : 0
-    },
-    "\/content\/home\/kirby-audio-sample.mp3" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/home\/kirby-audio-sample.mp3",
-      "oF" : 0
-    },
-    "\/content\/home\/kirby-audio-sample.mp3.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/home\/kirby-audio-sample.mp3.txt",
-      "oF" : 0
-    },
-    "\/content\/home\/peder_and_hendrik_at_revolve.jpg" : {
-      "ft" : 16384,
-      "iS" : 973343,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/home\/peder_and_hendrik_at_revolve.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/content\/home\/peder_and_hendrik_at_revolve.jpg.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/home\/peder_and_hendrik_at_revolve.jpg.txt",
-      "oF" : 0
-    },
-    "\/content\/home\/rare-beast-wordmark.jpg" : {
-      "ft" : 16384,
-      "iS" : 57661,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/home\/rare-beast-wordmark.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/content\/home\/rare-beast-wordmark.jpg.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/home\/rare-beast-wordmark.jpg.txt",
       "oF" : 0
     },
     "\/content\/site.txt" : {
@@ -7643,38 +7577,20 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/media\/pages\/projects\/blues-for-winter-zero\/df743a810d-1701285298\/BFWZ_BROADSIDE_4x5.jpg" : {
-      "ft" : 16384,
-      "iS" : 386767,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/media\/pages\/projects\/blues-for-winter-zero\/df743a810d-1701285298\/BFWZ_BROADSIDE_4x5.jpg",
+    "\/media\/pages\/home\/e99c1f8497-1702325661\/.jobs\/peder_and_hendrik_at_revolve-38x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/e99c1f8497-1702325661\/.jobs\/peder_and_hendrik_at_revolve-38x.jpg-min.json",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
+      "oO" : 1,
+      "oS" : 1
     },
-    "\/media\/pages\/projects\/moog-music\/eb89fe8399-1701285392\/BFWZ_SIDE_A.jpg" : {
+    "\/media\/pages\/home\/e99c1f8497-1702325661\/peder_and_hendrik_at_revolve-76x.jpg" : {
       "ft" : 16384,
-      "iS" : 283387,
+      "iS" : 2784,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/media\/pages\/projects\/moog-music\/eb89fe8399-1701285392\/BFWZ_SIDE_A.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/media\/pages\/projects\/rare-beast\/0c44d4e6bc-1701285329\/rare-beast_wordmark-w.jpg" : {
-      "ft" : 16384,
-      "iS" : 57661,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/media\/pages\/projects\/rare-beast\/0c44d4e6bc-1701285329\/rare-beast_wordmark-w.jpg",
+      "oAP" : "\/media\/pages\/home\/e99c1f8497-1702325661\/peder_and_hendrik_at_revolve-76x.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

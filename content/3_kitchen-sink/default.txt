@@ -1,0 +1,25 @@
+Title: Kitchen Sink
+
+----
+
+Blocks: 
+
+----
+
+Seo-title: Kitchen Sink
+
+----
+
+Meta-description: This page contains every available component in the Rare Beast starter theme.
+
+----
+
+Noindex: true
+
+----
+
+Nofollow: true
+
+----
+
+Uuid: Vkb9kSGnHig3C4DM
