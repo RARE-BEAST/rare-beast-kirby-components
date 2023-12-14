@@ -1,0 +1,127 @@
+title: Global Settings
+
+columns:
+  main:
+    width: 1/2
+    sections:
+      page_width:
+        type: fields
+        fields:
+
+          page_width:
+            label: Page Width
+            type: number
+            after: px
+            min: 1000
+            max: 1500
+            default: 1300
+            help: Set the maximum width of the page (in pixels).
+
+          base_size:
+            label: Base Size
+            type: number
+            after: px
+            min: 10
+            max: 18
+            default: 12
+            help: Set the base font size for the site (in pixels).
+
+          type_scale:
+            label: Type Scale
+            type: select
+            options:
+              custom: Custom
+              minor-second: Minor Second (1.067)
+              major-second: Major Second (1.125)
+              minor-third: Minor Third (1.200)
+              major-third: Major Third (1.250)
+              perfect-fourth: Perfect Fourth (1.333)
+              augmented-fourth: Augmented Fourth (1.414)
+              perfect-fifth: Perfect Fifth (1.500)
+              golden-ratio: Golden Ratio (1.618)
+            default: perfect-fourth
+            help: Select a type scale or choose 'Custom' to set your own font sizes.
+
+          type_custom:
+            label: Custom Type Sizes
+            type: structure
+            max: 1
+            help: Set your own font sizes for each heading level. All values are in 'rem' units, meaning they are relative to the base font size. For example, if the base font size is 16px and you set the H1 size to 2rem, the H1 font size will be 32px.
+            when:
+              type_scale: custom
+            fields:
+              h0:
+                label: H0
+                type: number
+                after: rem
+                min: 0.5
+                max: 15
+                step: 0.025
+              h1:
+                label: H1
+                type: number
+                after: rem
+                min: 0.5
+                max: 15
+                step: 0.025
+              h2:
+                label: H2
+                type: number
+                after: rem
+                min: 0.5
+                max: 15
+                step: 0.025
+              h3:
+                label: H3
+                type: number
+                after: rem
+                min: 0.5
+                max: 15
+                step: 0.025
+              h4:
+                label: H4
+                type: number
+                after: rem
+                min: 0.5
+                max: 15
+                step: 0.025
+              p:
+                label: Body
+                type: number
+                after: rem
+                default: 1
+                disabled: true
+              h5:
+                label: H5
+                type: number
+                after: rem
+                min: 1
+                max: 15
+                step: 0.025
+              h6:
+                label: H6
+                type: number
+                after: rem
+                min: 1
+                max: 15
+                step: 0.025
+
+  brand:
+    width: 1/2
+    sections:
+      brand_palette:
+        type: fields
+        fields:
+          brand_palette:
+            label: Brand Palette
+            type: structure
+            fields:
+              color_name:
+                label: Color Name
+                type: text
+              color_value:
+                label: Color Value
+                type: color
+                format: hex
+                alpha: true
+                mode: picker

@@ -1,5 +1,12 @@
 title: Site
 
-sections:
-  pages:
-    type: pages
+tabs:
+  dashboard:
+    label: Dashboard
+    sections:
+      pages:
+        type: pages
+
+  global-settings:
+    label: Global Settings
+    extends: tabs/global-settings

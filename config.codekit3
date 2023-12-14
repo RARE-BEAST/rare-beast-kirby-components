@@ -7960,6 +7960,22 @@
       "oAP" : "\/site\/blueprints\/tabs\/block-settings.yml",
       "oF" : 0
     },
+    "\/site\/blueprints\/tabs\/global-settings.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/blueprints\/tabs\/global-settings.yml",
+      "oF" : 0
+    },
+    "\/site\/blueprints\/tabs\/page-seo.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/blueprints\/tabs\/page-seo.yml",
+      "oF" : 0
+    },
     "\/site\/cache" : {
       "ft" : 65536,
       "oA" : 1,

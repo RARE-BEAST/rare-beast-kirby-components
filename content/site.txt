@@ -1,1 +1,63 @@
-Title: RARE BEAST: Kirby Playground
+Title: RARE BEAST: Kirby Starter
+
+----
+
+Page-width: 1300
+
+----
+
+Base-size: 16
+
+----
+
+Type-scale: perfect-fourth
+
+----
+
+Type-custom:
+
+- 
+  h0: 8
+  h1: 7
+  h2: 6
+  h3: 5
+  h4: 4
+  p: 1
+  h5: 3
+  h6: 2
+
+----
+
+Brand-palette:
+
+- 
+  color_name: Asphalt
+  color_value: '#1e1d1d'
+- 
+  color_name: Spackle
+  color_value: '#ffffed'
+- 
+  color_name: Lawn
+  color_value: '#4c6833eb'
+  black: '#ffffff'
+  white: '#000000'
+  brandcolor1: '#3daef4'
+  brandcolor2: ""
+- 
+  color_name: Reflector
+  color_value: '#ffff28'
+
+----
+
+Type-scale-custom:
+
+- 
+  _id: 2be47d00-b519-4135-ba9e-cefe647e8393
+  h0: 6
+  h1: 5.25
+  h2: 4.125
+  h3: 3.025
+  h4: 2.5
+  p: 1
+  h5: 2.025
+  h6: 1.875
