@@ -32,12 +32,6 @@ panel.plugin("rare-beast/block-factory", {
                 <div v-else>No audio selected</div>
                 </div>
             `
-        },
-        columncontent: `
-            <div @click="open">
-                {{ content.text}}
-                <h1>Column Content</h1>
-            </div>
-            `,
+        }
     }
 });

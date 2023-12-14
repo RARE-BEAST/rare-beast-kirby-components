@@ -2235,9 +2235,11 @@ swiper-container .swiper-notification {
   margin: 0 auto;
   border-bottom: 1px solid black;
 }
-.accordion__content p {
+.accordion__content--inner {
+  padding: 0 4rem 2rem 0;
+}
+.accordion__content--inner p {
   margin: 0;
-  padding-bottom: 2rem;
 }
 .accordion:last-of-type {
   margin-bottom: 3rem;

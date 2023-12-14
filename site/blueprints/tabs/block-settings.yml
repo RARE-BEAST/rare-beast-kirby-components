@@ -9,8 +9,8 @@ fields:
       background-1: Background 1
       background-2: Background 2
       background-3: Background 3
-      foreground-light: Foreground Light
-      foreground-dark: Foreground Dark
+      light: Foreground Light
+      dark: Foreground Dark
       accent-1: Accent 1
       accent-2: Accent 2
       accent-3: Accent 3
@@ -23,13 +23,13 @@ fields:
       background-1: Background 1
       background-2: Background 2
       background-3: Background 3
-      foreground-light: Foreground Light
-      foreground-dark: Foreground Dark
+      light: Foreground Light
+      dark: Foreground Dark
       accent-1: Accent 1
       accent-2: Accent 2
       accent-3: Accent 3
       accent-4: Accent 4
-    default: foreground-dark
+    default: dark
   padding_top:
     label: Padding Top
     type: number

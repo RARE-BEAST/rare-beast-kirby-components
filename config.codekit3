@@ -8006,6 +8006,14 @@
       "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/audio.yml",
       "oF" : 0
     },
+    "\/site\/plugins\/block-factory\/blueprints\/blocks\/content.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/content.yml",
+      "oF" : 0
+    },
     "\/site\/plugins\/block-factory\/index.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -8051,6 +8059,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/audio.php",
+      "oF" : 0
+    },
+    "\/site\/plugins\/block-factory\/snippets\/blocks\/content.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/content.php",
       "oF" : 0
     },
     "\/site\/sessions\/1702928188.62eccb2857dc1270c7fd.sess" : {

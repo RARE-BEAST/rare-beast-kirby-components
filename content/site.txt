@@ -32,11 +32,11 @@ Background-1: #f7f5e8
 
 ----
 
-Background-2: #d3d3d3
+Background-2: #232220
 
 ----
 
-Background-3: #d4a9d8
+Background-3: #d3d3d3
 
 ----
 

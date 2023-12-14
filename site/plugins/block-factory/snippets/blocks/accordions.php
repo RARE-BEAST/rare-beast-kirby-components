@@ -9,8 +9,8 @@ $wrapper = $block->wrapper()->value();
 
 <?php if (!empty($accordions)) : ?>
 
-<section class="section background--<?php echo $bg; ?> foreground--<?php echo $fg; ?>" style="--padding-top: <?php echo $padding_top; ?>rem; --padding-bottom: <?php echo $padding_bottom; ?>rem;">
-    <div class="accordions wrapper wrapper--<?php echo $wrapper; ?>">
+<section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem;">
+    <div class="accordions wrapper wrapper--<?= $wrapper; ?>">
 
       <div class="accordions__content">
       <?php foreach ($accordions->value() as $accordion) : ?>
@@ -23,7 +23,9 @@ $wrapper = $block->wrapper()->value();
                   </div>
               </div>
               <div class="accordion__content js-accordion-content">
-                  <?= $accordion['content'] ?>
+                <div class="accordion__content--inner">
+                    <?= $accordion['content'] ?>
+                </div>
               </div>
           </div>
       <?php endforeach; ?>

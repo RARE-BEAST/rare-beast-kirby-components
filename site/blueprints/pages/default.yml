@@ -19,6 +19,7 @@ tabs:
                   - image
                   - accordions
                   - audio
+                  - content
 
       sidebar:
         width: 1/3
