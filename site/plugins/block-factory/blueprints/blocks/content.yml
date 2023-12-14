@@ -9,72 +9,9 @@ tabs:
         type: blocks
         help: Create new headlines and text blocks by clicking the 'Add' button.
         fieldsets:
-          h1: 
-            label: H1
-            type: text
-            size: small
-            buttons: 
-              - bold
-              - italic
-              - link
-          h2: 
-            label: H2
-            type: text
-            size: small
-            buttons: 
-              - bold
-              - italic
-              - link
-          h3:
-            label: H3
-            type: text
-            size: small
-            buttons: 
-              - bold
-              - italic
-              - link
-          subheadline:
-            label: Subheadline
-            type: text
-            size: small
-            buttons: 
-              - bold
-              - italic
-              - link
-          copy:
-            label: Copy
-            type: textarea
-            buttons: 
-              - bold
-              - italic
-              - link
-          button:
-            label: Button
-            type: structure
-            fields:
-              text:
-                label: Text
-                type: text
-              url:
-                label: URL
-                type: url
-              btn_style:
-                label: Button Style
-                type: checkboxes
-                options:
-                  primary: Primary
-                  secondary: Secondary
-                max: 1
-          cta:
-            label: Call to Action
-            type: structure
-            fields:
-              text:
-                label: Text
-                type: text
-              url:
-                label: URL
-                type: url
+          - heading
+          - text
+          - button
 
   settings:
     label: Block Settings
