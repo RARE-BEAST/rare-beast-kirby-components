@@ -4,8 +4,10 @@ Kirby::plugin('rare-beast/block-factory', [
     'blueprints' => [
         'blocks/accordions' => __DIR__ . '/blueprints/blocks/accordions.yml',
         'blocks/audio' => __DIR__ . '/blueprints/blocks/audio.yml',
+        'blocks/button' => __DIR__ . '/blueprints/blocks/button.yml',
         'blocks/column-content' => __DIR__ . '/blueprints/blocks/column-content.yml',
         'blocks/content' => __DIR__ . '/blueprints/blocks/content.yml',
+        'blocks/cta' => __DIR__ . '/blueprints/blocks/cta.yml',
         'blocks/form' => __DIR__ . '/blueprints/blocks/form.yml',
         'blocks/hero' => __DIR__ . '/blueprints/blocks/hero.yml',
         'blocks/marquee' => __DIR__ . '/blueprints/blocks/marquee.yml',
@@ -31,8 +33,10 @@ Kirby::plugin('rare-beast/block-factory', [
         'en' => [
             'field.blocks.accordions' => 'Accordions',
             'field.blocks.audio' => 'Audio',
+            'field.blocks.button' => 'Button',
             'field.blocks.column-content' => 'Column Content',
             'field.blocks.content' => 'Content',
+            'field.blocks.cta' => 'Call to Action',
             'field.blocks.form' => 'Form',
             'field.blocks.hero' => 'Hero',
             'field.blocks.marquee' => 'Marquee',

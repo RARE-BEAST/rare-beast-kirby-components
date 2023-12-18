@@ -7931,6 +7931,14 @@
       "oAP" : "\/site\/blueprints\/tabs\/block-settings.yml",
       "oF" : 0
     },
+    "\/site\/blueprints\/tabs\/content-settings.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/blueprints\/tabs\/content-settings.yml",
+      "oF" : 0
+    },
     "\/site\/blueprints\/tabs\/global-settings.yml" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7977,12 +7985,12 @@
       "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/audio.yml",
       "oF" : 0
     },
-    "\/site\/plugins\/block-factory\/blueprints\/blocks\/buttons.yml" : {
+    "\/site\/plugins\/block-factory\/blueprints\/blocks\/button.yml" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/buttons.yml",
+      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/button.yml",
       "oF" : 0
     },
     "\/site\/plugins\/block-factory\/blueprints\/blocks\/content.yml" : {
@@ -7991,6 +7999,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/content.yml",
+      "oF" : 0
+    },
+    "\/site\/plugins\/block-factory\/blueprints\/blocks\/cta.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/cta.yml",
       "oF" : 0
     },
     "\/site\/plugins\/block-factory\/blueprints\/blocks\/gallery.yml" : {
@@ -8088,12 +8104,12 @@
       "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/audio.php",
       "oF" : 0
     },
-    "\/site\/plugins\/block-factory\/snippets\/blocks\/buttons.php" : {
+    "\/site\/plugins\/block-factory\/snippets\/blocks\/button.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/buttons.php",
+      "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/button.php",
       "oF" : 0
     },
     "\/site\/plugins\/block-factory\/snippets\/blocks\/content.php" : {

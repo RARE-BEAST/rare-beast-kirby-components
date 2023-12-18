@@ -1,0 +1,16 @@
+title: Button
+icon: circle-nested
+fields:
+  btn_url:
+    label: Button URL
+    type: url
+  btn_title:
+    label: Button Title
+    type: text
+  btn_style:
+    label: Button Style
+    type: radio
+    options:
+      primary: Primary
+      secondary: Secondary
+    default: primary

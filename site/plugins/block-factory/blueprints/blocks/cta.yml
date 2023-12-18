@@ -1,0 +1,16 @@
+title: Call to Action
+icon: megaphone
+fields:
+  cta_url:
+    label: CTA URL
+    type: url
+  cta_title:
+    label: CTA Title
+    type: text
+  cta_style:
+    label: CTA Style
+    type: radio
+    options:
+      primary: Primary
+      secondary: Secondary
+    default: primary

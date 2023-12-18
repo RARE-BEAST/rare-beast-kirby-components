@@ -26,6 +26,6 @@ tabs:
               - "|"
               - link
               - email
-  settings:
+  block-settings:
     label: Block Settings
     extends: tabs/block-settings

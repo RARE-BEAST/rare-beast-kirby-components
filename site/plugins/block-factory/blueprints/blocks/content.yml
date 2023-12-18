@@ -7,12 +7,17 @@ tabs:
       content:
         label: Content
         type: blocks
-        help: Create new headlines and text blocks by clicking the 'Add' button.
+        help: Build your own content group using headers, text blocks, buttons, and CTAs.
         fieldsets:
           - heading
           - text
           - button
+          - cta
 
-  settings:
+  content-settings:
+    label: Content Settings
+    extends: tabs/content-settings
+  
+  block-settings:
     label: Block Settings
     extends: tabs/block-settings

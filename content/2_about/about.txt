@@ -2,4 +2,24 @@ Title: About
 
 ----
 
+Blocks: 
+
+----
+
+Seo-title: 
+
+----
+
+Meta-description: 
+
+----
+
+Noindex: false
+
+----
+
+Nofollow: false
+
+----
+
 Uuid: DJPn1Hg6L8iJkTtk

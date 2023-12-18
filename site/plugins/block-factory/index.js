@@ -5,9 +5,9 @@ panel.plugin("rare-beast/block-factory", {
         <h1>Accordions</h1><br />
         <div v-if="content.accordions.length">
           <details v-for="(item, index) in content.accordions" class="k-block-type-accordions-item" :key="index">
-            <summary>{{ item.title }}</summary>
-            <div v-html="item.content"></div>
-          </details>
+            <summary style="padding-bottom: 1rem;">{{ item.title }}</summary>
+            <div v-html="item.content">></div><br /><br />
+          </details><br /><br />
         </div>
         <div v-else>No Accordions yet. Go ahead and add some.</div>
       </div>

@@ -1,0 +1,20 @@
+title: Block Settings
+icon: cog
+
+fields:
+    max_width:
+      label: Max Width
+      type: range
+      min: 25
+      max: 100
+      default: 50
+      step: 1
+      after: rem
+    align_content:
+      label: Align Content
+      type: radio
+      default: left
+      options:
+        left: Left
+        center: Center
+        right: Right
