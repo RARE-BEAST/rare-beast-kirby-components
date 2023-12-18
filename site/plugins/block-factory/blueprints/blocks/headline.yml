@@ -22,12 +22,7 @@ fields:
       - value: h4
         icon: h4
         text: H4
-      - value: h5
-        icon: h5
-        text: H5
-      - value: h6
-        icon: h6
-        text: H6
+
   text:
     label: Headline Text
     type: writer

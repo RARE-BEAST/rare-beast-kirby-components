@@ -31,17 +31,19 @@ $contents = json_decode($block->content()->content(), true);
             <?php elseif($content['type'] == 'text'): ?>
                 <p class="body"><?= $content['content']['text'] ?></p>
 
-            <?php elseif($content['type'] == 'buttons'): ?>
+            <?php elseif($content['type'] == 'button'): ?>
                 <a
                 class="btn btn--<?= $content['content']['btn_style'] ?>"
-                href="<?= $content['content']['btn_url'] ?>">
+                href="<?= $content['content']['btn_url'] ?>"
+                target="<?= $content['content']['btn_target'] ?>">
                     <?= $content['content']['btn_title'] ?>
                 </a>
 
             <?php elseif($content['type'] == 'cta'): ?>
                 <a 
                 class="cta cta--<?= $content['content']['cta_style'] ?>" 
-                href="<?= $content['content']['cta_url'] ?>">
+                href="<?= $content['content']['cta_url'] ?>"
+                target="<?= $content['content']['cta_target'] ?>">
                     <?= $content['content']['cta_title'] ?>
                 </a>
 

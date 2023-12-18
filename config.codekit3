@@ -897,14 +897,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/content\/1_home\/.lock" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/1_home\/.lock",
-      "oF" : 0
-    },
     "\/content\/1_home\/home.txt" : {
       "cB" : 0,
       "ft" : 8192,

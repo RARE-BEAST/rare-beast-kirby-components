@@ -1,5 +1,5 @@
 name: Subheadline
-icon: title
+icon: headline
 wysiwyg: true
 preview: subheadline
 fields:
