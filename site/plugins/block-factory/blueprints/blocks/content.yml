@@ -9,7 +9,8 @@ tabs:
         type: blocks
         help: Build your own content group using headers, text blocks, buttons, and CTAs.
         fieldsets:
-          - heading
+          - headline
+          - subheadline
           - text
           - button
           - cta

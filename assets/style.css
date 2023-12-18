@@ -2268,3 +2268,15 @@ swiper-container .swiper-notification {
 .accordion__trigger.active span:last-child {
   transform: translateY(-50%);
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__inner {
+  max-width: var(--max-width, "unset");
+}
+.content__inner .btn {
+  margin-right: 1rem;
+}

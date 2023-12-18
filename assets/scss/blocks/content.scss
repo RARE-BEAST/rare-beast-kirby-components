@@ -1,0 +1,11 @@
+.content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content__inner {
+    max-width: var(--max-width, 'unset');
+    .btn {
+      margin-right: 1rem;
+    }
+  }

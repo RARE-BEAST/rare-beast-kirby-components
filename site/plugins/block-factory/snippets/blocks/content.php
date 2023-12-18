@@ -16,8 +16,15 @@ $contents = json_decode($block->content()->content(), true);
     <?php if ($contents) : ?>
       <div class="content__inner">
         <?php foreach($contents as $content): ?>
-            <?php if($content['type'] == 'heading'): ?>
+            <?php if($content['type'] == 'headline'): ?>
+        
                 <<?= $content['content']['level'] ?> class="<?= $content['content']['level'] ?>">
+                    <?= $content['content']['text'] ?>
+                </<?= $content['content']['level'] ?>>
+            
+                <?php elseif($content['type'] == 'subheadline'): ?>
+        
+                <<?= $content['content']['level'] ?> class="subheadline h4">
                     <?= $content['content']['text'] ?>
                 </<?= $content['content']['level'] ?>>
 
