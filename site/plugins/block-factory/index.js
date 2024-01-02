@@ -32,6 +32,17 @@ panel.plugin("rare-beast/block-factory", {
                 <div v-else>No audio selected</div>
                 </div>
             `
-        }
+        },
+        // headline: {
+        //     template: `
+        //         <div>
+        //             <h1 v-if="content.level === 'h1'"><strong>{{ content.level.toUpperCase() }}:</strong> {{ content.text }}</h1>
+        //             <h2 v-else-if="content.level === 'h2'"><strong>{{ content.level.toUpperCase() }}:</strong> {{ content.text }}</h2>
+        //             <h3 v-else-if="content.level === 'h3'"><strong>{{ content.level.toUpperCase() }}:</strong> {{ content.text }}</h3>
+        //             <h4 v-else-if="content.level === 'h4'"><strong>{{ content.level.toUpperCase() }}:</strong> {{ content.text }}</h4>
+        //             <div v-else>No headline level selected</div>
+        //         </div>
+        //     `
+        // }
     }
 });

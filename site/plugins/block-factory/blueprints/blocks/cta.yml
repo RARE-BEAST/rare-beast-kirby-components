@@ -21,3 +21,5 @@ fields:
       _self: Open link in same tab
       _blank: Open link in new tab
     default: _self
+
+label: "{{ cta_title }} ({{ cta_url }})"

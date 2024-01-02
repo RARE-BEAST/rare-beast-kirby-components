@@ -22,3 +22,5 @@ tabs:
   block-settings:
     label: Block Settings
     extends: tabs/block-settings
+
+preview: fields

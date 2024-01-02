@@ -14,12 +14,30 @@ tabs:
               Blocks:
                 type: blocks
                 fieldsets:
-                  - heading
-                  - text
-                  - image
-                  - accordions
-                  - audio
-                  - content
+                  hero:
+                    label: Hero
+                    type: group
+                    fieldsets:
+                      - hero
+                      - split-hero
+                  text:
+                    label: Text
+                    type: group
+                    fieldsets:
+                      - content
+                      - heading
+                      - text
+                      - accordions
+                      - marquee
+                  media:
+                    label: Media
+                    type: group
+                    fieldsets:
+                      - image
+                      - image-slider
+                      - media
+                      - gallery
+                      - audio
 
       sidebar:
         width: 1/3

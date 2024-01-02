@@ -1,8 +1,9 @@
 name: Subheadline
 icon: headline
 wysiwyg: true
-preview: subheadline
+preview: text
 fields:
+
   level:
     label: Subheadline Level
     type: toggles
@@ -22,7 +23,10 @@ fields:
       - value: h6
         icon: h6
         text: H6
+
   text:
     label: Subheadline Text
     type: writer
     inline: true
+
+# label: "{{ text }}"
