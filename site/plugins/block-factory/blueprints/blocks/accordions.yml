@@ -1,5 +1,5 @@
 name: Accordions
-icon: bars
+icon: plus
 tabs:
   main:
     label: Block Content
@@ -29,5 +29,3 @@ tabs:
   block-settings:
     label: Block Settings
     extends: tabs/block-settings
-
-preview: fields

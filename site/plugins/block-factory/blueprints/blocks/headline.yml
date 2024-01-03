@@ -1,41 +1,13 @@
 name: Headline
 icon: title
-wysiwyg: true
-preview: text
+extends: blocks/heading
 fields:
   level:
     label: Headline Level
-    type: toggles
-    empty: false
-    default: "h2"
-    labels: false
+    type: select
+    default: h2
     options:
-      - value: h1
-        icon: h1
-        text: H1
-      - value: h2
-        icon: h2
-        text: H2
-      - value: h3
-        icon: h3
-        text: H3
-      - value: h4
-        icon: h4
-        text: H4
-
-  text:
-    label: Headline Text
-    type: writer
-    inline: true
-
-# label: "{{ text }}"
-
-# name: field.blocks.text.name
-# icon: text
-# wysiwyg: true
-# preview: text
-# fields:
-#   text:
-#     type: writer
-#     nodes: false
-#     placeholder: field.blocks.text.placeholder
+      h1: H1
+      h2: H2
+      h3: H3
+      h4: H4

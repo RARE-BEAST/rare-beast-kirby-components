@@ -1,17 +1,31 @@
 panel.plugin("rare-beast/block-factory", {
     blocks: {
-        accordions: `
-        <div @dblclick="open">
-        <h1>Accordions</h1><br />
-        <div v-if="content.accordions.length">
-          <details v-for="(item, index) in content.accordions" class="k-block-type-accordions-item" :key="index">
-            <summary style="padding-bottom: 1rem;">{{ item.title }}</summary>
-            <div v-html="item.content">></div><br /><br />
-          </details><br /><br />
-        </div>
-        <div v-else>No Accordions yet. Go ahead and add some.</div>
-      </div>
-            `,
+
+        accordions: {
+            computed: {
+                items() {
+                    return this.content.accordions || [];
+                }
+            },
+            template: `
+                <div @dblclick="open">
+                    <div class="k-block-title">
+                        <k-icon type="plus"></k-icon>
+                        <span class="k-block-type-fields-header">Accordions</span>
+                    </div>
+                    <div class="accordions">
+                        <div v-if="items.length">
+                            <details v-for="(item, index) in items" class="accordion" :key="index" open>
+                                <summary class="accordion__title">{{ item.title }}</summary>
+                                <p class="accordion__content" v-html="item.content"></p>
+                            </details>
+                        </div>
+                        <div v-else>No Accordions yet. Go ahead and add some.</div>
+                    </div>
+                </div>
+            `
+        },
+
         audio: {
             computed: {
                 source() {
@@ -24,25 +38,149 @@ panel.plugin("rare-beast/block-factory", {
             template: `
                 <div>
                 <div v-if="source.url">
-                    <h1>{{ content.title }}</h1><br/><br/>
+                    <span>{{ content.title }}</span><br/><br/>
                     <audio controls>
                         <source :src="source.url" type="audio/mpeg">
                     </audio>
                 </div>
-                <div v-else>No audio selected</div>
+                <div v-else>No audio selected.</div>
                 </div>
             `
         },
-        // headline: {
-        //     template: `
-        //         <div>
-        //             <h1 v-if="content.level === 'h1'"><strong>{{ content.level.toUpperCase() }}:</strong> {{ content.text }}</h1>
-        //             <h2 v-else-if="content.level === 'h2'"><strong>{{ content.level.toUpperCase() }}:</strong> {{ content.text }}</h2>
-        //             <h3 v-else-if="content.level === 'h3'"><strong>{{ content.level.toUpperCase() }}:</strong> {{ content.text }}</h3>
-        //             <h4 v-else-if="content.level === 'h4'"><strong>{{ content.level.toUpperCase() }}:</strong> {{ content.text }}</h4>
-        //             <div v-else>No headline level selected</div>
-        //         </div>
-        //     `
-        // }
+
+        headline: {
+            computed: {
+                level() {
+                    return this.content.level || 'No headline level found';
+                },
+                text() {
+                    return this.content.text || 'No headline text found';
+                }
+            },
+            template: `
+                <div @dblclick="open">
+                    <div v-if="level !== 'No headline level found' && text !== 'No headline text found'">
+                        <strong>{{ level.toUpperCase() }}:</strong> {{ text }}
+                    </div>
+                    <div v-else>No headline details found.</div>
+                </div>
+            `
+        },
+        
+        subheadline: {
+            computed: {
+                level() {
+                    return this.content.level || 'No subheadline level found';
+                },
+                text() {
+                    return this.content.text || 'No subheadline text found';
+                }
+            },
+            template: `
+                <div @dblclick="open">
+                    <div v-if="level !== 'No subheadline level found' && text !== 'No subheadline text found'">
+                        <strong>{{ level.toUpperCase() }}:</strong> {{ text }}
+                    </div>
+                    <div v-else>No subheadline details found.</div>
+                </div>
+            `
+        },
+
+
+        button: {
+            computed: {
+                btn_title() {
+                    return this.content.btn_title || 'No title';
+                },
+                btn_url() {
+                    return this.content.btn_url || 'No URL';
+                },
+                btn_style() {
+                    return this.content.btn_style || 'No style';
+                },
+                btn_target() {
+                    return this.content.btn_target || 'No target';
+                }
+            },
+            template: `
+                <div @dblclick="open">
+                    <div class="btn" v-if="btn_title !== 'No title'">
+                        {{ btn_title }}
+                    </div>
+                    <div v-if="btn_url !== 'No URL'">
+                        <div class="btn__info">
+                            <strong>URL:</strong> {{ btn_url }}
+                        </div>
+                    </div>
+                    <div v-if="btn_style !== 'No style'">
+                        <div class="btn__info">
+                            <strong>Style:</strong> {{ btn_style }}
+                        </div>
+                    </div>
+                    <div v-if="btn_target !== 'No target'">
+                        <div class="btn__info">
+                            <strong>Target:</strong> {{ btn_target }}
+                        </div>
+                    </div>
+                    <div v-else>No button details found.</div>
+                </div>
+            `
+        },
+
+        copy: {
+            computed: {
+                text() {
+                    return this.content ? this.content.text || 'No text found' : 'No content found';
+                }
+            },
+            template: `
+                <div @dblclick="open">
+                    <div v-if="text !== 'No text found'">
+                        <p>{{ text }}</p>
+                    </div>
+                    <div v-else>No text details found.</div>
+                </div>
+            `
+        },
+        
+        cta: {
+            computed: {
+                cta_title() {
+                    return this.content.cta_title || 'No title';
+                },
+                cta_url() {
+                    return this.content.cta_url || 'No URL';
+                },
+                cta_style() {
+                    return this.content.cta_style || 'No style';
+                },
+                cta_target() {
+                    return this.content.cta_target || 'No target';
+                }
+            },
+            template: `
+                <div @dblclick="open">
+                    <div class="cta" v-if="cta_title !== 'No title'">
+                        {{ cta_title }}
+                    </div>
+                    <div v-if="cta_url !== 'No URL'">
+                        <div class="cta__info">
+                            <strong>URL:</strong> {{ cta_url }}
+                        </div>
+                    </div>
+                    <div v-if="cta_style !== 'No style'">
+                        <div class="cta__info">
+                            <strong>Style:</strong> {{ cta_style }}
+                        </div>
+                    </div>
+                    <div v-if="cta_target !== 'No target'">
+                        <div class="cta__info">
+                            <strong>Target:</strong> {{ cta_target }}
+                        </div>
+                    </div>
+                    <div v-else>No button details found.</div>
+                </div>
+            `
+        },
     }
 });

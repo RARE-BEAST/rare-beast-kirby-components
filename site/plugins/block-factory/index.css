@@ -1,0 +1,97 @@
+/* GLOBAL BLOCK PREVIEW SETTINGS */
+.k-block-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.k-block-type-fields-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+/* ACCORDIONS PREVIEW */
+.k-block-type-accordions .accordion {
+    padding-bottom: 0.5rem;
+}
+
+.k-block-type-accordions .accordion__title {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.k-block-type-accordions .accordion__content {
+    font-size: 0.75rem;
+    padding-bottom: 1rem;
+    line-height: 1.35;
+}
+
+
+/* HEADLINE PREVIEW */
+.k-block-type-headline h1 {
+    font-size: 2.5rem;
+}
+.k-block-type-headline h2 {
+    font-size: 2.5rem;
+}
+.k-block-type-headline h3 {
+    font-size: 2rem;
+}
+.k-block-type-headline h4 {
+    font-size: 1.75rem;
+}
+
+
+/* SUBHEADLINE PREVIEW */
+.k-block-type-subheadline h3 {
+    font-size: 1.5rem;
+}
+.k-block-type-subheadline h4 {
+    font-size: 1.25rem;
+}
+.k-block-type-subheadline h5 {
+    font-size: 1rem;
+}
+.k-block-type-subheadline h6 {
+    font-size: 0.875rem;
+}
+
+
+/* BUTTON PREVIEW */
+.k-block-type-button .btn {
+    font-size: 0.825rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    display: inline-flex;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    margin: 1rem 0;
+}
+
+.k-block-type-button .btn__info {
+    padding-bottom: 0.325rem;
+    font-size: 0.75rem;
+}
+
+
+/* CTA PREVIEW */
+.k-block-type-cta .cta {
+    font-size: 0.825rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 0.125rem;
+    letter-spacing: 0.075rem;
+    display: inline-flex;
+    margin: 1rem 0;
+}
+
+.k-block-type-cta .cta__info {
+    padding-bottom: 0.325rem;
+    font-size: 0.75rem;
+}

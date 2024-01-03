@@ -1,32 +1,13 @@
 name: Subheadline
-icon: headline
-wysiwyg: true
-preview: text
+icon: title
+extends: blocks/heading
 fields:
-
   level:
     label: Subheadline Level
-    type: toggles
-    empty: false
-    default: "h3"
-    labels: false
+    type: select
+    default: h4
     options:
-      - value: h3
-        icon: h3
-        text: H3
-      - value: h4
-        icon: h4
-        text: H4
-      - value: h5
-        icon: h5
-        text: H5
-      - value: h6
-        icon: h6
-        text: H6
-
-  text:
-    label: Subheadline Text
-    type: writer
-    inline: true
-
-# label: "{{ text }}"
+      h3: H3
+      h4: H4
+      h5: H5
+      h6: H6

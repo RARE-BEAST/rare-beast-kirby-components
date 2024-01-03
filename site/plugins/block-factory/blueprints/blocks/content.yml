@@ -11,7 +11,7 @@ tabs:
         fieldsets:
           - headline
           - subheadline
-          - text
+          - copy
           - button
           - cta
 

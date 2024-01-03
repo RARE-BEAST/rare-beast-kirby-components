@@ -22,13 +22,13 @@ $contents = json_decode($block->content()->content(), true);
                     <?= $content['content']['text'] ?>
                 </<?= $content['content']['level'] ?>>
             
-                <?php elseif($content['type'] == 'subheadline'): ?>
+            <?php elseif($content['type'] == 'subheadline'): ?>
         
                 <<?= $content['content']['level'] ?> class="subheadline h4">
                     <?= $content['content']['text'] ?>
                 </<?= $content['content']['level'] ?>>
-
-            <?php elseif($content['type'] == 'text'): ?>
+            
+            <?php elseif($content['type'] == 'copy'): ?>
                 <p class="body"><?= $content['content']['text'] ?></p>
 
             <?php elseif($content['type'] == 'button'): ?>
