@@ -1,0 +1,91 @@
+title: Company Information
+
+columns:
+  contact:
+    width: 1/2
+    sections:
+      contact_main:
+        type: fields
+        fields:
+          contact_header:
+            label: Contact Information
+            type: headline
+
+          company_name:
+            label: Company Name
+            type: text
+            width: 1/2
+          address_line_1:
+            label: Address Line 1
+            type: text
+            width: 1/2
+          address_line_2:
+            label: Address Line 2
+            type: text
+            width: 1/2
+          city:
+            label: City
+            type: text
+            width: 1/2
+          state:
+            label: State
+            type: text
+            width: 1/2
+          zip:
+            label: Zip Code
+            type: text
+            width: 1/2
+          phone:
+            label: Phone Number
+            type: text
+            width: 1/2
+          fax:
+            label: Fax Number
+            type: text
+            width: 1/2
+          email:
+            label: Email Address
+            type: email
+            width: 1/2
+  social:
+    width: 1/2
+    sections:
+      social_main:
+        type: fields
+        fields:
+          social_header:
+            label: Social Links
+            type: headline
+
+          instagram:
+            label: Instagram
+            type: url
+            width: 1/2
+          facebook:
+            label: Facebook
+            type: url
+            width: 1/2
+          twitter:
+            label: Twitter
+            type: url
+            width: 1/2
+          tiktok:
+            label: TikTok
+            type: url
+            width: 1/2
+          linkedin:
+            label: LinkedIn
+            type: url
+            width: 1/2
+          youtube:
+            label: YouTube
+            type: url
+            width: 1/2
+          vimeo:
+            label: Vimeo
+            type: url
+            width: 1/2
+          pinterest:
+            label: Pinterest
+            type: url
+            width: 1/2

@@ -7,7 +7,7 @@ return [
   // OPTION TO MOVE THE PANEL TO A DIFFERENT URL
   // FOR SECURITY, BUT ALSO FOR FUN OR BRANDING PURPOSES
   'panel' => [
-    'slug' => 'panel' 
+    'slug' => 'panel'
   ],
 
   // OPTION TO ADD CUSTOM FAVICONS

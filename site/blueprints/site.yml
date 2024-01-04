@@ -10,3 +10,7 @@ tabs:
   global-settings:
     label: Global Settings
     extends: tabs/global-settings
+
+  company-information:
+    label: Company Information
+    extends: tabs/company-settings
