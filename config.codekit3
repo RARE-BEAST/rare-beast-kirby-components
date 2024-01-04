@@ -700,7 +700,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/scss\/blocks\/media.scss" : {
+    "\/assets\/scss\/blocks\/single-image.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -709,8 +709,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/scss\/blocks\/media.css",
-      "oF" : 0,
+      "oAP" : "\/assets\/scss\/blocks\/single-image.css",
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -897,14 +897,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/content\/1_home\/.lock" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/1_home\/.lock",
-      "oF" : 0
-    },
     "\/content\/1_home\/home.txt" : {
       "cB" : 0,
       "ft" : 8192,
@@ -913,49 +905,12 @@
       "oAP" : "\/content\/1_home\/home.txt",
       "oF" : 0
     },
-    "\/content\/1_home\/kirby-audio-sample.mp3" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/1_home\/kirby-audio-sample.mp3",
-      "oF" : 0
-    },
-    "\/content\/1_home\/kirby-audio-sample.mp3.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/1_home\/kirby-audio-sample.mp3.txt",
-      "oF" : 0
-    },
-    "\/content\/1_home\/peder_and_hendrik_at_revolve.jpg" : {
-      "ft" : 16384,
-      "iS" : 973343,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/1_home\/peder_and_hendrik_at_revolve.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/content\/1_home\/peder_and_hendrik_at_revolve.jpg.txt" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/content\/1_home\/peder_and_hendrik_at_revolve.jpg.txt",
-      "oF" : 0
-    },
-    "\/content\/1_home\/rare-beast-wordmark.jpg" : {
+    "\/content\/1_home\/rare-beast_wordmark-w.jpg" : {
       "ft" : 16384,
       "iS" : 57661,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/content\/1_home\/rare-beast-wordmark.jpg",
+      "oAP" : "\/content\/1_home\/rare-beast_wordmark-w.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -963,12 +918,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/content\/1_home\/rare-beast-wordmark.jpg.txt" : {
+    "\/content\/1_home\/rare-beast_wordmark-w.jpg.txt" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/content\/1_home\/rare-beast-wordmark.jpg.txt",
+      "oAP" : "\/content\/1_home\/rare-beast_wordmark-w.jpg.txt",
       "oF" : 0
     },
     "\/content\/2_about\/about.txt" : {
@@ -7543,20 +7498,180 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/media\/pages\/home\/6af79577c8-1701726744\/.jobs\/rare-beast-wordmark-38x.jpg.json" : {
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-38x.jpg.json" : {
       "ft" : 524288,
       "oA" : 1,
-      "oAP" : "\/media\/pages\/home\/6af79577c8-1701726744\/.jobs\/rare-beast-wordmark-38x.jpg-min.json",
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-38x.jpg-min.json",
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
-    "\/media\/pages\/home\/6af79577c8-1701726744\/rare-beast-wordmark-76x.jpg" : {
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-300x-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-300x-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-300x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-300x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-300x169-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-300x169-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-352x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-352x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-450x300-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-450x300-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-600x-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-600x-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-600x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-600x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-600x338-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-600x338-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-864x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-864x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-900x600-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-900x600-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1200x-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1200x-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1200x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1200x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1200x675-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1200x675-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1800x-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1800x-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1800x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1800x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1800x1013-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1800x1013-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1800x1200-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1800x1200-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1920x1080-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-1920x1080-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-2700x1800-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-2700x1800-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-2880x1920-crop-50-0-50-0.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-2880x1920-crop-50-0-50-0.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-76x.jpg" : {
       "ft" : 16384,
       "iS" : 1933,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/media\/pages\/home\/6af79577c8-1701726744\/rare-beast-wordmark-76x.jpg",
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-76x.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -7564,12 +7679,64 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/media\/pages\/home\/6af79577c8-1701726744\/rare-beast-wordmark.jpg" : {
+    "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-900x-crop-50-0-50-0.jpg" : {
       "ft" : 16384,
       "iS" : 57661,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/media\/pages\/home\/6af79577c8-1701726744\/rare-beast-wordmark.jpg",
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-900x-crop-50-0-50-0.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-900x.jpg" : {
+      "ft" : 16384,
+      "iS" : 37117,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-900x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-900x506-crop-50-0-50-0.jpg" : {
+      "ft" : 16384,
+      "iS" : 31208,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-900x506-crop-50-0-50-0.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-1350x900-crop-50-0-50-0.jpg" : {
+      "ft" : 16384,
+      "iS" : 57661,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-1350x900-crop-50-0-50-0.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-1408x.jpg" : {
+      "ft" : 16384,
+      "iS" : 41133,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-1408x.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -7612,48 +7779,6 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/media\/pages\/home\/57c99c3803-1702325661\/peder_and_hendrik_at_revolve-200x200-crop.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/media\/pages\/home\/76f2f6e622-1702325624\/kirby-audio-sample.mp3" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/media\/pages\/home\/76f2f6e622-1702325624\/kirby-audio-sample.mp3",
-      "oF" : 0
-    },
-    "\/media\/pages\/home\/e99c1f8497-1702325661\/.jobs\/peder_and_hendrik_at_revolve-38x.jpg.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/media\/pages\/home\/e99c1f8497-1702325661\/.jobs\/peder_and_hendrik_at_revolve-38x.jpg-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/media\/pages\/home\/e99c1f8497-1702325661\/peder_and_hendrik_at_revolve-76x.jpg" : {
-      "ft" : 16384,
-      "iS" : 2784,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/media\/pages\/home\/e99c1f8497-1702325661\/peder_and_hendrik_at_revolve-76x.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/media\/pages\/home\/e99c1f8497-1702325661\/peder_and_hendrik_at_revolve-200x200-crop.jpg" : {
-      "ft" : 16384,
-      "iS" : 14556,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/media\/pages\/home\/e99c1f8497-1702325661\/peder_and_hendrik_at_revolve-200x200-crop.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -8009,6 +8134,14 @@
       "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/content.yml",
       "oF" : 0
     },
+    "\/site\/plugins\/block-factory\/blueprints\/blocks\/copy.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/copy.yml",
+      "oF" : 0
+    },
     "\/site\/plugins\/block-factory\/blueprints\/blocks\/cta.yml" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8057,12 +8190,12 @@
       "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/marquee.yml",
       "oF" : 0
     },
-    "\/site\/plugins\/block-factory\/blueprints\/blocks\/media.yml" : {
+    "\/site\/plugins\/block-factory\/blueprints\/blocks\/single-image.yml" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/media.yml",
+      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/single-image.yml",
       "oF" : 0
     },
     "\/site\/plugins\/block-factory\/blueprints\/blocks\/split-hero.yml" : {
@@ -8168,12 +8301,12 @@
       "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/marquee.php",
       "oF" : 0
     },
-    "\/site\/plugins\/block-factory\/snippets\/blocks\/media.php" : {
+    "\/site\/plugins\/block-factory\/snippets\/blocks\/single-image.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/media.php",
+      "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/single-image.php",
       "oF" : 0
     },
     "\/site\/plugins\/block-factory\/snippets\/blocks\/split-hero.php" : {
@@ -8182,14 +8315,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/split-hero.php",
-      "oF" : 0
-    },
-    "\/site\/sessions\/1704137834.7f697939529ed4ca9e97.sess" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/site\/sessions\/1704137834.7f697939529ed4ca9e97.sess",
       "oF" : 0
     },
     "\/site\/sessions\/1704744399.9229ca71fc9196f9512e.sess" : {

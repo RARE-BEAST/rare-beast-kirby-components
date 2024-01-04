@@ -1,0 +1,26 @@
+.single-image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &.align-y--left {
+        align-items: flex-start;    
+    }
+    &.align-y--center {
+        align-items: center;    
+    }
+    &.align-y--right {
+        align-items: flex-end;    
+    }
+
+    &__inner {
+        width: 100%;
+        max-width: var(--max-width, 'unset');
+        img, video {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        } 
+    }
+}

@@ -2280,3 +2280,29 @@ swiper-container .swiper-notification {
 .content__inner .btn {
   margin-right: 1rem;
 }
+
+.single-image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.single-image.align-y--left {
+  align-items: flex-start;
+}
+.single-image.align-y--center {
+  align-items: center;
+}
+.single-image.align-y--right {
+  align-items: flex-end;
+}
+.single-image__inner {
+  width: 100%;
+  max-width: var(--max-width, "unset");
+}
+.single-image__inner img, .single-image__inner video {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

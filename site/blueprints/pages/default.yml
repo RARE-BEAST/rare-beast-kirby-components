@@ -31,11 +31,11 @@ tabs:
                     label: Media
                     type: group
                     fieldsets:
-                      - image
-                      - image-slider
-                      - media
-                      - gallery
                       - audio
+                      - gallery
+                      - image-slider
+                      - single-image
+                      - video
 
       sidebar:
         width: 1/3

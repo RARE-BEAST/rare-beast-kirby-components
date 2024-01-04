@@ -1,0 +1,21 @@
+Alt: Rare Beast wordmark
+
+----
+
+Caption: 
+
+----
+
+Credits: 
+
+----
+
+Uuid: tIUN89SNnkXnt7U0
+
+----
+
+Template: blocks/image
+
+----
+
+Focus: 50.0% 50.0%

@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Blocks: [{"content":{"content":"[{\"content\":{\"level\":\"h3\",\"text\":\"Lorem IPSUM!\"},\"id\":\"f9d4f74e-f37b-420f-acc9-566c213f11da\",\"isHidden\":false,\"type\":\"headline\"}]","max_width":50,"align_content":"left","background":"background-1","foreground":"dark","padding_top":4,"padding_bottom":4,"wrapper":"page-width"},"id":"2cd2250e-7182-4a05-b7aa-883161c18363","isHidden":false,"type":"content"}]
+Blocks: 
 
 ----
 
