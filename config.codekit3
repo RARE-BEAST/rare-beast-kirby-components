@@ -640,6 +640,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/scss\/blocks\/form-contact.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/blocks\/form-contact.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/scss\/blocks\/gallery.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -8196,6 +8211,14 @@
       "oAP" : "\/site\/config\/config.php",
       "oF" : 0
     },
+    "\/site\/controllers\/contact.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/controllers\/contact.php",
+      "oF" : 0
+    },
     "\/site\/plugins\/block-factory\/blueprints\/blocks\/accordions.yml" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8499,12 +8522,28 @@
       "oAP" : "\/site\/snippets\/responsive-image-loader.php",
       "oF" : 0
     },
+    "\/site\/templates\/contact.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/templates\/contact.php",
+      "oF" : 0
+    },
     "\/site\/templates\/default.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/templates\/default.php",
+      "oF" : 0
+    },
+    "\/site\/templates\/emails\/email.html.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/templates\/emails\/email.html.php",
       "oF" : 0
     },
     "\/site\/templates\/project.php" : {

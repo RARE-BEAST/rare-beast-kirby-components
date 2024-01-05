@@ -2281,6 +2281,11 @@ swiper-container .swiper-notification {
   margin-right: 1rem;
 }
 
+.honeypot {
+  position: absolute;
+  left: -9999px;
+}
+
 .media {
   position: relative;
   display: flex;
