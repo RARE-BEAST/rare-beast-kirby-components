@@ -10,18 +10,18 @@ fields:
   #   options:
   #     kirby: "{{ t('field.blocks.image.location.internal') }}"
   #     web: "{{ t('field.blocks.image.location.external') }}"
-  image:
-    label: field.blocks.image.name
-    type: files
-    query: model.images
-    multiple: false
-    image:
-      back: black
-    uploads:
-      template: blocks/image
-    # when:
-    #   location: kirby
-    help: Click the image above to add alt text, image credits, and/or set a focal point for cropping.
+  # image:
+  #   label: field.blocks.image.name
+  #   type: files
+  #   query: model.images
+  #   multiple: false
+  #   image:
+  #     back: black
+  #   uploads:
+  #     template: blocks/image
+  #   when:
+  #     media_type: image
+  #   help: Click the image above to add alt text, image credits, and/or set a focal point for cropping.
   # src:
   #   label: field.blocks.image.url
   #   type: url

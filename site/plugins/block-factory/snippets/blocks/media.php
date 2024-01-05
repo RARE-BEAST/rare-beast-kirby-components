@@ -12,15 +12,26 @@ $alignment = $block->alignment()->value();
 $image = $block->image()->toFile();
 $ratio = $block->ratio()->or('auto')->value();
 
+$video = $block->video_link()->value();
+$placeholder = $block->placeholder()->toFile();
+
 ?>
 
 <section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem;">
-  <div class="single-image wrapper wrapper--<?= $wrapper ?> align-y--<?= $alignment ?>">
-    <div class="single-image__inner"<?= $has_max_width ? ' style="--max-width: ' . $max_width . 'rem;"' : '' ?>>
+  <div class="media wrapper wrapper--<?= $wrapper ?> align-y--<?= $alignment ?>">
+    <div class="media__inner"<?= $has_max_width ? ' style="--max-width: ' . $max_width . 'rem;"' : '' ?>>
 
       <?php if ($image) :
+
         snippet('responsive-image-loader', ['image' => $image, 'ratio' => $ratio]);
-      endif; ?>
+      
+      elseif ($video): ?>
+
+        <video class="video js-video" muted autoplay loop playsinline poster="<?= $placeholder->url() ?>">
+          <source src="<?php echo $video; ?>" type="video/mp4">
+        </video>
+        
+      <?php endif; ?>
 
     </div>
   </div>

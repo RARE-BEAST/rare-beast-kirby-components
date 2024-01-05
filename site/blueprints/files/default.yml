@@ -1,21 +1,27 @@
 title: File
 
 fields:
+
   alt:
     label: Alt Text
-    type: text
-    width: 1/3
+    type: textarea
+    size: small
+    font: monospace
+    buttons: false
+    width: 1/2
     help: >
       Helps screen-reading tools describe images to visually impaired readers and allows search engines to better crawl and rank your site.
-  caption:
-    label: Caption
-    type: textarea
-    width: 1/3
-    help: >
-      A caption for the image, displayed below it.
+  
   credits:
     label: Credits
     type: textarea
-    width: 1/3
+    size: small
+    buttons:
+      - italic
+      - bold
+      - '|'
+      - link
+      - email
+    width: 1/2
     help: >
       The name of the photographer or artist.

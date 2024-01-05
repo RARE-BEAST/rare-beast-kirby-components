@@ -34,8 +34,7 @@ tabs:
                       - audio
                       - gallery
                       - image-slider
-                      - single-image
-                      - video
+                      - media
 
       sidebar:
         width: 1/3

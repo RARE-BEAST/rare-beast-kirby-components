@@ -670,6 +670,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/scss\/blocks\/image-slider.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/blocks\/image-slider.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/scss\/blocks\/marquee.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -685,7 +700,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/scss\/blocks\/media-slider.scss" : {
+    "\/assets\/scss\/blocks\/media.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -694,22 +709,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/scss\/blocks\/media-slider.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/assets\/scss\/blocks\/single-image.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/scss\/blocks\/single-image.css",
+      "oAP" : "\/assets\/scss\/blocks\/media.css",
       "oF" : 1,
       "oS" : 0,
       "pg" : 0,
@@ -7817,6 +7817,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w.jpg" : {
+      "ft" : 16384,
+      "iS" : 57661,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/media\/pages\/home\/53b855d7ea-1702325624\/kirby-audio-sample.mp3" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8271,12 +8284,12 @@
       "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/marquee.yml",
       "oF" : 0
     },
-    "\/site\/plugins\/block-factory\/blueprints\/blocks\/single-image.yml" : {
+    "\/site\/plugins\/block-factory\/blueprints\/blocks\/media.yml" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/single-image.yml",
+      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/media.yml",
       "oF" : 0
     },
     "\/site\/plugins\/block-factory\/blueprints\/blocks\/split-hero.yml" : {
@@ -8390,12 +8403,12 @@
       "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/marquee.php",
       "oF" : 0
     },
-    "\/site\/plugins\/block-factory\/snippets\/blocks\/single-image.php" : {
+    "\/site\/plugins\/block-factory\/snippets\/blocks\/media.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/single-image.php",
+      "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/media.php",
       "oF" : 0
     },
     "\/site\/plugins\/block-factory\/snippets\/blocks\/split-hero.php" : {

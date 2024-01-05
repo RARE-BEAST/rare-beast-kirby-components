@@ -2281,25 +2281,25 @@ swiper-container .swiper-notification {
   margin-right: 1rem;
 }
 
-.single-image {
+.media {
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.single-image.align-y--left {
+.media.align-y--left {
   align-items: flex-start;
 }
-.single-image.align-y--center {
+.media.align-y--center {
   align-items: center;
 }
-.single-image.align-y--right {
+.media.align-y--right {
   align-items: flex-end;
 }
-.single-image__inner {
+.media__inner {
   width: 100%;
   max-width: var(--max-width, "unset");
 }
-.single-image__inner img, .single-image__inner video {
+.media__inner img, .media__inner video {
   display: block;
   width: 100%;
   height: auto;
