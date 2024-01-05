@@ -95,3 +95,9 @@
     padding-bottom: 0.325rem;
     font-size: 0.75rem;
 }
+
+/* MEDIA PREVIEW */
+.k-block-type-media video {
+    width: 100%;
+    height: auto;
+}
