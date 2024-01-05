@@ -88,15 +88,19 @@ Zip:
 
 ----
 
-Phone: 
+Email: hello@therarebeast.com
+
+----
+
+Phone: 1.555.555.5555
+
+----
+
+Include-fax: true
 
 ----
 
 Fax: 
-
-----
-
-Email: hello@therarebeast.com
 
 ----
 
@@ -112,11 +116,15 @@ Twitter:
 
 ----
 
+Linkedin: 
+
+----
+
 Tiktok: 
 
 ----
 
-Linkedin: 
+Are-na: 
 
 ----
 
@@ -129,6 +137,10 @@ Vimeo:
 ----
 
 Pinterest: 
+
+----
+
+Reddit: 
 
 ----
 

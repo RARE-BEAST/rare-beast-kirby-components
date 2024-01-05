@@ -8,45 +8,122 @@ columns:
         type: fields
         fields:
           contact_header:
-            label: Contact Information
+            label: Contact
             type: headline
 
           company_name:
             label: Company Name
             type: text
-            width: 1/2
           address_line_1:
             label: Address Line 1
             type: text
-            width: 1/2
           address_line_2:
             label: Address Line 2
             type: text
-            width: 1/2
           city:
             label: City
             type: text
-            width: 1/2
+            width: 1/3
           state:
             label: State
-            type: text
-            width: 1/2
+            type: select
+            width: 1/3
+            options:
+              AL: Alabama
+              AK: Alaska
+              AZ: Arizona
+              AR: Arkansas
+              CA: California
+              CO: Colorado
+              CT: Connecticut
+              DE: Delaware
+              DC: District of Columbia
+              FL: Florida
+              GA: Georgia
+              HI: Hawaii
+              ID: Idaho
+              IL: Illinois
+              IN: Indiana
+              IA: Iowa
+              KS: Kansas
+              KY: Kentucky
+              LA: Louisiana
+              ME: Maine
+              MD: Maryland
+              MA: Massachusetts
+              MI: Michigan
+              MN: Minnesota
+              MS: Mississippi
+              MO: Missouri
+              MT: Montana
+              NE: Nebraska
+              NV: Nevada
+              NH: New Hampshire
+              NJ: New Jersey
+              NM: New Mexico
+              NY: New York
+              NC: North Carolina
+              ND: North Dakota
+              OH: Ohio
+              OK: Oklahoma
+              OR: Oregon
+              PA: Pennsylvania
+              PR: Puerto Rico
+              RI: Rhode Island
+              SC: South Carolina
+              SD: South Dakota
+              TN: Tennessee
+              TX: Texas
+              UT: Utah
+              VT: Vermont
+              VA: Virginia
+              WA: Washington
+              WV: West Virginia
+              WI: Wisconsin
+              WY: Wyoming
           zip:
             label: Zip Code
             type: text
-            width: 1/2
-          phone:
-            label: Phone Number
-            type: text
-            width: 1/2
-          fax:
-            label: Fax Number
-            type: text
-            width: 1/2
+            width: 1/3
           email:
             label: Email Address
             type: email
             width: 1/2
+            validate:
+              email: true
+          phone:
+            label: Phone Number
+            type: tel
+            width: 1/2
+            validate:
+              phone: true
+          include_fax:
+            label: Add a Fax Number?
+            type: toggle
+            width: 1/3
+            default: no
+            text:
+              - "no"
+              - "yes"
+          fax:
+            label: Fax Number
+            type: tel
+            width: 2/3
+            validate:
+              phone: true
+            when:
+              include_fax: true
+          wow:
+            label: Dear Analog Afficionado,
+            type: info
+            theme: positive
+            text: |
+              You still have a fax machine?! You're the coolest.
+
+              xoxo,
+              Your friends at The Rare Beast
+            when:
+              include_fax: true
   social:
     width: 1/2
     sections:
@@ -54,7 +131,7 @@ columns:
         type: fields
         fields:
           social_header:
-            label: Social Links
+            label: Social
             type: headline
 
           instagram:
@@ -69,12 +146,16 @@ columns:
             label: Twitter
             type: url
             width: 1/2
+          linkedin:
+            label: LinkedIn
+            type: url
+            width: 1/2
           tiktok:
             label: TikTok
             type: url
             width: 1/2
-          linkedin:
-            label: LinkedIn
+          are.na:
+            label: Are.na
             type: url
             width: 1/2
           youtube:
@@ -87,5 +168,9 @@ columns:
             width: 1/2
           pinterest:
             label: Pinterest
+            type: url
+            width: 1/2
+          reddit:
+            label: Reddit
             type: url
             width: 1/2

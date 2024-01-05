@@ -1,0 +1,12 @@
+{
+    "name": "rare-beast/block-factory",
+    "description": "An ever-expanding library of flexible custom blocks for Kirby CMS",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "THE RARE BEAST",
+            "email": "erik@therarebeast.com"
+        }
+    ]
+}

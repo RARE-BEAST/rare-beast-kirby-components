@@ -8285,6 +8285,14 @@
       "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/subheadline.yml",
       "oF" : 0
     },
+    "\/site\/plugins\/block-factory\/composer.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/site\/plugins\/block-factory\/composer-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/site\/plugins\/block-factory\/index.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -8386,6 +8394,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/split-hero.php",
+      "oF" : 0
+    },
+    "\/site\/plugins\/validation-machine\/composer.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/site\/plugins\/validation-machine\/composer-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/site\/plugins\/validation-machine\/index.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/plugins\/validation-machine\/index.php",
       "oF" : 0
     },
     "\/site\/sessions\/1704744399.9229ca71fc9196f9512e.sess" : {

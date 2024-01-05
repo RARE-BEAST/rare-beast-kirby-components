@@ -1,0 +1,12 @@
+{
+    "name": "rare-beast/validation-machine",
+    "description": "This US and International phnone number validator covers more phone number formats than the default Kirby validator.",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "THE RARE BEAST",
+            "email": "erik@therarebeast.com"
+        }
+    ]
+}
