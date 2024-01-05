@@ -4,10 +4,15 @@ tabs:
   main:
     label: Block Content
     fields:
+
+      headline:
+        type: headline
+        label: Add flexible content.
+        help: Build your own content cluster using headers, text blocks, buttons, and CTAs. Or just one of those things. It's up to you.
+      
       content:
         label: Content
         type: blocks
-        help: Build your own content group using headers, text blocks, buttons, and CTAs.
         fieldsets:
           - headline
           - subheadline

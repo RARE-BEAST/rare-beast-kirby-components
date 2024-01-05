@@ -29,7 +29,13 @@ tabs:
           template: blocks/image
         when:
           media_type: image
-        help: Click the image above to add alt text, image credits, and/or set a focal point for cropping.
+
+      image_help:
+        label: Important!
+        type: info
+        text: Don't forget to add **alt text**, **image credits**, and/or **set a focal point** for cropping. You can do this by clicking the image above or in the _Files_ section of the sidebar.
+        when:
+          media_type: image
 
       video_link:
         width: 1/2
@@ -37,7 +43,7 @@ tabs:
         type: url
         when:
           media_type: video
-        help: Must be a direct link to a video file, not an embed code. We recommend hosting your videos on Vimeo, where the "direct video links" are readily available in the settings for each video.
+        help: _Must be a **direct link** to a video file, not an embed code._ We recommend hosting your videos on Vimeo, where the "direct video links" are readily available in the settings for each video.
 
       placeholder:
         width: 1/2
@@ -53,59 +59,9 @@ tabs:
           media_type: video
         help: Set a placeholder image for the video. For visitors with slow internet connections, this image will be displayed until the video is loaded. For best results, use an image with the exact same aspect ratio or pixel dimensions as the video.
 
-      divider:
-        type: line
-
-      design_headline:
-        type: headline
-        label: Choose Layout
-
-      alignment:
-        width: 1/2
-        label: Alignment
-        type: radio
-        default: left
-        options:
-          left: Left
-          center: Center
-          right: Right
-
-      ratio:
-        width: 1/2
-        label: Ratio
-        type: select
-        default: auto
-        options:
-          auto: Auto
-          square: 1:1
-          two-three: 2:3
-          three-two: 3:2
-          three-four: 3:4
-          four-three: 4:3
-          four-five: 4:5
-          five-four: 5:4
-          sixteen-nine: 16:9
-
-      include_max_width:
-        width: 1/2
-        label: Include Max Width?
-        type: toggle
-        default: no
-        text:
-          - "no"
-          - "yes"
-
-      max_width:
-        width: 1/2
-        label: Max Width
-        type: range
-        min: 25
-        max: 100
-        default: 50
-        step: 1
-        after: rem
-        when:
-          include_max_width: true
+  media-settings:
+    label: Media Settings
+    extends: tabs/media-settings
 
   block-settings:
     label: Block Settings

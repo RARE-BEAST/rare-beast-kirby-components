@@ -715,6 +715,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/scss\/blocks\/media-content.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/scss\/blocks\/media-content.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/scss\/blocks\/media.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -8276,6 +8291,14 @@
       "oAP" : "\/site\/blueprints\/tabs\/global-settings.yml",
       "oF" : 0
     },
+    "\/site\/blueprints\/tabs\/media-settings.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/blueprints\/tabs\/media-settings.yml",
+      "oF" : 0
+    },
     "\/site\/blueprints\/tabs\/page-seo.yml" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8392,6 +8415,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/marquee.yml",
+      "oF" : 0
+    },
+    "\/site\/plugins\/block-factory\/blueprints\/blocks\/media-content.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/plugins\/block-factory\/blueprints\/blocks\/media-content.yml",
       "oF" : 0
     },
     "\/site\/plugins\/block-factory\/blueprints\/blocks\/media.yml" : {
@@ -8511,6 +8542,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/marquee.php",
+      "oF" : 0
+    },
+    "\/site\/plugins\/block-factory\/snippets\/blocks\/media-content.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/plugins\/block-factory\/snippets\/blocks\/media-content.php",
       "oF" : 0
     },
     "\/site\/plugins\/block-factory\/snippets\/blocks\/media.php" : {

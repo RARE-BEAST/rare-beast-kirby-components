@@ -2,19 +2,27 @@ title: Content Settings
 icon: cog
 
 fields:
-    max_width:
-      label: Max Width
-      type: range
-      min: 25
-      max: 100
-      default: 50
-      step: 1
-      after: rem
-    align_content:
-      label: Align Content
-      type: radio
-      default: left
-      options:
-        left: Left
-        center: Center
-        right: Right
+
+  headline:
+    type: headline
+    label: Adjust your content's layout.
+
+  max_width:
+    width: 1/2
+    label: Max Width
+    type: range
+    min: 25
+    max: 100
+    default: 50
+    step: 1
+    after: rem
+
+  align_content:
+    width: 1/2
+    label: Align Content
+    type: radio
+    default: left
+    options:
+      left: Left
+      center: Center
+      right: Right

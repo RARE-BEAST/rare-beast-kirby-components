@@ -4,11 +4,16 @@ tabs:
   main:
     label: Block Content
     fields:
+      headline:
+        type: headline
+        label: Create some accordions.
+        help: Add as many accordions as you need! Accordions are collapsed by default, so the 'Accordion Title' is what visitors will see first. The 'Accordion Content' will become visible when the accordion is expanded.
+
       accordions:
         label: Accordions
         type: structure
-        help: Add as many accordions as you need! Accordions are collapsed by default, so the 'Accordion Title' is what visitors will see first. The 'Accordion Content' will become visible when the accordion is expanded.
         fields:
+
           title: 
             label: Accordion Title
             type: textarea
@@ -16,6 +21,7 @@ tabs:
             buttons: 
               - bold
               - italic
+
           content:
             label: Accordion Content
             type: textarea
@@ -26,6 +32,7 @@ tabs:
               - "|"
               - link
               - email
+  
   block-settings:
     label: Block Settings
     extends: tabs/block-settings
