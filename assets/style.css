@@ -2306,3 +2306,44 @@ swiper-container .swiper-notification {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.media .video {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.media .video--auto {
+  aspect-ratio: unset;
+}
+.media .video--square {
+  aspect-ratio: 1/1;
+}
+.media .video--two-three {
+  aspect-ratio: 2/3;
+}
+.media .video--three-two {
+  aspect-ratio: 3/2;
+}
+.media .video--three-four {
+  aspect-ratio: 3/4;
+}
+.media .video--four-three {
+  aspect-ratio: 4/3;
+}
+.media .video--four-five {
+  aspect-ratio: 4/5;
+}
+.media .video--five-four {
+  aspect-ratio: 5/4;
+}
+.media .video--sixteen-nine {
+  aspect-ratio: 16/9;
+}
+.media .video:not(.media .video--auto) video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

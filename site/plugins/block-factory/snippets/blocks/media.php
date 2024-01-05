@@ -25,12 +25,15 @@ $placeholder = $block->placeholder()->toFile();
 
         snippet('responsive-image-loader', ['image' => $image, 'ratio' => $ratio]);
       
-      elseif ($video): ?>
-
-        <video class="video js-video" muted autoplay loop playsinline poster="<?= $placeholder->url() ?>">
-          <source src="<?php echo $video; ?>" type="video/mp4">
-        </video>
-        
+      elseif ($video): 
+        $video_crop = 'video--' . $ratio;
+      ?>
+        <div class="video <?= $video_crop ?>">
+            <video class="js-video" muted autoplay loop playsinline poster="<?= $placeholder->url() ?>">
+                <source src="<?php echo $video; ?>" type="video/mp4">
+            </video>
+        </div>
+                
       <?php endif; ?>
 
     </div>
