@@ -6,7 +6,7 @@ Blocks: [{"content":{"content":"[{\"content\":{\"level\":\"h1\",\"text\":\"Conta
 
 ----
 
-Seo-title: 
+Seo-title: Contact | The Rare Beast
 
 ----
 
@@ -14,11 +14,11 @@ Meta-description:
 
 ----
 
-Noindex: false
+Noindex: true
 
 ----
 
-Nofollow: false
+Nofollow: true
 
 ----
 

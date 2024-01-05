@@ -6,6 +6,10 @@ tabs:
     sections:
       pages:
         type: pages
+        layout: cards
+        image:
+          ratio: 5/4
+          cover: true
 
   global-settings:
     label: Global Settings
