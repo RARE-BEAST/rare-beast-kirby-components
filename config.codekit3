@@ -7616,22 +7616,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-600x.jpg.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-600x.jpg-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-600x338-crop-50-0-50-0.jpg.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-600x338-crop-50-0-50-0.jpg-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
     "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-800x600-crop-50-0-50-0.jpg.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -7758,6 +7742,32 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-76x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-600x.jpg" : {
+      "ft" : 16384,
+      "iS" : 22562,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-600x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-600x338-crop-50-0-50-0.jpg" : {
+      "ft" : 16384,
+      "iS" : 20090,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/9aefb24090-1704320675\/rare-beast_wordmark-w-600x338-crop-50-0-50-0.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -8291,6 +8301,14 @@
       "oAP" : "\/site\/blueprints\/tabs\/global-settings.yml",
       "oF" : 0
     },
+    "\/site\/blueprints\/tabs\/media-content-settings.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/blueprints\/tabs\/media-content-settings.yml",
+      "oF" : 0
+    },
     "\/site\/blueprints\/tabs\/media-settings.yml" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8582,14 +8600,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/plugins\/validation-machine\/index.php",
-      "oF" : 0
-    },
-    "\/site\/sessions\/1704744399.9229ca71fc9196f9512e.sess" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/site\/sessions\/1704744399.9229ca71fc9196f9512e.sess",
       "oF" : 0
     },
     "\/site\/sessions\/1705430722.10b13c96d8a4667173cf.sess" : {

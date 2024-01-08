@@ -70,3 +70,11 @@ fields:
       wide: Wide
       narrow: Narrow
     default: page-width
+
+  hot_tip:
+    label: What are "rems"?
+    type: info
+    text: >
+      A "rem" is a unit of measurement that is **relative to the base font size** in your site's _Global Settings_ tab. This means that if you change the base font size of your site, the padding will change proportionally. This is a good thing! :) It means that your site will be more accessible to people with visual impairments, and it means that you can change the font size of your site without having to adjust the padding of every block.
+      <br><br>
+      On this site, 1rem = `{{ site.base_size }}`px. To convert rems to pixels, multiply the number of rems by `{{ site.base_size }}`. For example, 4rem = 64px.

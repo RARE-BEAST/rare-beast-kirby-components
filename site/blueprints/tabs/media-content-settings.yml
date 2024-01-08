@@ -1,0 +1,67 @@
+title: Media & Content Settings
+icon: cog
+
+fields:
+
+  headline_a:
+    type: headline
+    label: Adjust your content's layout.
+
+  align_content:
+    width: 1/2
+    label: Align Content
+    type: radio
+    default: left
+    options:
+      left: Left
+      center: Center
+      right: Right
+
+  gap:
+    width: 1/2
+    label: Gap
+    type: range
+    default: 2
+    min: 0
+    max: 8
+    after: rem
+    help: Set the gap between your media and content.
+
+  headline_b:
+    type: headline
+    label: Customize your layout for mobile and desktop views.
+  
+  layout-mobile:
+    width: 1/2
+    type: radio
+    label: Mobile Layout
+    options:
+      content-first: Content Top
+      content-second: Content Bottom
+    default: content-first
+  
+  layout-desktop:
+    width: 1/2
+    type: radio
+    label: Desktop Layout
+    options:
+      content-first: Content Left
+      content-second: Content Right
+    default: content-first
+
+  # line_a:
+  #   type: line
+
+  headline_c:
+    type: headline
+    label: Set the width of your media.
+    help: This applies to desktop views only. Media will always be as wide as the rest of the block on mobile.
+
+  media_width:
+    type: radio
+    label: Media Width
+    options:
+      default: Default (50%)
+      two-thirds: Two-Thirds (66%)
+      three-quarters: Three-Quarters (75%)
+    columns: 3
