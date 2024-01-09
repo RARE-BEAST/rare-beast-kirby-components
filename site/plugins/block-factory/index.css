@@ -101,3 +101,9 @@
     width: 100%;
     height: auto;
 }
+
+/* MEDIA & CONTENT PREVIEW */
+.k-block-type-media-content video {
+    width: 100%;
+    height: auto;
+}

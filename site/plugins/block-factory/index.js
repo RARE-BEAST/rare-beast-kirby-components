@@ -214,5 +214,37 @@ panel.plugin("rare-beast/block-factory", {
                 </div>
             `
         },
+        
+        'media-content': {
+            computed: {
+                media_type() {
+                    return this.content.media_type || 'No media type';
+                },
+                image() {
+                    return this.content.image.length ? this.content.image[0] : null;
+                },
+                video_link() {
+                    return this.content.video_link || null;
+                }
+            },
+            template: `
+                <div @dblclick="open">
+                    <div class="k-block-title">
+                        <k-icon type="grid-left"></k-icon>
+                        <span class="k-block-type-fields-header">Media & Content</span>
+                    </div>
+
+                    <div v-if="image">
+                        <img :src="image.url" class="media__image">
+                    </div>
+                    <div v-if="video_link">
+                        <video controls>
+                            <source :src="video_link" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            `
+        },
     }
 });
