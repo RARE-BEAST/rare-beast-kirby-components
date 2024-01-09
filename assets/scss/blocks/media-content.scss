@@ -1,0 +1,150 @@
+.media-content {
+    display: flex;
+
+    &.layout-mobile--content-first {
+        flex-direction: column-reverse;
+    }
+
+    &.layout-mobile--content-second {
+        flex-direction: column;
+    }
+
+    &.layout-desktop--content-first {
+        @include breakpoint($laptop) {
+            flex-direction: row;
+            .media-content__image {
+                order: 1;
+            }
+        }
+    }
+
+    &.layout-desktop--content-second {
+        @include breakpoint($laptop) {
+            flex-direction: row;
+            .media-content__content {
+                order: 1;
+                padding-left: 2rem;
+                padding-right: 0;
+            }
+        }
+    }
+
+    &__content {
+      max-width: var(--max-width, 'unset');
+      display: flex;
+      flex-direction: column;
+      padding-right: 2rem;
+      
+      &.align-y {
+        &--top {
+           align-self: flex-start; 
+        }
+        &--center {
+            align-self: center;
+        }
+        &--bottom {
+            align-self: flex-end;
+        }
+      }
+    }
+
+    &__image {
+        img, video {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+    
+            &--auto {
+                aspect-ratio: unset;
+            }
+            &--square {
+                aspect-ratio: 1 / 1;
+            }
+            &--two-three {
+                aspect-ratio: 2 / 3;
+            }
+            &--three-two {
+                aspect-ratio: 3 / 2;
+            }
+            &--three-four {
+                aspect-ratio: 3 / 4;
+            }
+            &--four-three {
+                aspect-ratio: 4 / 3;
+            }
+            &--four-five {
+                aspect-ratio: 4 / 5;
+            }
+            &--five-four {
+                aspect-ratio: 5 / 4;
+            }
+            &--sixteen-nine {
+                aspect-ratio: 16 / 9;
+            }
+        
+            &:not(&--auto) {
+                video {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        
+    }
+
+    &.media--two-thirds {
+        .media-content__image {
+            @include breakpoint($laptop) {
+                width: 66.6666666667%;
+                flex-grow: 1;
+            }
+        }
+        .media-content__content {
+            @include breakpoint($laptop) {
+                min-width: 400px;
+                width: 33.3333333333%;
+            }
+        }
+    }
+    
+    &.media--three-quarters {
+        .media-content__image {
+              @include breakpoint($laptop) {
+                  width: 75%;
+                  flex-grow: 1;
+              }
+          }
+        .media-content__content {
+            @include breakpoint($laptop) {
+                min-width: 400px;
+                width: 25%;
+            }
+        }
+    }
+
+    &.media--default {
+        .media-content__image {
+            @include breakpoint($laptop) {
+                width: 50%;
+            }
+        }
+        .media-content__content {
+            @include breakpoint($laptop) {
+                width: 50%;
+            }
+        }
+    }
+    
+    
+}

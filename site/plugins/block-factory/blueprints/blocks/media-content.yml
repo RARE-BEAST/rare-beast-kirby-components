@@ -7,7 +7,7 @@ tabs:
 
       media_headline:
         type: headline
-        label: Add Media
+        label: Add Media.
 
       media_type:
         label: Select Media Type
@@ -64,7 +64,7 @@ tabs:
 
       content_headline:
         type: headline
-        label: Add flexible content.
+        label: Add Content.
         help: Build your own content cluster using headers, text blocks, buttons, and CTAs. Or just one of those things. It's up to you.
       
       content:

@@ -3,13 +3,13 @@
     display: flex;
     flex-direction: column;
 
-    &.align-y--left {
+    &.align-x--left {
         align-items: flex-start;    
     }
-    &.align-y--center {
+    &.align-x--center {
         align-items: center;    
     }
-    &.align-y--right {
+    &.align-x--right {
         align-items: flex-end;    
     }
 
