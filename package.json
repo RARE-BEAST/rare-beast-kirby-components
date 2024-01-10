@@ -8,6 +8,9 @@
   "repository": {},
   "private": true,
   "dependencies": {
+    "@studio-freight/lenis": "^1.0.33",
     "normalize.css": "^8.0.1"
-  }
+  },
+  "main": "index.js",
+  "keywords": []
 }

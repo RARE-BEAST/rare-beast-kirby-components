@@ -1,0 +1,1 @@
+import Lenis from"@studio-freight/lenis";export function initLenis(){if(!document.querySelector("#lenis-smooth-scroll"))return void console.error("No element with id #lenis-smooth-scroll found");const o=new Lenis;o.on("scroll",(o=>{console.log(o)})),requestAnimationFrame((function e(n){o.raf(n),requestAnimationFrame(e)}))}
