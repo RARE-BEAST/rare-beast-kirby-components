@@ -1370,6 +1370,26 @@ main {
   padding: 0.75rem 1.5rem;
 }
 
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
 /**
  * Swiper 9.1.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions

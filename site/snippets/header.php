@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="lenis lenis-smooth">
 <head>
     
 <meta charset="UTF-8">
