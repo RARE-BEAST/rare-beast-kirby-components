@@ -12,7 +12,7 @@ export function initLenis() {
         element: lenisElement,
         multiplier: 1.5,
         direction: 'vertical',
-        infinite: true
+        // infinite: true
     });
 
 

@@ -1,0 +1,62 @@
+.background--background-1 {
+    background-color: var(--background-1);
+    color: var(--foreground-dark);
+}
+
+.background--background-2 {
+    background-color: var(--background-2);
+    color: var(--foreground-dark);
+}
+
+.background--background-3 {
+    background-color: var(--background-3);
+    color: var(--foreground-dark);
+}
+
+.background--accent-1 {
+    background-color: var(--accent-1);
+    color: var(--foreground-dark);
+}
+
+.background--accent-2 {
+    background-color: var(--accent-2);
+    color: var(--foreground-dark);
+}
+
+.background--accent-3 {
+    background-color: var(--accent-3);
+    color: var(--foreground-dark);
+}
+
+.background--accent-4 {
+    background-color: var(--accent-4);
+    color: var(--foreground-dark);
+}
+
+.foreground--foreground-default {
+    color: inherit;
+}
+
+.foreground--light {
+    color: var(--foreground-light);
+}
+
+.foreground--dark {
+    color: var(--foreground-dark);
+}
+
+.foreground--accent-1 {
+    color: var(--accent-1);
+}
+
+.foreground--accent-2 {
+    color: var(--accent-2);
+}
+
+.foreground--accent-3 {
+    color: var(--accent-3);
+}
+
+.foreground--accent-4 {
+    color: var(--accent-4);
+}

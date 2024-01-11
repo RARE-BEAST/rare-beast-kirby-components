@@ -1,0 +1,163 @@
+.contact-form {
+    // align-items: center;
+    background: #E0E0E0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    // display: none;
+    justify-content: center;
+    height: 100vh;
+    height: 100svh;
+    // opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transform: translateX(540px);
+    top: 0;
+    // left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 540px;
+
+    max-width: 100%;
+
+    &.active {
+        pointer-events: auto;
+    }
+
+    .close {
+        display: flex;
+        font-size: $text--small;
+        justify-content: center;
+        position: absolute;
+        text-transform: uppercase;
+        right: 2rem;
+        top: 2rem;
+        z-index: 1000;
+
+        button {
+            align-self: start;
+            appearance: none;
+            border: 0;
+            background: transparent;
+            color: currentColor;
+            letter-spacing: 0.075rem;
+            font-size: $text--small;
+            text-transform: uppercase;
+        }
+    }
+
+    h3 {
+        padding: 2rem 2rem 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 100%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        padding: 1rem 2rem 2rem;
+        position: relative;
+        width: 100%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        // @include breakpoint ($laptop) {
+        //     margin-bottom: 2rem;
+        //     margin-top: 1rem;
+        // }
+
+        textarea {
+            resize: vertical;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        > div {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            position: relative;
+            width: 100%;
+
+            @include breakpoint ($laptop) {
+                flex-direction: row;
+            }
+
+            > div {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                position: relative;
+
+                &:focus-within {
+                    label {
+                        display: block;
+                    }
+
+                    input::placeholder,
+                    textarea::placeholder {
+                        opacity: 0;
+                    }
+                } 
+
+                input,
+                textarea {
+                    appearance: none;
+                    background: transparent;
+                    border: 1px solid currentColor;
+                    font-size: $text--small;
+                    margin-top: 1.5rem;
+                    padding: 1rem 1.5rem;
+                    position: relative;
+                }
+
+                label,
+                input::placeholder,
+                textarea::placeholder {
+                    color: currentColor;
+                    display: none;
+                    font-size: $text--small;
+                    left: 1.5rem;
+                    letter-spacing: .075em;
+                    position: absolute;
+                    // transform: translateY(2.625rem);
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .form__submit {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+
+            input {
+                appearance: none;
+                align-items: center;
+                aspect-ratio: 1/1;
+                background: transparent;
+                border: 1px solid currentColor;
+                // border-radius: 50%;
+                color: currentColor;
+                display: flex;
+                font-size: $text--small;
+                justify-content: center;
+                letter-spacing: .075em;
+                padding: clamp(.5rem, 5vmin, 1.25rem);
+                text-transform: uppercase;
+        
+                height: calc(110rem / 16);
+                width: calc(110rem / 16);
+        
+                @include breakpoint ($laptop) {
+                    height: calc(140rem / 16);
+                    width: calc(140rem / 16);
+                }
+            }
+        }
+    }
+}

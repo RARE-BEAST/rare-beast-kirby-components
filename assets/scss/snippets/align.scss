@@ -1,0 +1,36 @@
+.align-x--left {
+    align-items: flex-start;
+}
+
+.align-x--center {
+    align-items: center;
+    text-align: center;
+}
+
+.align-x--right {
+    align-items: flex-end;
+}
+
+.align-y--top {
+    @include breakpoint($laptop) {
+        align-items: flex-start;
+    }
+}
+
+.align-y--center {
+    @include breakpoint($laptop) {
+        align-items: center;
+    }
+}
+
+.align-y--bottom {
+    @include breakpoint($laptop) {
+        align-items: flex-end;
+    }
+}
+
+.align-y--stretch {
+    @include breakpoint($laptop) {
+        align-items: stretch;
+    }
+}

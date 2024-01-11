@@ -1,3 +1,40 @@
 .btn {
+    display: inline-flex;
+    align-self: flex-start;
+    margin: 1rem 0;
     padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    transition: color .4s, background .4s;
+    &:hover {
+        text-decoration: none;
+    }
+
+    &--primary {
+        background-color: var(--foreground-dark);
+        color: var(--foreground-light)
+    }
+    
+    &--secondary {
+        background-color: var(--foreground-light);
+        color: var(--foreground-dark);
+        border: 1px solid var(--foreground-dark);
+        &:hover {
+            background-color: var(--foreground-dark);
+            color: var(--foreground-light)
+        }
+    }
+}
+
+.cta {
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+    text-underline-offset: 0.3rem;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }

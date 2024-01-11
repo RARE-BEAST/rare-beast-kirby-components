@@ -15,10 +15,14 @@ Version: 1.0
 
 
 // SNIPPETS
-@import "snippets/header.scss";
-@import "snippets/footer.scss";
+@import 'snippets/align.scss';
 @import 'snippets/buttons.scss';
+@import 'snippets/colors.scss';
+@import "snippets/footer.scss";
+@import "snippets/header.scss";
 @import 'snippets/lenis.scss';
+@import 'snippets/loading.scss';
+@import 'snippets/wrappers.scss';
 
 
 // VENDOR

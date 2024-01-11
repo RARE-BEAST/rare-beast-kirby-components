@@ -146,7 +146,7 @@
     transition: opacity .4s;
     z-index: 9;
 
-    @media only screen and (min-width: $laptop) {
+    @include breakpoint ($laptop) {
         flex-wrap: nowrap;
     }
 
@@ -189,7 +189,7 @@
     left: 1.5rem;
     transition: top .4s;
 
-    @media only screen and (min-width: $laptop) {
+    @include breakpoint ($laptop) {
         left: 3rem;
     }
 
@@ -269,7 +269,7 @@
     right: 0;
     transition: top .4s;
 
-    @media only screen and (min-width: $laptop) {
+    @include breakpoint ($laptop) {
         right: 2rem;
     }
 
@@ -317,7 +317,7 @@
         position: relative;
         text-align: center;
 
-        @media only screen and (min-width: $laptop) {
+        @include breakpoint ($laptop) {
             align-items: center;
             padding: 0;
         }
@@ -346,7 +346,7 @@
     right: 0;
     text-transform: uppercase;
 
-    @media only screen and (min-width: $laptop) {
+    @include breakpoint ($laptop) {
         padding: 2rem 3rem;
     }
 

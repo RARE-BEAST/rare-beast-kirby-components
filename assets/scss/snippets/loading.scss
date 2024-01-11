@@ -1,0 +1,55 @@
+.loading-screen {
+    // align-items: flex-end;
+    background-color: $white;
+    display: flex;
+    gap: 2rem;
+    // display: none;
+    justify-content: center;
+    height: 100vh;
+    height: 100svh;
+    padding: 2rem;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+    @include breakpoint ($laptop) {
+        padding: 3rem;
+    }
+
+    .loading-screen__logo {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 2rem;
+        // transform: scale(.05);
+        width: 100%;
+
+        @include breakpoint ($laptop) {
+            gap: 3rem;
+            flex-direction: row;
+        }
+
+        > * {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        // svg {
+        //     width: 100%;
+        // }
+
+        &::before {
+            background-color: red;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            content: "";
+            height: 100%;
+            aspect-ratio: 3/4;
+            max-width: 100%;
+        }
+    }
+}
