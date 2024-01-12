@@ -2224,27 +2224,26 @@ swiper-container .swiper-notification {
        object-fit: unset;
   }
 }
+.image-slider .swiper-button-next, .image-slider .swiper-button-prev {
+  color: currentColor;
+}
+.image-slider .swiper-button-prev {
+  left: 2rem;
+}
+.image-slider .swiper-button-next {
+  right: 2rem;
+}
 .image-slider .swiper-pagination {
   position: relative;
   bottom: 0;
   top: 0;
   margin-top: 1rem;
 }
-.image-slider .swiper-button-next, .image-slider .swiper-button-prev {
-  color: currentColor;
-}
-.image-slider .swiper-button-prev {
-  left: 0;
-  transform: translateX(calc(-100% - 1rem));
-}
-.image-slider .swiper-button-next {
-  right: 0;
-  transform: translateX(calc(100% + 1rem));
-}
 .image-slider .swiper-pagination-bullet {
   background: currentColor;
 }
 .image-slider .swiper-pagination-progressbar {
+  margin-top: 0;
   background: var(--white, #FFF);
 }
 .image-slider .swiper-pagination-progressbar-fill {

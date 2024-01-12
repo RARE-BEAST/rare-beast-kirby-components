@@ -43,9 +43,8 @@ $pagination_type = $block->pagination_style()->value();
                     <div class="image image__mobile--<?= $mobile_ratio ?> image__desktop--<?= $desktop_ratio ?>">
                         <?php if ($video): ?>
 
-                        <video class="video" poster="<?= $image ? $image->url() : '' ?>" controls>
+                        <video class="video js-video" muted autoplay loop playsinline poster="<?= $image ? $image->url() : '' ?>">
                             <source src="<?= $video ?>" type="video/mp4">
-                            Your browser does not support the video tag.
                         </video>
                 
                         <?php else: ?>

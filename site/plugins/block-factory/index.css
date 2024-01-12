@@ -107,3 +107,24 @@
     width: 100%;
     height: auto;
 }
+
+/* IMAGE SLIDER PREVIEW */
+.k-block-type-image-slider .image-slider {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+}
+
+.k-block-type-image-slider .image,
+.k-block-type-image-slider .video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.k-block-type-image-slider .image img,
+.k-block-type-image-slider .video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

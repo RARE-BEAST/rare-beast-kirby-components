@@ -206,7 +206,7 @@ panel.plugin("rare-beast/block-factory", {
                         <img :src="image.url" class="media__image">
                     </div>
                     <div v-if="video_link">
-                        <video controls>
+                        <video muted autoplay loop playsinline>
                             <source :src="video_link" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -238,7 +238,7 @@ panel.plugin("rare-beast/block-factory", {
                         <img :src="image.url" class="media__image">
                     </div>
                     <div v-if="video_link">
-                        <video controls>
+                        <video muted autoplay loop playsinline>
                             <source :src="video_link" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -246,5 +246,41 @@ panel.plugin("rare-beast/block-factory", {
                 </div>
             `
         },
+
+        'image-slider': {
+            computed: {
+                slides() {
+                    return this.content.slides.map(slide => {
+                        const image = slide.image[0]; // Get the first image object from the image field
+                        return {
+                            ...slide,
+                            imageUrl: image.url, // Add a new imageUrl property to the slide object
+                            videoLink: slide.video_link || null // Add a new videoLink property to the slide object
+                        };
+                    }) || [];
+                }
+            },
+            template: `
+                <div @dblclick="open">
+                    <div class="k-block-title">
+                        <k-icon type="images"></k-icon>
+                        <span class="k-block-type-fields-header">Image Slider</span>
+                    </div>
+                    <div v-if="slides.length" class="image-slider">
+                        <div v-for="(slide, index) in slides" :key="index">
+                            <div v-if="slide.videoLink" class="video">
+                                <video muted autoplay loop playsinline>
+                                    <source :src="slide.videoLink" type="video/mp4">
+                                </video>
+                            </div>
+                            <div v-else class="image">
+                                <img :src="slide.imageUrl" :alt="slide.image.alt">
+                            </div>
+                        </div>
+                    </div>
+                    <div v-else>No slides yet. Go ahead and add some.</div>
+                </div>
+            `
+        }
     }
 });

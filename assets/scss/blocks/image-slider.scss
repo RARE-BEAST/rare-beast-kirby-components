@@ -75,27 +75,28 @@
         }
     }
     
+    .swiper-button-next, .swiper-button-prev {
+      color: currentColor;
+    }
+    .swiper-button-prev {
+      left: 2rem;
+      // transform: translateX(calc(-100% - 1rem));
+    }
+    .swiper-button-next {
+      right: 2rem;
+      // transform: translateX(calc(100% + 1rem));
+    }
     .swiper-pagination {
       position: relative;
       bottom: 0;
       top: 0;
       margin-top: 1rem;
     }
-    .swiper-button-next, .swiper-button-prev {
-      color: currentColor;
-    }
-    .swiper-button-prev {
-      left: 0;
-      transform: translateX(calc(-100% - 1rem));
-    }
-    .swiper-button-next {
-      right: 0;
-      transform: translateX(calc(100% + 1rem));
-    }
     .swiper-pagination-bullet {
       background: currentColor;
     }
     .swiper-pagination-progressbar {
+      margin-top: 0;
       background: $white;
     }
     .swiper-pagination-progressbar-fill {
