@@ -3,33 +3,53 @@ export function initImageSlider() {
     let imageSliders = document.querySelectorAll('.js-image-slider');
 
     imageSliders.forEach(function (imageSlider) {
+        let parent = imageSlider.parentElement;
 
-      let parent = imageSlider.parentElement;
+        let mobileSlideCount = imageSlider.dataset.mobileSlidesPerView,
+            mobileSlideMargin = parseInt(imageSlider.dataset.mobileSlideMargin),
+            // mobileNavigation = imageSlider.dataset.mobileNavigation,
+            // mobilePagination = imageSlider.dataset.mobilePagination,
 
-      let mobileSlideCount = imageSlider.dataset.mobileSlidesPerView,
-          desktopSlideCount = imageSlider.dataset.desktopSlidesPerView,
-          slideMargin = parseInt(imageSlider.dataset.slideMargin),
-          nextEl = parent.querySelector('.swiper-button-next'),
-          prevEl = parent.querySelector('.swiper-button-prev'),
-          paginationEl = parent.querySelector('.swiper-pagination');
+            desktopSlideCount = imageSlider.dataset.desktopSlidesPerView,
+            desktopSlideMargin = parseInt(imageSlider.dataset.desktopSlideMargin),
+            // desktopNavigation = imageSlider.dataset.desktopNavigation,
+            // desktopPagination = imageSlider.dataset.desktopPagination,
 
+            nextEl = parent.querySelector('.swiper-button-next'),
+            prevEl = parent.querySelector('.swiper-button-prev'),
+            paginationEl = parent.querySelector('.swiper-pagination'),
+            paginationType = imageSlider.dataset.paginationType;
 
-      let swiper = new Swiper(imageSlider, {
+      
+
+        new Swiper(imageSlider, {
             loop: true,
-            spaceBetween: slideMargin,
+            grabCursor: true,
+            spaceBetween: mobileSlideMargin,
             slidesPerView: mobileSlideCount,
-            breakpoints: {
-                1024: {
-                  slidesPerView: desktopSlideCount
-                }
-            },
-            pagination: {
-                el: paginationEl,
-                type: 'bullets'
-            },
             navigation: {
                 nextEl: nextEl,
                 prevEl: prevEl
+            },
+            pagination: {
+                el: paginationEl,
+                type: paginationType,
+                clickable: true
+            },
+            breakpoints: {
+                1024: {
+                    spaceBetween: desktopSlideMargin,
+                    slidesPerView: desktopSlideCount,
+                    navigation: {
+                        nextEl: nextEl,
+                        prevEl: prevEl
+                    },
+                    pagination: {
+                        el: paginationEl,
+                        type: paginationType,
+                        clickable: true
+                    }
+                }
             }
         });
 

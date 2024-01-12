@@ -1,0 +1,128 @@
+title: Image Slider Settings
+icon: cog
+
+fields:
+
+  headline_a:
+    type: headline
+    label: Choose pagination style.
+    help: |
+      Applies to all screen sizes. Note: Pagination is only visible when there's more than one slide.
+
+  pagination_style:
+    label: Pagination Style
+    type: radio
+    default: bullets
+    columns: 3
+    options:
+      bullets: Bullets
+      fraction: Fraction
+      progressbar: Progress Bar
+
+  line_a:
+    type: line
+
+  headline_b:
+    type: headline
+    label: Customize slider for mobile devices.
+  
+  mobile_ratio:
+    width: 1/3
+    label: Slide Aspect Ratio
+    type: select
+    default: portrait
+    options:
+      unset: Auto
+      square: Square (1:1)
+      portrait: Portrait (5:7)
+      landscape: Landscape (16:9)
+    help: Applies to all slides.
+
+  mobile_pagination:
+    width: 1/3
+    label: Pagination
+    type: toggle
+    default: true
+    text: Show
+    help: Show pagination on mobile?
+
+  mobile_navigation:
+    width: 1/3
+    label: Navigation
+    type: toggle
+    default: false
+    text: Show
+    help: Show navigation arrows on mobile?
+
+  mobile_slides_per_view:
+    width: 1/2
+    label: Slides Per View
+    type: range
+    default: 1
+    min: 1
+    max: 4
+    help: How many slides should be visible at once on mobile?
+  
+  mobile_space_between:
+    width: 1/2
+    label: Space Between
+    type: range
+    default: 0
+    min: 0
+    max: 64
+    after: px
+    help: Set the gap between each slide on mobile.
+
+  line_b:
+    type: line
+
+  headline_c:
+    type: headline
+    label: Customize slider for larger screen sizes (laptops, desktops).
+
+  desktop_ratio:
+    width: 1/3
+    label: Slide Aspect Ratio
+    type: select
+    default: landscape
+    options:
+      unset: Auto
+      square: Square (1:1)
+      portrait: Portrait (5:7)
+      landscape: Landscape (16:9)
+    help: Applies to all slides.
+
+  desktop_pagination:
+    width: 1/3
+    label: Pagination
+    type: toggle
+    default: true
+    text: Show
+    help: Show pagination on desktop?
+
+  desktop_navigation:
+    width: 1/3
+    label: Navigation
+    type: toggle
+    default: true
+    text: Show
+    help: Show navigation arrows on desktop?
+
+  desktop_slides_per_view:
+    width: 1/2
+    label: Slides Per View
+    type: range
+    default: 1
+    min: 1
+    max: 4
+    help: How many slides should be visible at once on desktop?
+  
+  desktop_space_between:
+    width: 1/2
+    label: Space Between
+    type: range
+    default: 0
+    min: 0
+    max: 64
+    after: px
+    help: Set the gap between each slide on desktop.

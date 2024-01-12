@@ -1035,6 +1035,132 @@
       "oAP" : "\/content\/1_home\/rare-beast_wordmark-w.jpg.txt",
       "oF" : 0
     },
+    "\/content\/1_home\/screenshot-2023-12-11-at-8.56.11-pm.png" : {
+      "ft" : 32768,
+      "iS" : 670963,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/screenshot-2023-12-11-at-8.56.11-pm.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/content\/1_home\/screenshot-2023-12-11-at-8.56.11-pm.png.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/screenshot-2023-12-11-at-8.56.11-pm.png.txt",
+      "oF" : 0
+    },
+    "\/content\/1_home\/tirey_collage_07.jpg" : {
+      "ft" : 16384,
+      "iS" : 612036,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/tirey_collage_07.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/content\/1_home\/tirey_collage_07.jpg.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/tirey_collage_07.jpg.txt",
+      "oF" : 0
+    },
+    "\/content\/1_home\/tirey_collage_08.jpg" : {
+      "ft" : 16384,
+      "iS" : 578738,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/tirey_collage_08.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/content\/1_home\/tirey_collage_08.jpg.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/tirey_collage_08.jpg.txt",
+      "oF" : 0
+    },
+    "\/content\/1_home\/tirey_collage_10.jpg" : {
+      "ft" : 16384,
+      "iS" : 426576,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/tirey_collage_10.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/content\/1_home\/tirey_collage_10.jpg.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/tirey_collage_10.jpg.txt",
+      "oF" : 0
+    },
+    "\/content\/1_home\/tirey_collage_13.jpg" : {
+      "ft" : 16384,
+      "iS" : 602756,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/tirey_collage_13.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/content\/1_home\/tirey_collage_13.jpg.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/tirey_collage_13.jpg.txt",
+      "oF" : 0
+    },
+    "\/content\/1_home\/tirey_collage_15.jpg" : {
+      "ft" : 16384,
+      "iS" : 343558,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/tirey_collage_15.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/content\/1_home\/tirey_collage_15.jpg.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/1_home\/tirey_collage_15.jpg.txt",
+      "oF" : 0
+    },
     "\/content\/2_about\/about.txt" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7607,6 +7733,72 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/.jobs\/tirey_collage_07-38x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/.jobs\/tirey_collage_07-38x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/.jobs\/tirey_collage_07-300x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/.jobs\/tirey_collage_07-300x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/.jobs\/tirey_collage_07-600x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/.jobs\/tirey_collage_07-600x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/.jobs\/tirey_collage_07-1200x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/.jobs\/tirey_collage_07-1200x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/.jobs\/tirey_collage_07-1800x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/.jobs\/tirey_collage_07-1800x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/tirey_collage_07-76x.jpg" : {
+      "ft" : 16384,
+      "iS" : 612036,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/tirey_collage_07-76x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/tirey_collage_07-900x.jpg" : {
+      "ft" : 16384,
+      "iS" : 612036,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/4d5f0ddc6c-1705007307\/tirey_collage_07-900x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/media\/pages\/home\/9aefb24090-1704320675\/.jobs\/rare-beast_wordmark-w-38x.jpg.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -8078,6 +8270,325 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/media\/pages\/home\/074ff23de8-1705007278\/.jobs\/tirey_collage_13-38x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/074ff23de8-1705007278\/.jobs\/tirey_collage_13-38x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/074ff23de8-1705007278\/.jobs\/tirey_collage_13-300x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/074ff23de8-1705007278\/.jobs\/tirey_collage_13-300x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/074ff23de8-1705007278\/.jobs\/tirey_collage_13-1200x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/074ff23de8-1705007278\/.jobs\/tirey_collage_13-1200x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/074ff23de8-1705007278\/.jobs\/tirey_collage_13-1800x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/074ff23de8-1705007278\/.jobs\/tirey_collage_13-1800x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/074ff23de8-1705007278\/tirey_collage_13-76x.jpg" : {
+      "ft" : 16384,
+      "iS" : 2569,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/074ff23de8-1705007278\/tirey_collage_13-76x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/074ff23de8-1705007278\/tirey_collage_13-600x.jpg" : {
+      "ft" : 16384,
+      "iS" : 602756,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/074ff23de8-1705007278\/tirey_collage_13-600x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/074ff23de8-1705007278\/tirey_collage_13-900x.jpg" : {
+      "ft" : 16384,
+      "iS" : 602756,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/074ff23de8-1705007278\/tirey_collage_13-900x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/80c73a82fc-1705007342\/.jobs\/tirey_collage_15-38x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/80c73a82fc-1705007342\/.jobs\/tirey_collage_15-38x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/80c73a82fc-1705007342\/.jobs\/tirey_collage_15-300x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/80c73a82fc-1705007342\/.jobs\/tirey_collage_15-300x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/80c73a82fc-1705007342\/.jobs\/tirey_collage_15-600x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/80c73a82fc-1705007342\/.jobs\/tirey_collage_15-600x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/80c73a82fc-1705007342\/.jobs\/tirey_collage_15-1200x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/80c73a82fc-1705007342\/.jobs\/tirey_collage_15-1200x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/80c73a82fc-1705007342\/.jobs\/tirey_collage_15-1800x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/80c73a82fc-1705007342\/.jobs\/tirey_collage_15-1800x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/80c73a82fc-1705007342\/tirey_collage_15-76x.jpg" : {
+      "ft" : 16384,
+      "iS" : 343558,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/80c73a82fc-1705007342\/tirey_collage_15-76x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/80c73a82fc-1705007342\/tirey_collage_15-900x.jpg" : {
+      "ft" : 16384,
+      "iS" : 343558,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/80c73a82fc-1705007342\/tirey_collage_15-900x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/ac5eb5e520-1705007326\/.jobs\/tirey_collage_10-38x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/ac5eb5e520-1705007326\/.jobs\/tirey_collage_10-38x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/ac5eb5e520-1705007326\/.jobs\/tirey_collage_10-300x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/ac5eb5e520-1705007326\/.jobs\/tirey_collage_10-300x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/ac5eb5e520-1705007326\/.jobs\/tirey_collage_10-600x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/ac5eb5e520-1705007326\/.jobs\/tirey_collage_10-600x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/ac5eb5e520-1705007326\/.jobs\/tirey_collage_10-1200x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/ac5eb5e520-1705007326\/.jobs\/tirey_collage_10-1200x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/ac5eb5e520-1705007326\/.jobs\/tirey_collage_10-1800x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/ac5eb5e520-1705007326\/.jobs\/tirey_collage_10-1800x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/ac5eb5e520-1705007326\/tirey_collage_10-76x.jpg" : {
+      "ft" : 16384,
+      "iS" : 426576,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/ac5eb5e520-1705007326\/tirey_collage_10-76x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/ac5eb5e520-1705007326\/tirey_collage_10-900x.jpg" : {
+      "ft" : 16384,
+      "iS" : 426576,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/ac5eb5e520-1705007326\/tirey_collage_10-900x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/e35c769c1f-1705007364\/.jobs\/tirey_collage_08-38x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/e35c769c1f-1705007364\/.jobs\/tirey_collage_08-38x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/e35c769c1f-1705007364\/.jobs\/tirey_collage_08-300x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/e35c769c1f-1705007364\/.jobs\/tirey_collage_08-300x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/e35c769c1f-1705007364\/.jobs\/tirey_collage_08-600x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/e35c769c1f-1705007364\/.jobs\/tirey_collage_08-600x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/e35c769c1f-1705007364\/.jobs\/tirey_collage_08-1200x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/e35c769c1f-1705007364\/.jobs\/tirey_collage_08-1200x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/e35c769c1f-1705007364\/.jobs\/tirey_collage_08-1800x.jpg.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/e35c769c1f-1705007364\/.jobs\/tirey_collage_08-1800x.jpg-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/e35c769c1f-1705007364\/tirey_collage_08-76x.jpg" : {
+      "ft" : 16384,
+      "iS" : 3053,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/e35c769c1f-1705007364\/tirey_collage_08-76x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/e35c769c1f-1705007364\/tirey_collage_08-900x.jpg" : {
+      "ft" : 16384,
+      "iS" : 578738,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/e35c769c1f-1705007364\/tirey_collage_08-900x.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/f63781f5f2-1704998347\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-38x.png.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/f63781f5f2-1704998347\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-38x.png-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/f63781f5f2-1704998347\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-352x.png.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/f63781f5f2-1704998347\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-352x.png-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/f63781f5f2-1704998347\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-864x.png.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/f63781f5f2-1704998347\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-864x.png-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/media\/pages\/home\/f63781f5f2-1704998347\/screenshot-2023-12-11-at-8.56.11-pm-76x.png" : {
+      "ft" : 32768,
+      "iS" : 16659,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/f63781f5f2-1704998347\/screenshot-2023-12-11-at-8.56.11-pm-76x.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/f63781f5f2-1704998347\/screenshot-2023-12-11-at-8.56.11-pm-1408x.png" : {
+      "ft" : 32768,
+      "iS" : 670963,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/f63781f5f2-1704998347\/screenshot-2023-12-11-at-8.56.11-pm-1408x.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/media\/panel\/495063beeac89309a2247ce9c13ed292\/apple-touch-icon.png" : {
       "ft" : 32768,
       "iS" : 4115,
@@ -8384,6 +8895,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/blueprints\/tabs\/global-settings.yml",
+      "oF" : 0
+    },
+    "\/site\/blueprints\/tabs\/image-slider-settings.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/blueprints\/tabs\/image-slider-settings.yml",
       "oF" : 0
     },
     "\/site\/blueprints\/tabs\/media-content-settings.yml" : {

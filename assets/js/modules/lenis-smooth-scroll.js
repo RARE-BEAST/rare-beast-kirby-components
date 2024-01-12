@@ -11,14 +11,14 @@ export function initLenis() {
     const lenis = new Lenis({
         element: lenisElement,
         multiplier: 1.5,
-        direction: 'vertical',
+        direction: 'vertical'
         // infinite: true
     });
 
 
-    lenis.on('scroll', (e) => {
-        console.log(e)
-    });
+    // lenis.on('scroll', (e) => {
+    //     console.log(e)
+    // });
 
     function raf(time) {
         lenis.raf(time)

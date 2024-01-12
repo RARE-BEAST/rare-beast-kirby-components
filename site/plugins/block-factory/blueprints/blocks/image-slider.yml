@@ -1,0 +1,59 @@
+name: Image Slider
+icon: images
+tabs:
+  main:
+    label: Block Content
+    fields:
+
+      image_slider_headline:
+        type: headline
+        label: Add Media.
+
+      slides:
+        label: Slides
+        type: structure
+        min: 2
+        max: 12
+        sortable: true
+        empty: No slides yet.
+        fields:
+
+          image:
+            width: 1/2
+            label: Image
+            type: files
+            query: model.images
+            multiple: false
+            image:
+              back: black
+            uploads:
+              template: blocks/image
+            accept:
+              extension: jpg, jpeg, png, gif
+            help: _Only .jpg, .jpeg, .png, and .gif files are allowed._
+
+          image_help:
+            width: 1/2
+            label: Image Help
+            type: info
+            text: Don't forget to add **alt text**, **image credits**, and/or **set a focal point** for cropping. You can do this by clicking the image above or in the _Files_ section of the sidebar.
+
+          video_link:
+            width: 1/2
+            label: Video Link
+            type: url
+            help: _Must be a **direct link** to a video file, not an embed code._ We recommend hosting your videos on Vimeo, where the "direct video links" are readily available in the settings for each video.
+
+          video_help:
+            width: 1/2
+            label: Video Help
+            type: info
+            text: If you add a video link, the image will be used as a placeholder while the video loads on slower internet connections. For best performance, we recommend using a placeholder image that is the same pixel dimensions as your video.
+
+  image-slider-settings:
+    label: Image Slider Settings
+    extends: tabs/image-slider-settings
+
+  block-settings:
+    label: Block Settings
+    extends: tabs/block-settings

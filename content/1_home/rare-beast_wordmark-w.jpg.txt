@@ -19,3 +19,7 @@ Template: blocks/image
 ----
 
 Focus: 50.0% 50.0%
+
+----
+
+Sort: 1

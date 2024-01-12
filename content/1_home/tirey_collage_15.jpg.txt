@@ -1,0 +1,13 @@
+Alt: 
+
+----
+
+Credits: 
+
+----
+
+Uuid: PmgfcmQkZqQXqcy1
+
+----
+
+Template: blocks/image
