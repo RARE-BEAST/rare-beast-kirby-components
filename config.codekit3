@@ -8657,6 +8657,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/media\/pages\/home\/f63781f5f2-1704998347\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-76x.png.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/f63781f5f2-1704998347\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-76x.png-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/media\/pages\/home\/f63781f5f2-1704998347\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-352x.png.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -8673,31 +8681,13 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/media\/pages\/home\/f63781f5f2-1704998347\/screenshot-2023-12-11-at-8.56.11-pm-76x.png" : {
-      "ft" : 32768,
-      "iS" : 16659,
-      "oA" : 0,
-      "oAP" : "\/media\/pages\/home\/f63781f5f2-1704998347\/screenshot-2023-12-11-at-8.56.11-pm-76x.png",
+    "\/media\/pages\/home\/f63781f5f2-1704998347\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-1408x.png.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/media\/pages\/home\/f63781f5f2-1704998347\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-1408x.png-min.json",
       "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
-    },
-    "\/media\/pages\/home\/f63781f5f2-1704998347\/screenshot-2023-12-11-at-8.56.11-pm-1408x.png" : {
-      "ft" : 32768,
-      "iS" : 670963,
-      "oA" : 0,
-      "oAP" : "\/media\/pages\/home\/f63781f5f2-1704998347\/screenshot-2023-12-11-at-8.56.11-pm-1408x.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 90,
-      "rq" : 75
+      "oO" : 1,
+      "oS" : 1
     },
     "\/media\/panel\/495063beeac89309a2247ce9c13ed292\/apple-touch-icon.png" : {
       "ft" : 32768,
@@ -9005,6 +8995,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/blueprints\/tabs\/global-settings.yml",
+      "oF" : 0
+    },
+    "\/site\/blueprints\/tabs\/hero-settings.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/blueprints\/tabs\/hero-settings.yml",
       "oF" : 0
     },
     "\/site\/blueprints\/tabs\/image-slider-settings.yml" : {

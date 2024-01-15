@@ -1,4 +1,4 @@
-Alt: 
+Alt: Digitally-altered photograph of a person wearing a knit bucket hat. Their face is illuminated in an artificial and unsettling manner.
 
 ----
 
@@ -15,3 +15,7 @@ Template: blocks/image
 ----
 
 Sort: 2
+
+----
+
+Focus: 53.8% 47.9%

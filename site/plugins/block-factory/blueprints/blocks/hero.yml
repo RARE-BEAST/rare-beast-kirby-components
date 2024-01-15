@@ -1,0 +1,59 @@
+name: Hero
+icon: wand
+tabs:
+  main:
+    label: Hero Content
+    fields:
+
+      headline_a:
+        type: headline
+        label: Add flexible content.
+        help: |
+          Build your own _hero content cluster_ using headers, text blocks, buttons, and CTAs. Or just one of those things. It's up to you.
+      
+      content:
+        label: Content
+        type: blocks
+        fieldsets:
+          - headline
+          - subheadline
+          - copy
+          - button
+          - cta
+
+      headline_b:
+        type: headline
+        label: Add a background image or video.
+        help: |
+          You can add a background image or video to your hero. If you add both, the video will take precedence.
+
+      image:
+        width: 1/2
+        label: Image
+        type: files
+        query: model.images
+        multiple: false
+        image:
+          back: black
+        uploads:
+          template: blocks/image
+        accept:
+          extension: jpg, jpeg, png, gif
+
+
+      video_link:
+        width: 1/2
+        label: Video Link
+        type: url
+
+      media_help:
+        label: Important!
+        type: info
+        text: |
+          Don't forget to add **alt text**, **image credits**, and/or **set a focal point** for cropping. You can do this by clicking the image above or in the _Files_ section of the sidebar.
+
+          _Must be a **direct link** to a video file, not an embed code._ We recommend hosting your videos on Vimeo, where the "direct video links" are readily available in the settings for each video.
+    
+  hero-settings:
+    label: Hero Settings
+    extends: tabs/hero-settings

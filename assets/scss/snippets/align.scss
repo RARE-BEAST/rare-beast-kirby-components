@@ -12,25 +12,25 @@
 }
 
 .align-y--top {
+    align-self: flex-start;
     @include breakpoint($laptop) {
-        align-items: flex-start;
     }
 }
 
 .align-y--center {
+    align-self: center;
     @include breakpoint($laptop) {
-        align-items: center;
     }
 }
 
 .align-y--bottom {
     @include breakpoint($laptop) {
-        align-items: flex-end;
     }
+        align-self: flex-end;
 }
 
 .align-y--stretch {
+    align-self: stretch;
     @include breakpoint($laptop) {
-        align-items: stretch;
     }
 }

@@ -2,6 +2,7 @@
 // Ensure $image and $ratio are set, with 'auto' as the default ratio
 $image = $image ?? null;
 $ratio = $ratio ?? 'auto';
+$lazyLoading = $lazyLoading ?? true;
 
 // Fetch the srcsets configuration
 $srcsets = kirby()->option('thumbs.srcsets');
@@ -35,5 +36,5 @@ $srcsetAttribute = rtrim($srcsetAttribute, ', ');
             100vw"
     width="<?= $image->width() ?>"
     height="<?= $image->height() ?>"
-    loading="lazy"
+    <?php if ($lazyLoading) echo 'loading="lazy"'; ?>
 >

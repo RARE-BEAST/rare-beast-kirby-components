@@ -1,0 +1,56 @@
+title: Hero Settings
+icon: cog
+
+fields:
+
+  headline_a:
+    type: headline
+    label: Design your hero.
+
+  foreground:
+    width: 1/2
+    label: Foreground Color
+    type: select
+    options:
+      background-1: Background 1
+      background-2: Background 2
+      background-3: Background 3
+      light: Foreground Light
+      dark: Foreground Dark
+      accent-1: Accent 1
+      accent-2: Accent 2
+      accent-3: Accent 3
+      accent-4: Accent 4
+    default: dark
+
+  height:
+    width: 1/2
+    label: Height
+    type: select
+    options:
+      unset: Auto
+      landscape: Landscape (16:9)
+      half: Half Window
+      three-quarters: Three-Quarters Window
+      full: Full Window
+    default: full
+
+  align_x:
+    width: 1/2
+    label: Horizontal Text Alignment
+    type: select
+    options:
+      left: Left
+      center: Center
+      right: Right
+    default: center
+
+  align_y:
+    width: 1/2
+    label: Vertical Text Alignment
+    type: select
+    options:
+      top: Top
+      center: Center
+      bottom: Bottom
+    default: center
