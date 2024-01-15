@@ -51,6 +51,24 @@ Kirby::plugin('rare-beast/block-factory', [
             'field.blocks.split-media' => 'Split Media',
             'field.blocks.subheadline' => 'Subheadline',
         ]
+    ],
+    'fieldMethods' => [
+        // 'desktopRatioOptions' => function ($field) {
+        //     if ($field->parent()->video_url()->isNotEmpty()) {
+        //         return [
+        //             'square' => 'Square (1:1)',
+        //             'portrait' => 'Portrait (5:7)',
+        //             'landscape' => 'Landscape (16:9)',
+        //         ];
+        //     } else {
+        //         return [
+        //             'unset' => 'Auto',
+        //             'square' => 'Square (1:1)',
+        //             'portrait' => 'Portrait (5:7)',
+        //             'landscape' => 'Landscape (16:9)',
+        //         ];
+        //     }
+        // }
     ]
 ])
 

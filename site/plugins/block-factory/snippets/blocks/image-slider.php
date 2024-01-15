@@ -8,14 +8,14 @@ $wrapper = $block->wrapper()->value();
 $slides = $block->slides()->toStructure();
 
 $mobile_ratio = $block->mobile_ratio()->value();
-$mobile_pagination = $block->mobile_pagination()->toBool();
-$mobile_navigation = $block->mobile_navigation()->toBool();
+$mobile_pagination = $block->mobile_pagination()->value();
+$mobile_navigation = $block->mobile_navigation()->value();
 $mobile_slide_count = $block->mobile_slides_per_view()->value();
 $mobile_slide_margin = $block->mobile_space_between()->value();
 
 $desktop_ratio = $block->desktop_ratio()->value();
-$desktop_pagination = $block->desktop_pagination()->toBool();
-$desktop_navigation = $block->desktop_navigation()->toBool();
+$desktop_pagination = $block->desktop_pagination()->value();
+$desktop_navigation = $block->desktop_navigation()->value();
 $desktop_slide_count = $block->desktop_slides_per_view()->value();
 $desktop_slide_margin = $block->desktop_space_between()->value();
 
@@ -55,21 +55,17 @@ $pagination_type = $block->pagination_style()->value();
 
                 </div>
             <?php endforeach; ?>
+            
             </div>
         </div>
 
-        <?php if ($mobile_pagination || $desktop_pagination) : ?>
-        <div class="swiper-pagination"></div>
-        <?php endif; ?>
+        <div class="swiper-pagination" data-mobile-pagination="<?= $mobile_pagination ?>" data-desktop-pagination="<?= $desktop_pagination ?>"></div>
 
-        <?php if ($mobile_navigation || $desktop_navigation) : ?>
-        <div class="swiper-navigation">
+        <div class="swiper-navigation" data-mobile-navigation="<?= $mobile_navigation ?>" data-desktop-navigation="<?= $desktop_navigation ?>">
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-        <?php endif; ?>
     <?php endif; ?>
 
-    
   </div>
 </section>

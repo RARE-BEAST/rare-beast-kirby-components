@@ -305,6 +305,10 @@ main {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 .align-x--left {
   align-items: flex-start;
 }

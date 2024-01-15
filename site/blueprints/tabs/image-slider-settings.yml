@@ -36,7 +36,8 @@ fields:
       square: Square (1:1)
       portrait: Portrait (5:7)
       landscape: Landscape (16:9)
-    help: Applies to all slides.
+    help: |
+      Applies to all slides. _Note: do not select "Auto" if you have a mix of videos and images._
 
   mobile_pagination:
     width: 1/3
@@ -90,7 +91,8 @@ fields:
       square: Square (1:1)
       portrait: Portrait (5:7)
       landscape: Landscape (16:9)
-    help: Applies to all slides.
+    help: |
+      Applies to all slides. _Note: do not select "Auto" if you have a mix of videos and images._
 
   desktop_pagination:
     width: 1/3
