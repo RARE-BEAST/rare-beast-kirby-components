@@ -2,10 +2,10 @@ title: Button
 icon: circle-nested
 fields:
   btn_url:
-    label: Button URL
-    type: url
+    label: Button Link
+    type: link
   btn_title:
-    label: Button Title
+    label: Button Text
     type: text
   btn_style:
     label: Button Style

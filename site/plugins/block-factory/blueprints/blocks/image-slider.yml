@@ -7,7 +7,8 @@ tabs:
 
       image_slider_headline:
         type: headline
-        label: Add Media.
+        label: Add images and/or videos.
+        help: if you add both, the video will take precedence and the image will serve as a placeholder while the video loads.
 
       slides:
         label: Slides
@@ -15,7 +16,7 @@ tabs:
         min: 2
         max: 12
         sortable: true
-        empty: No slides yet.
+        empty: There's nothing here yet.
         fields:
 
           image:
@@ -29,8 +30,8 @@ tabs:
             uploads:
               template: blocks/image
             accept:
-              extension: jpg, jpeg, png, gif
-            help: _Only .jpg, .jpeg, .png, and .gif files are allowed._
+              extension: jpg, jpeg
+            help: _Only **.jpg** and **.jpeg** files under 1MB are allowed._
 
           image_help:
             width: 1/2

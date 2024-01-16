@@ -22,10 +22,10 @@ $desktop_slide_margin = $block->desktop_space_between()->value();
 $pagination_type = $block->pagination_style()->value();
 ?>
 
+<?php if (!empty($slides)) : ?>
 <section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem;">
   <div class="image-slider wrapper wrapper--<?= $wrapper ?>">
     
-  <?php if ($slides) : ?>
         <div class="swiper js-image-slider"
         data-mobile-slide-margin="<?= $mobile_slide_margin ?>" 
         data-mobile-slides-per-view="<?= $mobile_slide_count ?>" 
@@ -43,7 +43,7 @@ $pagination_type = $block->pagination_style()->value();
                     <div class="image image__mobile--<?= $mobile_ratio ?> image__desktop--<?= $desktop_ratio ?>">
                         <?php if ($video): ?>
 
-                        <video class="video js-video" muted autoplay loop playsinline poster="<?= $image ? $image->url() : '' ?>">
+                        <video muted autoplay loop playsinline poster="<?= $image ? $image->url() : '' ?>">
                             <source src="<?= $video ?>" type="video/mp4">
                         </video>
                 
@@ -65,7 +65,7 @@ $pagination_type = $block->pagination_style()->value();
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </div>
-    <?php endif; ?>
-
-  </div>
+        
+    </div>
 </section>
+<?php endif; ?>

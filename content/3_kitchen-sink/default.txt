@@ -2,7 +2,7 @@ Title: Kitchen Sink
 
 ----
 
-Blocks: 
+Blocks: [{"content":{"content":"","image":["file://C0fVL0dgGN7rLhy7"],"video_link":"","foreground":"dark","height":"full","align_x":"center","align_y":"center"},"id":"53efbc24-0cff-4031-b66a-1df2570040c1","isHidden":false,"type":"hero"}]
 
 ----
 

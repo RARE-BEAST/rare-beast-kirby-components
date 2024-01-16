@@ -21,6 +21,7 @@ $gap = $block->gap()->value();
 $media_size = $block->media_width()->value();
 ?>
 
+<?php if (!empty($contents) && ($image || $video)) : ?>
 <section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem;">
   <div class="media-content wrapper wrapper--<?= $wrapper ?> layout-mobile--<?= $mobile ?> layout-desktop--<?= $desktop ?> media--<?= $media_size ?>" style="gap: <?= $gap ?>rem;">
     <div class="media-content__image">
@@ -33,7 +34,7 @@ $media_size = $block->media_width()->value();
         $video_crop = 'video--' . $ratio;
       ?>
         <div class="video <?= $video_crop ?>">
-            <video class="js-video" muted autoplay loop playsinline poster="<?= $placeholder->url() ?>">
+            <video muted autoplay loop playsinline poster="<?= $placeholder->url() ?>">
                 <source src="<?php echo $video; ?>" type="video/mp4">
             </video>
         </div>
@@ -43,8 +44,6 @@ $media_size = $block->media_width()->value();
     </div>
 
     <div class="media-content__content align-y--<?= $alignment ?>">
-
-    <?php if ($contents) : ?>
       <div class="content__inner">
         <?php foreach($contents as $content): ?>
 
@@ -82,8 +81,7 @@ $media_size = $block->media_width()->value();
             <?php endif; ?>
         <?php endforeach; ?>
         </div>
-    <?php endif; ?>
-
     </div>
   </div>
 </section>
+<?php endif; ?>

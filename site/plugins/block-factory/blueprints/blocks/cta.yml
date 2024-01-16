@@ -2,10 +2,10 @@ title: Call to Action
 icon: megaphone
 fields:
   cta_url:
-    label: CTA URL
-    type: url
+    label: CTA Link
+    type: link
   cta_title:
-    label: CTA Title
+    label: CTA Text
     type: text
   cta_style:
     label: CTA Style

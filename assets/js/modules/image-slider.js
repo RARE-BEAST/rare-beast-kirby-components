@@ -6,6 +6,8 @@ export function initImageSlider() {
         let parent = imageSlider.parentElement;
 
         let paginationType = imageSlider.dataset.paginationType,
+            autoplay = imageSlider.dataset.autoplay,
+            slideInterval = imageSlider.dataset.slideInterval,
             paginationEl = parent.querySelector('.swiper-pagination'),
             navigationEl = parent.querySelector('.swiper-navigation'),
             nextEl = parent.querySelector('.swiper-button-next'),
@@ -21,44 +23,48 @@ export function initImageSlider() {
             desktopNavigation = navigationEl.dataset.desktopNavigation,
             desktopPagination = paginationEl.dataset.desktopPagination;
 
+            console.log('autoplay: ' + autoplay);
+            console.log('slideInterval: ' + slideInterval);
+            
+
         const updatePaginationVisibility = () => {
-            console.log('updatePaginationVisibility called');
+            // console.log('updatePaginationVisibility called');
             if (window.innerWidth < 1024) {
                 if (mobilePagination === 'false') {
                     paginationEl.classList.add('hidden');
-                    console.log("mobile pagination hidden");
+                    // console.log("mobile pagination hidden");
                 } else {
                     paginationEl.classList.remove('hidden');
-                    console.log("mobile pagination visible");
+                    // console.log("mobile pagination visible");
                 }
             } else {
                 if (desktopPagination === 'false') {
                     paginationEl.classList.add('hidden');
-                    console.log("desktop pagination hidden");
+                    // console.log("desktop pagination hidden");
                 } else {
                     paginationEl.classList.remove('hidden');
-                    console.log("desktop pagination visible");
+                    // console.log("desktop pagination visible");
                 }
             }
         }
 
         const updateNavigationVisibility = () => {
-            console.log('updateNavigationVisibility called');
+            // console.log('updateNavigationVisibility called');
             if (window.innerWidth < 1024) {
                 if (mobileNavigation === 'false') {
                     navigationEl.classList.add('hidden');
-                    console.log("mobile navigation hidden");
+                    // console.log("mobile navigation hidden");
                 } else {
                     navigationEl.classList.remove('hidden');
-                    console.log("mobile navigation visible");
+                    // console.log("mobile navigation visible");
                 }
             } else {
                 if (desktopNavigation === 'false') {
                     navigationEl.classList.add('hidden');
-                    console.log("desktop navigation hidden");
+                    // console.log("desktop navigation hidden");
                 } else {
                     navigationEl.classList.remove('hidden');
-                    console.log("desktop navigation visible");
+                    // console.log("desktop navigation visible");
                 }
             }
         }
@@ -85,6 +91,10 @@ export function initImageSlider() {
                 type: paginationType,
                 clickable: true
             },
+            autoplay: typeof autoplay !== 'undefined' && autoplay === 'true' && typeof slideInterval !== 'undefined' ? {
+                delay: slideInterval,
+                disableOnInteraction: false
+            } : false,
             breakpoints: {
                 1024: {
                     spaceBetween: desktopSlideMargin,

@@ -27,6 +27,10 @@ tabs:
           back: black
         uploads:
           template: blocks/image
+        accept:
+          extension: jpg, jpeg
+        help: |
+          _Only **.jpg** and **.jpeg** files under 1MB are allowed._
         when:
           media_type: image
 

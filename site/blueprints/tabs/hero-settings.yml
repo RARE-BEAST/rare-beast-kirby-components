@@ -36,7 +36,7 @@ fields:
     default: full
 
   align_x:
-    width: 1/2
+    width: 1/3
     label: Horizontal Text Alignment
     type: select
     options:
@@ -46,7 +46,7 @@ fields:
     default: center
 
   align_y:
-    width: 1/2
+    width: 1/3
     label: Vertical Text Alignment
     type: select
     options:
@@ -54,3 +54,13 @@ fields:
       center: Center
       bottom: Bottom
     default: center
+
+  max_width:
+    width: 1/3
+    label: Max Width
+    type: range
+    min: 25
+    max: 100
+    default: 50
+    step: 1
+    after: rem

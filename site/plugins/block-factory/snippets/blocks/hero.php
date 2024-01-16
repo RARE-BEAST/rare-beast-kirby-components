@@ -4,16 +4,38 @@ $height = $block->height()->value();
 $alignment = $block->align_content()->value();
 
 $contents = json_decode($block->content()->content(), true);
-$image = $block->image()->toFile();
-$video = $block->video_link()->value();
+$slides = $block->slides()->toStructure();
 
 $align_x = $block->align_x()->value();
 $align_y = $block->align_y()->value();
+$max_width = $block->max_width()->value();
+
+$mobile_pagination = $block->mobile_pagination()->value();
+$mobile_navigation = $block->mobile_navigation()->value();
+$mobile_slide_count = $block->mobile_slides_per_view()->value();
+$mobile_slide_margin = $block->mobile_space_between()->value();
+
+$desktop_pagination = $block->desktop_pagination()->value();
+$desktop_navigation = $block->desktop_navigation()->value();
+$desktop_slide_count = $block->desktop_slides_per_view()->value();
+$desktop_slide_margin = $block->desktop_space_between()->value();
+
+$pagination_type = $block->pagination_style()->value();
+$autoplay = $block->autoplay()->value();
+$slide_interval = $block->slide_interval()->value();
 ?>
 
+<?php if ($contents || $slides) : ?>
 <section class="section hero foreground--<?= $fg ?> height--<?= $height ?>">
     
     <div class="hero__background">
+
+    <?php if (count($slides) < 2): ?>
+        <?php foreach ($slides as $slide) :
+                $image = $slide->image()->toFile();
+                $video = $slide->video_link()->value();
+            ?>
+
     <?php if ($video): ?>
         <video class="video js-video" muted autoplay loop playsinline poster="<?= $image ? $image->url() : '' ?>">
             <source src="<?= $video ?>" type="video/mp4">
@@ -24,11 +46,59 @@ $align_y = $block->align_y()->value();
         <?php snippet('responsive-image-loader', ['image' => $image, 'ratio' => 'auto', 'lazyLoading' => false]); ?>
     <?php endif; ?>
 
+    <?php endforeach; ?>
+    <?php endif; ?>
+
+    <?php if (count($slides) > 1): ?>
+    
+    <div class="swiper js-image-slider"
+        data-mobile-slide-margin="<?= $mobile_slide_margin ?>" 
+        data-mobile-slides-per-view="<?= $mobile_slide_count ?>" 
+        data-desktop-slide-margin="<?= $desktop_slide_margin ?>" 
+        data-desktop-slides-per-view="<?= $desktop_slide_count ?>"
+        data-pagination-type="<?= $pagination_type ?>"
+        data-autoplay="<?= $autoplay ?>"
+        data-slide-interval="<?= $slide_interval ?>"
+        >
+            <div class="swiper-wrapper">
+
+            <?php foreach ($slides as $slide) :
+                $image = $slide->image()->toFile();
+                $video = $slide->video_link()->value();
+            ?>
+                <div class="swiper-slide">
+                    <div class="image">
+                        <?php if ($video): ?>
+
+                        <video class="video js-video" muted autoplay loop playsinline poster="<?= $image ? $image->url() : '' ?>">
+                            <source src="<?= $video ?>" type="video/mp4">
+                        </video>
+                
+                        <?php else: ?>
+                        <?php snippet('responsive-image-loader', ['image' => $image, 'ratio' => 'auto', 'lazyLoading' => false]); ?>
+                
+                        <?php endif; ?>
+                    </div>
+
+                </div>
+            <?php endforeach; ?>
+            
+            </div>
+        </div>
+
+        <div class="swiper-pagination" data-mobile-pagination="<?= $mobile_pagination ?>" data-desktop-pagination="<?= $desktop_pagination ?>"></div>
+
+        <div class="swiper-navigation" data-mobile-navigation="<?= $mobile_navigation ?>" data-desktop-navigation="<?= $desktop_navigation ?>">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <?php endif; ?>
+
     </div>
 
     <?php if ($contents) : ?>
 
-    <div class="hero__content align-x--<?= $align_x ?> align-y--<?= $align_y ?>">
+    <div class="hero__content align-x--<?= $align_x ?> align-y--<?= $align_y ?>" style="--max-width: <?= $max_width ?>rem;">
         <div class="hero__content--inner">
         
             <?php foreach($contents as $content): ?>
@@ -70,3 +140,4 @@ $align_y = $block->align_y()->value();
     
     <?php endif; ?>
 </section>
+<?php endif; ?>
