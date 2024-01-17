@@ -62,6 +62,8 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1rem;
+    background-color: #d8d3b134;
+    padding: 1rem;
 }
 .k-block-type-content .btn {
     justify-self: start;
@@ -193,6 +195,8 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1rem;
+    background-color: #d8d3b134;
+    padding: 1rem;
 }
 .k-block-type-media-content .btn {
     justify-self: start;
