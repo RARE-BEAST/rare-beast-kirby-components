@@ -136,17 +136,25 @@
     }
 
     &__content {
-        // align-self: stretch;
         display: flex;
         flex: 1;
         flex-direction: column;
         gap: 1rem;
         max-width: var(--max-width, 100%);
         margin: 4rem;
-        padding: 0 2rem;
+        padding: 2rem;
         position: relative;
         z-index: 1;
 
+        // MORE OPTIONAL PARAMS FOR BACKEND
+        // Content bg color (true/false, then color picker with alpha channel)
+        // Image color overlay (true/false, then color picker with alpha channel)
+        // ------these could help with contrast issues!
+        // Content padding: top and bottom, left and right
+        // ------for finessing content that isn't centered!
+        // Faux headline option for SEO
+
+        background-color: $black;
        
         &--headline {
             font-size: clamp(3rem, 10vmin, 5rem);

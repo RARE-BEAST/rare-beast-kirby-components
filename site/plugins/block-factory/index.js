@@ -15,7 +15,7 @@ panel.plugin("rare-beast/block-factory", {
                     </div>
                     <div class="accordions">
                         <div v-if="items.length">
-                            <details v-for="(item, index) in items" class="accordion" :key="index" open>
+                            <details v-for="(item, index) in items" class="accordion" :key="index" :open="index === 0">
                                 <summary class="accordion__title">{{ item.title }}</summary>
                                 <p class="accordion__content" v-html="item.content"></p>
                             </details>
@@ -85,7 +85,6 @@ panel.plugin("rare-beast/block-factory", {
                 </div>
             `
         },
-
 
         button: {
             computed: {
@@ -225,6 +224,16 @@ panel.plugin("rare-beast/block-factory", {
                 },
                 video_link() {
                     return this.content.video_link || null;
+                },
+                contentBlocks() {
+                    return this.content.content.map(block => {
+                        // Transform the block into a format that the template can easily loop through
+                        // The exact transformation depends on the structure of your block objects
+                        return {
+                            type: block.type,
+                            content: block.content
+                        };
+                    }) || [];
                 }
             },
             template: `
@@ -233,15 +242,93 @@ panel.plugin("rare-beast/block-factory", {
                         <k-icon type="grid-left"></k-icon>
                         <span class="k-block-type-fields-header">Media & Content</span>
                     </div>
-
-                    <div v-if="image">
-                        <img :src="image.url" class="media__image">
-                    </div>
-                    <div v-if="video_link">
-                        <video muted autoplay loop playsinline>
-                            <source :src="video_link" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                    <div class="media-content__inner">
+                        <div v-if="image" class="media__image">
+                            <img :src="image.url">
+                        </div>
+                        <div v-if="video_link" class="media__image">
+                            <video muted autoplay loop playsinline>
+                                <source :src="video_link" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="media__content">
+                            <div v-for="(block, index) in contentBlocks" :key="index">
+                                <div v-if="block.type === 'headline'" class="headline">
+                                    <component
+                                        :is="block.content.level"
+                                        :class="block.content.level"
+                                        v-html="block.content.text"
+                                    >
+                                        {{ block.content.text }}
+                                    </component>
+                                </div>
+                                <div v-else-if="block.type === 'subheadline'" class="subheadline">
+                                    <component
+                                        :is="block.content.level"
+                                        :class="block.content.level"
+                                        v-html="block.content.text"
+                                    >
+                                        {{ block.content.text }}
+                                    </component>
+                                </div>
+                                <div v-else-if="block.type === 'copy'" class="copy">
+                                    <component
+                                        :is="block.content.level"
+                                        :class="block.content.level"
+                                        v-html="block.content.text"
+                                    >
+                                        {{ block.content.text }}
+                                    </component>
+                                </div>
+                                <div v-else-if="block.type === 'button'" class="button">
+                                    <div class="btn" v-if="block.content.btn_title">
+                                        {{ block.content.btn_title }}
+                                    </div>
+                                    <div class="btn__details">
+                                        <div v-if="block.content.btn_url">
+                                            <div class="btn__info">
+                                                <strong>URL:</strong> {{ block.content.btn_url }}
+                                            </div>
+                                        </div>
+                                        <div v-if="block.content.btn_style">
+                                            <div class="btn__info">
+                                                <strong>Style:</strong> {{ block.content.btn_style }}
+                                            </div>
+                                        </div>
+                                        <div v-if="block.content.btn_target">
+                                            <div class="btn__info">
+                                                <strong>Target:</strong> {{ block.content.btn_target }}
+                                            </div>
+                                        </div>
+                                        <div v-else>No button details found.</div>
+                                    </div>
+                                </div>
+                                <div v-else-if="block.type === 'cta'" class="call-to-action">
+                                    <div class="cta" v-if="block.content.cta_title">
+                                        {{ block.content.cta_title }}
+                                    </div>
+                                    <div class="cta__details">
+                                        <div v-if="block.content.cta_url">
+                                            <div class="cta__info">
+                                                <strong>URL:</strong> {{ block.content.cta_url }}
+                                            </div>
+                                        </div>
+                                        <div v-if="block.content.cta_style">
+                                            <div class="cta__info">
+                                                <strong>Style:</strong> {{ block.content.cta_style }}
+                                            </div>
+                                        </div>
+                                        <div v-if="block.content.cta_target">
+                                            <div class="cta__info">
+                                                <strong>Target:</strong> {{ block.content.cta_target }}
+                                            </div>
+                                        </div>
+                                        <div v-else>No button details found.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             `
@@ -251,11 +338,11 @@ panel.plugin("rare-beast/block-factory", {
             computed: {
                 slides() {
                     return this.content.slides.map(slide => {
-                        const image = slide.image[0]; // Get the first image object from the image field
+                        const image = slide.image && slide.image.length > 0 ? slide.image[0] : null;
                         return {
                             ...slide,
-                            imageUrl: image.url, // Add a new imageUrl property to the slide object
-                            videoLink: slide.video_link || null // Add a new videoLink property to the slide object
+                            imageUrl: image ? image.url : null,
+                            videoLink: slide.video_link || null
                         };
                     }) || [];
                 }
@@ -279,6 +366,233 @@ panel.plugin("rare-beast/block-factory", {
                         </div>
                     </div>
                     <div v-else>No slides yet. Go ahead and add some.</div>
+                </div>
+            `
+        },
+        hero: {
+            computed: {
+                contentBlocks() {
+                    return this.content.content.map(block => {
+                        // Transform the block into a format that the template can easily loop through
+                        // The exact transformation depends on the structure of your block objects
+                        return {
+                            type: block.type,
+                            content: block.content
+                        };
+                    }) || [];
+                },
+                slides() {
+                    return this.content.slides.map(slide => {
+                        const image = slide.image && slide.image.length > 0 ? slide.image[0] : null;
+                        return {
+                            ...slide,
+                            imageUrl: image ? image.url : null,
+                            videoLink: slide.video_link || null
+                        };
+                    }) || [];
+                }
+            },
+            template: `
+                <div @dblclick="open">
+                    <div class="k-block-title">
+                        <k-icon type="wand"></k-icon>
+                        <span class="k-block-type-fields-header">Hero</span>
+                    </div>
+                    <div v-for="(block, index) in contentBlocks" :key="index">
+                        <div v-if="block.type === 'headline'" class="headline">
+                            <component
+                                :is="block.content.level"
+                                :class="block.content.level"
+                                v-html="block.content.text"
+                            >
+                                {{ block.content.text }}
+                            </component>
+                        </div>
+                        <div v-else-if="block.type === 'subheadline'" class="subheadline">
+                            <component
+                                :is="block.content.level"
+                                :class="block.content.level"
+                                v-html="block.content.text"
+                            >
+                                {{ block.content.text }}
+                            </component>
+                        </div>
+                        <div v-else-if="block.type === 'copy'" class="copy">
+                            <component
+                                :is="block.content.level"
+                                :class="block.content.level"
+                                v-html="block.content.text"
+                            >
+                                {{ block.content.text }}
+                            </component>
+                        </div>
+                        <div v-else-if="block.type === 'button'" class="button">
+                            <div class="btn" v-if="block.content.btn_title">
+                                {{ block.content.btn_title }}
+                            </div>
+                            <div class="btn__details">
+                                <div v-if="block.content.btn_url">
+                                    <div class="btn__info">
+                                        <strong>URL:</strong> {{ block.content.btn_url }}
+                                    </div>
+                                </div>
+                                <div v-if="block.content.btn_style">
+                                    <div class="btn__info">
+                                        <strong>Style:</strong> {{ block.content.btn_style }}
+                                    </div>
+                                </div>
+                                <div v-if="block.content.btn_target">
+                                    <div class="btn__info">
+                                        <strong>Target:</strong> {{ block.content.btn_target }}
+                                    </div>
+                                </div>
+                                <div v-else>No button details found.</div>
+                            </div>
+                        </div>
+                        <div v-else-if="block.type === 'cta'" class="call-to-action">
+                            <div class="cta" v-if="block.content.cta_title">
+                                {{ block.content.cta_title }}
+                            </div>
+                            <div class="cta__details">
+                                <div v-if="block.content.cta_url">
+                                    <div class="cta__info">
+                                        <strong>URL:</strong> {{ block.content.cta_url }}
+                                    </div>
+                                </div>
+                                <div v-if="block.content.cta_style">
+                                    <div class="cta__info">
+                                        <strong>Style:</strong> {{ block.content.cta_style }}
+                                    </div>
+                                </div>
+                                <div v-if="block.content.cta_target">
+                                    <div class="cta__info">
+                                        <strong>Target:</strong> {{ block.content.cta_target }}
+                                    </div>
+                                </div>
+                                <div v-else>No button details found.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-if="slides.length === 1" class="single-slide">
+                        <div v-if="slides[0].videoLink" class="video">
+                            <video muted autoplay loop playsinline>
+                                <source :src="slides[0].videoLink" type="video/mp4">
+                            </video>
+                        </div>
+                        <div v-else class="image">
+                            <img :src="slides[0].imageUrl" :alt="slides[0].image.alt">
+                        </div>
+                    </div>
+                    <div v-else-if="slides.length > 1" class="image-slider">
+                        <div v-for="(slide, index) in slides" :key="index">
+                            <div v-if="slide.videoLink" class="video">
+                                <video muted autoplay loop playsinline>
+                                    <source :src="slide.videoLink" type="video/mp4">
+                                </video>
+                            </div>
+                            <div v-else class="image">
+                                <img :src="slide.imageUrl" :alt="slide.image.alt">
+                            </div>
+                        </div>
+                    </div>
+                    <div v-else>No slides yet. Go ahead and add some.</div>
+                </div>
+            `
+        },
+        content: {
+            computed: {
+                contentBlocks() {
+                    return this.content.content.map(block => {
+                        // Transform the block into a format that the template can easily loop through
+                        // The exact transformation depends on the structure of your block objects
+                        return {
+                            type: block.type,
+                            content: block.content
+                        };
+                    }) || [];
+                }
+            },
+            template: `
+                <div @dblclick="open">
+                    <div class="k-block-title">
+                        <k-icon type="text"></k-icon>
+                        <span class="k-block-type-fields-header">Content</span>
+                    </div>
+                    <div v-for="(block, index) in contentBlocks" :key="index">
+                        <div v-if="block.type === 'headline'" class="headline">
+                            <component
+                                :is="block.content.level"
+                                :class="block.content.level"
+                                v-html="block.content.text"
+                            >
+                                {{ block.content.text }}
+                            </component>
+                        </div>
+                        <div v-else-if="block.type === 'subheadline'" class="subheadline">
+                            <component
+                                :is="block.content.level"
+                                :class="block.content.level"
+                                v-html="block.content.text"
+                            >
+                                {{ block.content.text }}
+                            </component>
+                        </div>
+                        <div v-else-if="block.type === 'copy'" class="copy">
+                            <component
+                                :is="block.content.level"
+                                :class="block.content.level"
+                                v-html="block.content.text"
+                            >
+                                {{ block.content.text }}
+                            </component>
+                        </div>
+                        <div v-else-if="block.type === 'button'" class="button">
+                            <div class="btn" v-if="block.content.btn_title">
+                                {{ block.content.btn_title }}
+                            </div>
+                            <div class="btn__details">
+                                <div v-if="block.content.btn_url">
+                                    <div class="btn__info">
+                                        <strong>URL:</strong> {{ block.content.btn_url }}
+                                    </div>
+                                </div>
+                                <div v-if="block.content.btn_style">
+                                    <div class="btn__info">
+                                        <strong>Style:</strong> {{ block.content.btn_style }}
+                                    </div>
+                                </div>
+                                <div v-if="block.content.btn_target">
+                                    <div class="btn__info">
+                                        <strong>Target:</strong> {{ block.content.btn_target }}
+                                    </div>
+                                </div>
+                                <div v-else>No button details found.</div>
+                            </div>
+                        </div>
+                        <div v-else-if="block.type === 'cta'" class="call-to-action">
+                            <div class="cta" v-if="block.content.cta_title">
+                                {{ block.content.cta_title }}
+                            </div>
+                            <div class="cta__details">
+                                <div v-if="block.content.cta_url">
+                                    <div class="cta__info">
+                                        <strong>URL:</strong> {{ block.content.cta_url }}
+                                    </div>
+                                </div>
+                                <div v-if="block.content.cta_style">
+                                    <div class="cta__info">
+                                        <strong>Style:</strong> {{ block.content.cta_style }}
+                                    </div>
+                                </div>
+                                <div v-if="block.content.cta_target">
+                                    <div class="cta__info">
+                                        <strong>Target:</strong> {{ block.content.cta_target }}
+                                    </div>
+                                </div>
+                                <div v-else>No button details found.</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             `
         }
