@@ -11,3 +11,7 @@ Uuid: PmgfcmQkZqQXqcy1
 ----
 
 Template: blocks/image
+
+----
+
+Sort: 6

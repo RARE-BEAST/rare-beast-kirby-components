@@ -14,7 +14,7 @@ Template: blocks/image
 
 ----
 
-Sort: 2
+Sort: 7
 
 ----
 

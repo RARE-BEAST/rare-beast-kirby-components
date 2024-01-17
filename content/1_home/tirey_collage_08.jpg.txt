@@ -11,3 +11,7 @@ Uuid: IpVmhM5ePbdT4VxB
 ----
 
 Template: blocks/image
+
+----
+
+Sort: 3

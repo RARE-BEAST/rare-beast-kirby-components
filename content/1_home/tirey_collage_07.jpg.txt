@@ -11,3 +11,7 @@ Uuid: O1LjVxqmllr3BAgU
 ----
 
 Template: blocks/image
+
+----
+
+Sort: 2
