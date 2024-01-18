@@ -6,9 +6,15 @@ $alignment = $block->align_content()->value();
 $contents = json_decode($block->content()->content(), true);
 $slides = $block->slides()->toStructure();
 
-$align_x = $block->align_x()->value();
+$justify_content = $block->justify_content()->value();
+$text_align = $block->text_align()->value();
 $align_y = $block->align_y()->value();
 $max_width = $block->max_width()->value();
+$content_padding = $block->content_padding()->value();
+$content_background = $block->content_background()->value();
+
+$include_overlay = $block->include_overlay()->toBool();
+$image_overlay = $block->image_overlay()->value();
 
 $mobile_pagination = $block->mobile_pagination()->value();
 $mobile_navigation = $block->mobile_navigation()->value();
@@ -26,15 +32,17 @@ $slide_interval = $block->slide_interval()->value();
 ?>
 
 <?php if ($contents || $slides) : ?>
-<section class="section hero foreground--<?= $fg ?> height--<?= $height ?>">
-    
+<section class="section hero foreground--<?= $fg ?> height--<?= $height ?>" style="--justify-content: <?= $justify_content ?>;">
     <div class="hero__background">
 
-    <?php if (count($slides) < 2): ?>
-        <?php foreach ($slides as $slide) :
-                $image = $slide->image()->toFile();
-                $video = $slide->video_link()->value();
-            ?>
+    <?php if (count($slides) < 2): foreach ($slides as $slide) :
+        $image = $slide->image()->toFile();
+        $video = $slide->video_link()->value();
+    ?>
+
+    <?php if ($include_overlay) : ?>
+    <div class="hero__background--overlay" style="--background-color: <?= $image_overlay ?>;"></div>
+    <?php endif; ?>
 
     <?php if ($video): ?>
         <video class="video js-video" muted autoplay loop playsinline poster="<?= $image ? $image->url() : '' ?>">
@@ -46,8 +54,7 @@ $slide_interval = $block->slide_interval()->value();
         <?php snippet('responsive-image-loader', ['image' => $image, 'ratio' => 'auto', 'lazyLoading' => false]); ?>
     <?php endif; ?>
 
-    <?php endforeach; ?>
-    <?php endif; ?>
+    <?php endforeach; endif; ?>
 
     <?php if (count($slides) > 1): ?>
     
@@ -59,46 +66,51 @@ $slide_interval = $block->slide_interval()->value();
         data-pagination-type="<?= $pagination_type ?>"
         data-autoplay="<?= $autoplay ?>"
         data-slide-interval="<?= $slide_interval ?>"
-        >
-            <div class="swiper-wrapper">
+    >
+        <div class="swiper-wrapper">
 
-            <?php foreach ($slides as $slide) :
-                $image = $slide->image()->toFile();
-                $video = $slide->video_link()->value();
-            ?>
-                <div class="swiper-slide">
-                    <div class="image">
-                        <?php if ($video): ?>
+        <?php foreach ($slides as $slide) :
+            $image = $slide->image()->toFile();
+            $video = $slide->video_link()->value();
+        ?>
 
-                        <video class="video js-video" muted autoplay loop playsinline poster="<?= $image ? $image->url() : '' ?>">
-                            <source src="<?= $video ?>" type="video/mp4">
-                        </video>
-                
-                        <?php else: ?>
-                        <?php snippet('responsive-image-loader', ['image' => $image, 'ratio' => 'auto', 'lazyLoading' => false]); ?>
-                
-                        <?php endif; ?>
-                    </div>
+            <div class="swiper-slide">
 
-                </div>
-            <?php endforeach; ?>
+                <div class="image">
+                    <?php if ($video): ?>
+
+                    <video class="video js-video" muted autoplay loop playsinline poster="<?= $image ? $image->url() : '' ?>">
+                        <source src="<?= $video ?>" type="video/mp4">
+                    </video>
             
+                    <?php else: ?>
+                    <?php snippet('responsive-image-loader', ['image' => $image, 'ratio' => 'auto', 'lazyLoading' => false]); ?>
+            
+                    <?php endif; ?>
+                </div>
             </div>
+        <?php endforeach; ?>
+        
         </div>
+    </div>
 
-        <div class="swiper-pagination" data-mobile-pagination="<?= $mobile_pagination ?>" data-desktop-pagination="<?= $desktop_pagination ?>"></div>
+    <?php if ($include_overlay) : ?>
+    <div class="hero__background--overlay" style="--background-color: <?= $image_overlay ?>;"></div>
+    <?php endif; ?>
 
-        <div class="swiper-navigation" data-mobile-navigation="<?= $mobile_navigation ?>" data-desktop-navigation="<?= $desktop_navigation ?>">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-        <?php endif; ?>
+    <div class="swiper-pagination" data-mobile-pagination="<?= $mobile_pagination ?>" data-desktop-pagination="<?= $desktop_pagination ?>"></div>
+
+    <div class="swiper-navigation" data-mobile-navigation="<?= $mobile_navigation ?>" data-desktop-navigation="<?= $desktop_navigation ?>">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <?php endif; ?>
 
     </div>
 
     <?php if ($contents) : ?>
 
-    <div class="hero__content align-x--<?= $align_x ?> align-y--<?= $align_y ?>" style="--max-width: <?= $max_width ?>rem;">
+    <div class="hero__content align-y--<?= $align_y ?>" style="--max-width: <?= $max_width ?>rem; --background-color: <?= $content_background ?>; --padding: <?= $content_padding ?>rem; --text-align: <?= $text_align ?>;">
         <div class="hero__content--inner">
         
             <?php foreach($contents as $content): ?>

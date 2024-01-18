@@ -13,24 +13,16 @@
 
 .align-y--top {
     align-self: flex-start;
-    @include breakpoint($laptop) {
-    }
 }
 
 .align-y--center {
     align-self: center;
-    @include breakpoint($laptop) {
-    }
 }
 
 .align-y--bottom {
-    @include breakpoint($laptop) {
-    }
         align-self: flex-end;
 }
 
 .align-y--stretch {
     align-self: stretch;
-    @include breakpoint($laptop) {
-    }
 }

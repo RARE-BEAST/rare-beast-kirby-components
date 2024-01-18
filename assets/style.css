@@ -325,15 +325,19 @@ main {
 .align-y--top {
   align-self: flex-start;
 }
+
 .align-y--center {
   align-self: center;
 }
+
 .align-y--bottom {
   align-self: flex-end;
 }
+
 .align-y--stretch {
   align-self: stretch;
 }
+
 .btn {
   display: inline-flex;
   align-self: flex-start;
@@ -2145,6 +2149,7 @@ swiper-container .swiper-notification {
   padding: 0;
   position: relative;
   z-index: 1;
+  justify-content: var(--justify-content, center);
 }
 .hero.height--full {
   min-height: 100vh;
@@ -2236,7 +2241,9 @@ swiper-container .swiper-notification {
 }
 .hero__background .swiper-navigation {
   pointer-events: auto;
-  z-index: 10;
+  position: relative;
+  bottom: 50%;
+  z-index: 3;
 }
 .hero__background .swiper-button-next, .hero__background .swiper-button-prev {
   color: currentColor;
@@ -2254,6 +2261,7 @@ swiper-container .swiper-notification {
   top: 0;
   margin-top: -3rem;
   pointer-events: auto;
+  z-index: 3;
 }
 .hero__background .swiper-pagination-bullet {
   background: currentColor;
@@ -2269,17 +2277,27 @@ swiper-container .swiper-notification {
   color: currentColor;
   font-family: "Courier", "Courier New", monospace;
 }
+.hero .hero__background--overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: var(--background-color, rgba(0, 0, 0, 0.5));
+}
 .hero__content {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex: 1;
   flex-direction: column;
   gap: 1rem;
-  max-width: var(--max-width, 100%);
   margin: 4rem;
-  padding: 2rem;
-  position: relative;
-  z-index: 1;
-  background-color: var(--black, #000);
+  max-width: var(--max-width, 100%);
+  padding: var(--padding, 2rem);
+  background-color: var(--background-color, transparent);
+  text-align: var(--text-align, center);
 }
 .hero__content--headline {
   font-size: clamp(3rem, 10vmin, 5rem);
@@ -2293,38 +2311,6 @@ swiper-container .swiper-notification {
 }
 .hero__content--btn {
   margin: 0;
-}
-.hero__footer {
-  align-items: flex-end;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  grid-template-columns: repeat(auto-fit, minmax(10em, 15em));
-  gap: 1rem;
-  justify-content: space-between;
-  font-size: clamp(0.6875rem, 1.5vw, 0.8125rem);
-  letter-spacing: 0.075em;
-  text-transform: uppercase;
-  padding: 1rem 1.5rem;
-}
-.hero__footer div {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0;
-}
-.hero__footer div p {
-  margin: 0;
-}
-.hero__footer--left {
-  align-items: flex-start;
-}
-.hero__footer--right {
-  align-items: flex-end;
-  text-align: right;
 }
 
 .image-slider {
