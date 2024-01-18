@@ -794,6 +794,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/scss\/snippets\/accessibility.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/snippets\/accessibility.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/scss\/snippets\/align.scss" : {
       "aP" : 0,
       "bl" : 0,

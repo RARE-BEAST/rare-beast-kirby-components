@@ -157,6 +157,7 @@ $accent_4 = site()->accent_4()->value();
 
 <body class="<?= $typography ?>">
     <header class="header">
+        <a href="#main" class="skip-link h3">Skip to main content.</a>
         <a href="<?= $site->url() ?>" class="logo">Great Logo!</a>
         <!-- <?php snippet('menu') ?> -->
     </header>

@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<main class="main">
+<main class="main" id="main">
         
     <?php foreach ($page->blocks()->toBlocks() as $block): ?>
         <?= $block ?>
