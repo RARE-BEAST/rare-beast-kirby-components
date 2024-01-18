@@ -101,8 +101,8 @@ $slide_interval = $block->slide_interval()->value();
     <div class="swiper-pagination" data-mobile-pagination="<?= $mobile_pagination ?>" data-desktop-pagination="<?= $desktop_pagination ?>"></div>
 
     <div class="swiper-navigation" data-mobile-navigation="<?= $mobile_navigation ?>" data-desktop-navigation="<?= $desktop_navigation ?>">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev" role="navigation"></div>
+        <div class="swiper-button-next" role="navigation"></div>
     </div>
     <?php endif; ?>
 
