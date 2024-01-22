@@ -80,7 +80,7 @@ City:
 
 ----
 
-State: 
+State: OH
 
 ----
 
@@ -96,7 +96,7 @@ Phone: 1.555.555.5555
 
 ----
 
-Include-fax: true
+Include-fax: false
 
 ----
 

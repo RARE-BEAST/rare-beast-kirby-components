@@ -1,10 +1,12 @@
 <?php snippet('header') ?>
-    <main class="main">
-        <h1><?= $page->title()->html() ?></h1>
+<main class="main" id="main">
 
-        <?php snippet('form-contact'); ?>
+    <?php foreach ($page->blocks()->toBlocks() as $block): ?>
+        <?= $block ?>
+    <?php endforeach ?>
+    
+    <?php snippet('form-contact'); ?>
 
-        <script src="https://www.cognitoforms.com/f/seamless.js" data-key="ruy5itXPj0mhEnl4kOuGbQ" data-form="1"></script>
-    </main>
+</main>
 
 <?php snippet('footer') ?>

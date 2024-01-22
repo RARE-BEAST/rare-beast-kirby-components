@@ -1,4 +1,4 @@
-Hello Company,
+Hello RB,
 
 <p><?= $text ?></p>
 
