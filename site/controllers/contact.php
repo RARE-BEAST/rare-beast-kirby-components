@@ -7,26 +7,26 @@ return function($kirby, $pages, $page) {
 
         // check the honeypot
         if(empty(get('website')) === false) {
-            go($page->url());
+            // go($page->url());
             exit;
         }
 
         $data = [
             'name'  => get('name'),
             'email' => get('email'),
-            'text'  => get('text')
+            'message'  => get('message')
         ];
 
         $rules = [
-            'name'  => ['required', 'minLength' => 3],
+            'name'  => ['required', 'minLength' => 2],
             'email' => ['required', 'email'],
-            'text'  => ['required', 'minLength' => 3, 'maxLength' => 3000],
+            'message'  => ['required', 'minLength' => 40, 'maxLength' => 3000],
         ];
 
         $messages = [
-            'name'  => 'Please enter a valid name',
-            'email' => 'Please enter a valid email address',
-            'text'  => 'Please enter a text between 3 and 3000 characters'
+            'name'  => 'Please enter a valid name with 2 or more characters.',
+            'email' => 'Wait, is this a valid email address?',
+            'message'  => 'Please enter a message between 40 and 3000 characters.'
         ];
 
         // some of the data is invalid
@@ -41,10 +41,11 @@ return function($kirby, $pages, $page) {
                     'from'     => 'hello@therarebeast.com',
                     'replyTo'  => $data['email'],
                     'to'       => 'erik@therarebeast.com',
-                    'subject'  => esc($data['name']) . ' filled out your contact form',
+                    'subject'  => esc($data['name']) . ' filled out your contact form.',
                     'data'     => [
-                        'text'   => esc($data['text']),
-                        'sender' => esc($data['name'])
+                        'message'   => esc($data['message']),
+                        'sender' => esc($data['name']),
+                        'email' => esc($data['email'])
                     ]
                 ]);
 
@@ -58,7 +59,7 @@ return function($kirby, $pages, $page) {
 
             // no exception occurred, let's send a success message
             if (empty($alert) === true) {
-                $success = 'Your message has been sent, thank you. We will get back to you soon!';
+                $success = 'Thanks for reaching out! We\'ll get back to you soon.';
                 $data = [];
             }
         }
