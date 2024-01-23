@@ -273,13 +273,7 @@ panel.plugin("rare-beast/block-factory", {
                                     </component>
                                 </div>
                                 <div v-else-if="block.type === 'copy'" class="copy">
-                                    <component
-                                        :is="block.content.level"
-                                        :class="block.content.level"
-                                        v-html="block.content.text"
-                                    >
-                                        {{ block.content.text }}
-                                    </component>
+                                    <component v-html="block.content.text"></component>
                                 </div>
                                 <div v-else-if="block.type === 'button'" class="button">
                                     <div class="btn" v-if="block.content.btn_title">
@@ -418,13 +412,7 @@ panel.plugin("rare-beast/block-factory", {
                             </component>
                         </div>
                         <div v-else-if="block.type === 'copy'" class="copy">
-                            <component
-                                :is="block.content.level"
-                                :class="block.content.level"
-                                v-html="block.content.text"
-                            >
-                                {{ block.content.text }}
-                            </component>
+                            <component v-html="block.content.text"></component>
                         </div>
                         <div v-else-if="block.type === 'button'" class="button">
                             <div class="btn" v-if="block.content.btn_title">
@@ -538,13 +526,7 @@ panel.plugin("rare-beast/block-factory", {
                             </component>
                         </div>
                         <div v-else-if="block.type === 'copy'" class="copy">
-                            <component
-                                :is="block.content.level"
-                                :class="block.content.level"
-                                v-html="block.content.text"
-                            >
-                                {{ block.content.text }}
-                            </component>
+                            <component v-html="block.content.text"></component>
                         </div>
                         <div v-else-if="block.type === 'button'" class="button">
                             <div class="btn" v-if="block.content.btn_title">
