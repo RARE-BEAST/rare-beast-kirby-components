@@ -30,9 +30,6 @@ panel.plugin("rare-beast/block-factory", {
             computed: {
                 source() {
                     return this.content.source[0] || {};
-                    // We just checked to see if the file exists
-                    // If it does, we return the file object
-                    // If it doesn't, we return an empty object
                 }
             },
             template: `
@@ -227,8 +224,6 @@ panel.plugin("rare-beast/block-factory", {
                 },
                 contentBlocks() {
                     return this.content.content.map(block => {
-                        // Transform the block into a format that the template can easily loop through
-                        // The exact transformation depends on the structure of your block objects
                         return {
                             type: block.type,
                             content: block.content
@@ -367,8 +362,6 @@ panel.plugin("rare-beast/block-factory", {
             computed: {
                 contentBlocks() {
                     return this.content.content.map(block => {
-                        // Transform the block into a format that the template can easily loop through
-                        // The exact transformation depends on the structure of your block objects
                         return {
                             type: block.type,
                             content: block.content
@@ -491,8 +484,6 @@ panel.plugin("rare-beast/block-factory", {
             computed: {
                 contentBlocks() {
                     return this.content.content.map(block => {
-                        // Transform the block into a format that the template can easily loop through
-                        // The exact transformation depends on the structure of your block objects
                         return {
                             type: block.type,
                             content: block.content
@@ -507,7 +498,7 @@ panel.plugin("rare-beast/block-factory", {
                         <span class="k-block-type-fields-header">Content</span>
                     </div>
                     <div v-for="(block, index) in contentBlocks" :key="index">
-                        <div v-if="block.type === 'headline'" class="headline">
+                        <div v-if="block.type === 'headline'" class="headline" style="cursor: pointer;">
                             <component
                                 :is="block.content.level"
                                 :class="block.content.level"

@@ -6,4 +6,4 @@ fields:
   text:
     type: writer
     nodes: false
-    placeholder: field.blocks.text.placeholder
+    placeholder: Add some copy...
