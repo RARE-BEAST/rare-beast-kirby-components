@@ -33,7 +33,7 @@ $pagination_type = $block->pagination_style()->value();
         data-desktop-slides-per-view="<?= $desktop_slide_count ?>"
         data-pagination-type="<?= $pagination_type ?>"
         >
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper js-fade-in">
 
             <?php foreach ($slides as $slide) :
                 $image = $slide->image()->toFile();

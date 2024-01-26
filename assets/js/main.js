@@ -4,7 +4,7 @@ import { initImageSlider } from "./modules/image-slider";
 import { initContact } from "./modules/contact";
 // import { initScrollTrigger } from "./modules/scroll-trigger";
 // import { initMenu } from "./modules/menu";
-// import { initFadeIns } from "./modules/fade-in";
+import { initFadeIns } from "./modules/fade-in";
 // import { initStickyContentGallery } from "./modules/sticky-content-gallery";
 
 initAccordions();
@@ -13,7 +13,7 @@ initImageSlider();
 initContact();
 // initScrollTrigger();
 // initMenu();
-// initFadeIns(); 
+initFadeIns(); 
 // initStickyContentGallery();
 
 document.addEventListener("DOMContentLoaded", (event) => {

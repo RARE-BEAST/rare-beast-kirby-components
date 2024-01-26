@@ -1,30 +1,19 @@
-import Lenis from '@studio-freight/lenis';
-
 export function initLenis() {
-    const lenisElement = document.querySelector('.lenis');
-
-    if (!lenisElement) {
-        console.error('No element with class .lenis found');
-        return;
-    }
-
     const lenis = new Lenis({
-        element: lenisElement,
-        multiplier: 1.5,
-        direction: 'vertical'
-        // infinite: true
-    });
-
+        element: document.querySelector('.lenis'),
+        multiplier: 1.5
+    })
 
     // lenis.on('scroll', (e) => {
-    //     console.log(e)
-    // });
+    // console.log(e)
+    // })
 
-    function raf(time) {
-        lenis.raf(time)
-        requestAnimationFrame(raf)
-    }
+    lenis.on('scroll', ScrollTrigger.update)
 
-requestAnimationFrame(raf);
+    gsap.ticker.add((time)=>{
+    lenis.raf(time * 1000)
+    })
+
+    gsap.ticker.lagSmoothing(0)
 
 }

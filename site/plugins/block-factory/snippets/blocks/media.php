@@ -21,7 +21,7 @@ $placeholder = $block->placeholder()->toFile();
 
 <section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem;">
   <div class="media wrapper wrapper--<?= $wrapper ?> align-x--<?= $alignment ?>">
-    <div class="media__inner"<?= $has_max_width ? ' style="--max-width: ' . $max_width . 'rem;"' : '' ?>>
+    <div class="media__inner js-fade-in"<?= $has_max_width ? ' style="--max-width: ' . $max_width . 'rem;"' : '' ?>>
 
       <?php if ($image) :
 

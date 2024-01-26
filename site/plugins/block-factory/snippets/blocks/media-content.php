@@ -24,7 +24,7 @@ $media_size = $block->media_width()->value();
 <?php if (!empty($contents) && ($image || $video)) : ?>
 <section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem;">
   <div class="media-content wrapper wrapper--<?= $wrapper ?> layout-mobile--<?= $mobile ?> layout-desktop--<?= $desktop ?> media--<?= $media_size ?>" style="gap: <?= $gap ?>rem;">
-    <div class="media-content__image">
+    <div class="media-content__image js-fade-in">
 
       <?php if ($image) :
 
@@ -43,7 +43,7 @@ $media_size = $block->media_width()->value();
 
     </div>
 
-    <div class="media-content__content align-y--<?= $alignment ?>">
+    <div class="media-content__content align-y--<?= $alignment ?> js-fade-in">
       <div class="content__inner">
         <?php foreach($contents as $content): ?>
 

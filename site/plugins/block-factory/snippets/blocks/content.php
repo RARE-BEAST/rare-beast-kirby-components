@@ -14,7 +14,7 @@ $contents = json_decode($block->content()->content(), true);
 <?php if (!empty($contents)) : ?>
 <section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem; --max-width: <?= $max_width ?>rem;">
   <div class="content wrapper wrapper--<?= $wrapper ?> align-x--<?= $alignment ?>">
-      <div class="content__inner">
+      <div class="content__inner js-fade-in">
         <?php foreach($contents as $content): ?>
             <?php if($content['type'] == 'headline'): ?>
         

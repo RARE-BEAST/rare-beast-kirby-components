@@ -13,7 +13,7 @@ $accordions = $block->content()->get('accordions');
 <section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem;">
     <div class="accordions wrapper wrapper--<?= $wrapper; ?>">
 
-      <div class="accordions__content">
+      <div class="accordions__content js-fade-in">
       <?php foreach ($accordions->value() as $accordion) : ?>
           <div class="js-accordion accordion">
               <div class="accordion__title js-accordion-trigger">
