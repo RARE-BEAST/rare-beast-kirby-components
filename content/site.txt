@@ -64,10 +64,6 @@ Accent-4: #434cf9
 
 ----
 
-Nav-logo: - file://G0QxYSIBCymDq0Vl
-
-----
-
 Nav-links:
 
 - 
@@ -85,11 +81,15 @@ Nav-links:
 
 ----
 
+Nav-logo: - file://b0mfUgmmQ7urdy8e
+
+----
+
 Logo-fill-color: #ef0f00
 
 ----
 
-Nav-bg-color: #f7f5e8
+Nav-bg-color: #e8d722
 
 ----
 

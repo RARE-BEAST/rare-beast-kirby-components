@@ -14,18 +14,54 @@
 
 
 <!-- PAGE-LEVEL SEO: NOINDEX & NOFOLLOW  -->
-<?php if ($page->noindex()->toBool() === true) : ?>
-<meta name="robots" content="noindex">
-<meta name="googlebot" content="noindex">
-<?php endif; ?>
-
-<?php if ($page->nofollow()->toBool() === true) : ?>
-<meta name="robots" content="nofollow">
-<?php endif; ?>
-
-
-<!-- GLOBAL TYPOGRAPHY SETTINGS -->
 <?php
+// Initialize an empty array to hold our robot directives
+$robotDirectives = [];
+
+// Check if the page should not be indexed
+if ($page->noindex()->toBool() === true) {
+    // If so, add 'noindex' to our array of directives
+    $robotDirectives[] = 'noindex';
+}
+
+// Check if links on the page should not be followed
+if ($page->nofollow()->toBool() === true) {
+    // If so, add 'nofollow' to our array of directives
+    $robotDirectives[] = 'nofollow';
+}
+
+// If we have any directives, output them in a single meta tag
+if (!empty($robotDirectives)) {
+    // Convert our array of directives into a comma-separated string
+    $contentValue = implode(',', $robotDirectives);
+
+    // Output the meta tag with our directives
+    echo '<meta name="robots" content="' . $contentValue . '">';
+}
+?>
+
+
+<!-- OPEN GRAPH / FACEBOOK -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="<?= $page->url() ?>">
+<meta property="og:title" content="<?= $page->seo_title()->html() ?>">
+<meta property="og:description" content="<?= $page->meta_description()->html() ?>">
+<meta property="og:image" content="<?= $page->og_image()->toFile()->url() ?>">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="<?= $page->url() ?>">
+<meta property="twitter:title" content="<?= $page->seo_title()->html() ?>">
+<meta property="twitter:description" content="<?= $page->meta_description()->html() ?>">
+<meta property="twitter:image" content="<?= $page->twitter_image()->toFile()->url() ?>">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="<?= $site->url() ?>">
+
+
+<!-- GLOBAL SETTINGS -->
+<?php
+$nav_bar_height = $site->nav_height()->value();
 $page_width = site()->page_width()->value();
 $base_size = site()->base_size()->value();
 $type_scale = site()->type_scale()->value();
@@ -50,6 +86,7 @@ $accent_4 = site()->accent_4()->value();
 
 <style>
 :root {
+    --nav-bar-height: <?= $nav_bar_height ?>rem;
     --background-1: <?= $background_1 ?>;
     --background-2: <?= $background_2 ?>;
     --background-3: <?= $background_3 ?>;

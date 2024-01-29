@@ -1,14 +1,13 @@
 <?php
 $bg = $site->nav_bg_color()->value();
 $fg = $site->nav_fg_color()->value();
-$height = $site->nav_height()->value();
 $font_size = $site->nav_font_size()->value();
 $nav_links = $site->nav_links()->toStructure();
 $logo = $site->nav_logo()->toFile();
 $logo_fill_color = $site->logo_fill_color()->value();
 ?>
 
-<header class="header" style="background-color: <?= $bg ?>; color: <?= $fg ?>; --height: <?= $height ?>rem; --font-size: <?= $font_size ?>rem;">
+<header class="header" style="background-color: <?= $bg ?>; color: <?= $fg ?>; --font-size: <?= $font_size ?>rem;">
     
     <a href="#main" class="skip-link h3">Skip to main content.</a>
     

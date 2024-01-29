@@ -1,0 +1,6 @@
+title: Open Graph Image
+
+accept:
+  mime: image/jpg, image/png
+  extension: jpg, png
+query: page.images

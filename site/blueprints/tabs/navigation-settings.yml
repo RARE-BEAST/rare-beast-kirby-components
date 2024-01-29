@@ -8,28 +8,12 @@ columns:
         type: fields
         fields:
 
-          nav_content_header:
+          nav_links_header:
             label: Navigation Content
             type: headline
             help: |
-              Choose which pages to include in your site's navigation menu.
+              Choose which pages to include in your site's navigation menu. Drag and drop to reorder the links in your navigation menu.
           
-          nav_logo:
-            label: Add Logo
-            type: files
-            uploads:
-              template: logo-header
-            multiple: false
-            
-            help : |
-              **Acceptable file types: png, svg.** Upload a logo to display in the header of your site. If you don't upload a logo, your site title will be displayed instead.
-
-              **HINT: optimize your SVG using (link: https://svgomg.net/ text: SVGOMG target: _blank) prior to uploading.** Make sure you select the option _Prefer viewBox to width/height_ before exporting. Open the optimized SVG in a text editor and add **fill="currentColor"** inside the opening `<svg>` tag. The result will look something like this:
-              
-              `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor">`
-
-              This will allow you to change the color of your logo using the **Logo Fill Color** option.
-
           nav_links:
             label: Add pages to the navigation menu
             type: structure
@@ -47,6 +31,32 @@ columns:
                 type: text
                 placeholder: Leave this field blank to use the page title.
                 empty: Leave this field blank to use the page title.
+          
+          nav_logo_header:
+            label: Navigation/Header Logo
+            type: headline
+            help: |
+              Upload a logo to display in the header of your site.
+          
+          nav_logo:
+            label: Add Logo
+            type: files
+            uploads:
+              template: logo-header
+            multiple: false
+            layout: cardlets
+            help : |
+              **Acceptable file types: png, svg.**
+
+          nav_help:
+            label: SVG Hotline!
+            type: info
+            text: |
+              **Always optimize your SVG using (link: https://svgomg.net/ text: SVGOMG target: _blank) prior to uploading.** Make sure you select the option _Prefer viewBox to width/height_ before exporting. Open the optimized SVG in a text editor and add **fill="currentColor"** inside the opening `<svg>` tag. The result will look something like this:
+              
+              `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor">`
+
+              This will allow you to change the color of your logo using the **Logo Fill Color** field.
 
   nav_column_b:
     width: 1/2

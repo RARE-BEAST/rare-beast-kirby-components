@@ -93,7 +93,9 @@ main {
 	position: relative;
 	z-index: 2;
 	backface-visibility: hidden;
-  // margin-top: var(--nav-bar-height, 6rem);
+    min-height: 100vh;
+    min-height: 100svh;
+    margin-top: var(--nav-bar-height, 6rem);
 }
 
 .section, .footer {

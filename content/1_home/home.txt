@@ -22,6 +22,14 @@ Nofollow: true
 
 ----
 
+Og-image: - file://tIUN89SNnkXnt7U0
+
+----
+
+Twitter-image: - file://tIUN89SNnkXnt7U0
+
+----
+
 No-index: 1
 
 ----
