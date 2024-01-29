@@ -1,3 +1,4 @@
+<?php snippet('head') ?>
 <?php snippet('header') ?>
 
 <main class="main" id="main">

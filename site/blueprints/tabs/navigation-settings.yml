@@ -1,0 +1,126 @@
+title: Navigation Settings
+
+columns:
+  nav_column_a:
+    width: 1/2
+    sections:
+      nav_content:
+        type: fields
+        fields:
+
+          nav_content_header:
+            label: Navigation Content
+            type: headline
+            help: |
+              Choose which pages to include in your site's navigation menu.
+          
+          nav_logo:
+            label: Add Logo
+            type: files
+            uploads:
+              template: logo-header
+            multiple: false
+            
+            help : |
+              **Acceptable file types: png, svg.** Upload a logo to display in the header of your site. If you don't upload a logo, your site title will be displayed instead.
+
+              **HINT: optimize your SVG using (link: https://svgomg.net/ text: SVGOMG target: _blank) prior to uploading.** Make sure you select the option _Prefer viewBox to width/height_ before exporting. Open the optimized SVG in a text editor and add **fill="currentColor"** inside the opening `<svg>` tag. The result will look something like this:
+              
+              `<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor">`
+
+              This will allow you to change the color of your logo using the **Logo Fill Color** option.
+
+          nav_links:
+            label: Add pages to the navigation menu
+            type: structure
+            sortable: true
+            fields:
+              link:
+                label: Page
+                type: pages
+                query: site.children.listed
+                layout: list
+                multiple: false
+                link: false
+              text:
+                label: Link Text (optional)
+                type: text
+                placeholder: Leave this field blank to use the page title.
+                empty: Leave this field blank to use the page title.
+
+  nav_column_b:
+    width: 1/2
+    sections:
+      nav_styles:
+        type: fields
+        fields:
+          
+          nav_styles_header:
+            label: Navigation Styles
+            type: headline
+            help: |
+              Customize the appearance of your site's navigation menu.
+          
+          logo_fill_color:
+            label: Logo Fill Color
+            type: color
+            alpha: true
+            default: "Poppy"
+            options:
+              "Drywall": "#f7f5e8"
+              "Asphalt": "#232220"
+              "Concrete": "#d3d3d3"
+              "Highlighter": "#e8d722"
+              "Grass": "#3a8e0f"
+              "Poppy": "#ef0f00"
+              "Pond": "#434cf9"
+            help: Only applies to SVG logos. If you upload a PNG logo, the logo will be displayed as-is.
+
+          nav_bg_color:
+            width: 1/2
+            label: Background Color
+            type: color
+            alpha: true
+            default: "Drywall"
+            options:
+              "Drywall": "#f7f5e8"
+              "Asphalt": "#232220"
+              "Concrete": "#d3d3d3"
+              "Highlighter": "#e8d722"
+              "Grass": "#3a8e0f"
+              "Poppy": "#ef0f00"
+              "Pond": "#434cf9"
+          
+          nav_fg_color:
+            width: 1/2
+            label: Text Color
+            type: color
+            alpha: true
+            default: "Asphalt"
+            options:
+              "Drywall": "#f7f5e8"
+              "Asphalt": "#232220"
+              "Concrete": "#d3d3d3"
+              "Highlighter": "#e8d722"
+              "Grass": "#3a8e0f"
+              "Poppy": "#ef0f00"
+              "Pond": "#434cf9"
+          
+          nav_font_size:
+            width: 1/2
+            label: Font Size
+            type: number
+            min: 0.5
+            max: 3
+            step: 0.125
+            default: 1.5
+            after: "rem"
+
+          nav_height:
+            width: 1/2
+            label: Nav Bar Height
+            type: number
+            min: 2
+            max: 10
+            default: 4
+            after: "rem"

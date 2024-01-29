@@ -15,6 +15,10 @@ tabs:
     label: Global Settings
     extends: tabs/global-settings
 
+  navigation-settings:
+    label: Navigation Settings
+    extends: tabs/navigation-settings
+
   company-information:
     label: Company Information
     extends: tabs/company-settings

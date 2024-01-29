@@ -64,6 +64,47 @@ Accent-4: #434cf9
 
 ----
 
+Nav-logo: - file://G0QxYSIBCymDq0Vl
+
+----
+
+Nav-links:
+
+- 
+  link:
+    - page://DJPn1Hg6L8iJkTtk
+  text: ""
+- 
+  link:
+    - page://Vkb9kSGnHig3C4DM
+  text: Everything
+- 
+  link:
+    - page://W0YUKnmDyTuOJvRh
+  text: ""
+
+----
+
+Logo-fill-color: #ef0f00
+
+----
+
+Nav-bg-color: #f7f5e8
+
+----
+
+Nav-fg-color: #232220
+
+----
+
+Nav-font-size: 1.875
+
+----
+
+Nav-height: 5
+
+----
+
 Company-name: The Rare Beast
 
 ----
@@ -141,6 +182,10 @@ Pinterest:
 ----
 
 Reddit: 
+
+----
+
+Nav-text-color: #232220
 
 ----
 

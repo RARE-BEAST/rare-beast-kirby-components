@@ -1,0 +1,11 @@
+title: Header Logo
+
+accept:
+  mime: image/svg+xml, image/png
+  # type: image
+  extension: svg, png
+
+options:
+  delete:
+    admin: true
+    editor: false
