@@ -8,19 +8,20 @@ fields:
     label: Fine-tune your layout.
 
   alignment:
-        width: 1/2
-        label: Alignment
-        type: radio
-        default: left
-        options:
-          left: Left
-          center: Center
-          right: Right
+    width: 1/2
+    label: Alignment
+    type: radio
+    default: left
+    options:
+      left: Left
+      center: Center
+      right: Right
 
   ratio:
     width: 1/2
     label: Ratio
     type: select
+    empty: false
     default: auto
     options:
       auto: Auto

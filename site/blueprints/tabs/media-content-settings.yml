@@ -32,6 +32,7 @@ fields:
     label: Ratio
     type: select
     default: auto
+    empty: false
     options:
       auto: Auto
       square: 1:1

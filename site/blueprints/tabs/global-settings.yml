@@ -32,6 +32,7 @@ columns:
           type_scale:
             label: Type Scale
             type: select
+            empty: false
             options:
               custom: Custom
               minor-second: Minor Second (1.067)
@@ -115,60 +116,99 @@ columns:
       brand_palette:
         type: fields
         fields:
+
           column_2_header:
             label: Brand Palette
             type: headline
+            help: |
+              Assign your brand's colors to each of the global variables below. These variables will be used in the Block Settings tab for each block used on your site.
+
           background_1:
             label: Background 1
             type: color
             format: hex
             alpha: true
-            mode: picker
+            mode: options
+            options:
+              type: query
+              query: kirby.option('brand.palette')
+
           background_2:
             label: Background 2
             type: color
             format: hex
             alpha: true
-            mode: picker
+            mode: options
+            options:
+              type: query
+              query: kirby.option('brand.palette')
+
           background_3:
             label: Background 3
             type: color
             format: hex
             alpha: true
-            mode: picker
+            mode: options
+            options:
+              type: query
+              query: kirby.option('brand.palette')
+
           foreground_light:
             label: Foreground Light
             type: color
             format: hex
             alpha: true
-            mode: picker
+            mode: options
+            options:
+              type: query
+              query: kirby.option('brand.palette')
+
           foreground_dark:
             label: Foreground Dark
             type: color
             format: hex
             alpha: true
-            mode: picker
+            mode: options
+            options:
+              type: query
+              query: kirby.option('brand.palette')
+
           accent_1:
             label: Accent 1
             type: color
             format: hex
             alpha: true
-            mode: picker
+            mode: options
+            options:
+              type: query
+              query: kirby.option('brand.palette')
+
           accent_2:
             label: Accent 2
             type: color
             format: hex
             alpha: true
-            mode: picker
+            mode: options
+            options:
+              type: query
+              query: kirby.option('brand.palette')
+
           accent_3:
             label: Accent 3
             type: color
             format: hex
             alpha: true
-            mode: picker
+            mode: options
+            options:
+              type: query
+              query: kirby.option('brand.palette')
+
           accent_4:
             label: Accent 4
             type: color
             format: hex
             alpha: true
-            mode: picker
+            mode: options
+            options:
+              type: query
+              query: kirby.option('brand.palette')

@@ -4,13 +4,13 @@ return [
   // SET THIS TO FALSE FOR PRODUCTION
   'debug' => true,
 
-  // OPTION TO MOVE THE PANEL TO A DIFFERENT URL
+  // MOVE THE PANEL TO A DIFFERENT URL
   // FOR SECURITY, BUT ALSO FOR FUN OR BRANDING PURPOSES
   'panel' => [
     'slug' => 'panel'
   ],
 
-  // OPTION TO ADD CUSTOM FAVICONS
+  // ADD CUSTOM FAVICONS
   'favicon' => [
     'apple-touch-icon' => [
       'type' => 'image/png',
@@ -25,8 +25,24 @@ return [
       'url'  => 'assets/favicon.png',
     ]
   ],
+
+  // DEFINE COLOR PALETTE
+  // Can be accessed in the Color field
+  // like so: kirby.option('brand.palette')
+  'brand' => [
+    'palette' => [
+      'ffffff00' => 'Transparent',
+      '#f7f5e8' => 'Drywall',
+      '#d3d3d3' => 'Concrete',
+      '#232220' => 'Asphalt',
+      '#e8d722' => 'Highlighter',
+      '#3a8e0f' => 'Grass',
+      '#ef0f00' => 'Poppy',
+      '#434cf9' => 'Pond',
+    ]
+  ],
   
-  // OPTION TO ADD CUSTOM CSS TO THE PANEL
+  // ADD CUSTOM CSS TO THE PANEL
   // 'panel' => [
   //   'css' => 'assets/css/custom-panel.css'
   // ],

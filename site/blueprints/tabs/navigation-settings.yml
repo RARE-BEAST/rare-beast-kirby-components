@@ -76,14 +76,10 @@ columns:
             type: color
             alpha: true
             default: "Poppy"
+            mode: options
             options:
-              "Drywall": "#f7f5e8"
-              "Asphalt": "#232220"
-              "Concrete": "#d3d3d3"
-              "Highlighter": "#e8d722"
-              "Grass": "#3a8e0f"
-              "Poppy": "#ef0f00"
-              "Pond": "#434cf9"
+              type: query
+              query: kirby.option('brand.palette')
             help: Only applies to SVG logos. If you upload a PNG logo, the logo will be displayed as-is.
 
           nav_bg_color:
@@ -92,14 +88,10 @@ columns:
             type: color
             alpha: true
             default: "Drywall"
+            mode: options
             options:
-              "Drywall": "#f7f5e8"
-              "Asphalt": "#232220"
-              "Concrete": "#d3d3d3"
-              "Highlighter": "#e8d722"
-              "Grass": "#3a8e0f"
-              "Poppy": "#ef0f00"
-              "Pond": "#434cf9"
+              type: query
+              query: kirby.option('brand.palette')
           
           nav_fg_color:
             width: 1/2
@@ -107,14 +99,10 @@ columns:
             type: color
             alpha: true
             default: "Asphalt"
+            mode: options
             options:
-              "Drywall": "#f7f5e8"
-              "Asphalt": "#232220"
-              "Concrete": "#d3d3d3"
-              "Highlighter": "#e8d722"
-              "Grass": "#3a8e0f"
-              "Poppy": "#ef0f00"
-              "Pond": "#434cf9"
+              type: query
+              query: kirby.option('brand.palette')
           
           nav_font_size:
             width: 1/2
