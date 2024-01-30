@@ -7,11 +7,12 @@ $logo = $site->nav_logo()->toFile();
 $logo_fill_color = $site->logo_fill_color()->value();
 ?>
 
-<header class="header" style="background-color: <?= $bg ?>; color: <?= $fg ?>; --font-size: <?= $font_size ?>rem;">
-    
+<header class="header js-header">
     <a href="#main" class="skip-link h3">Skip to main content.</a>
+
+    <div class="header__bg js-header-bg" style="background-color: <?= $bg ?>;"></div>
     
-    <nav class="navigation" aria-label="Main Navigation">
+    <nav class="navigation" style="color: <?= $fg ?>; font-size: <?= $font_size ?>rem;" aria-label="Main Navigation">
         
         <ul class="navigation__links">
         <?php foreach($nav_links as $link): ?>

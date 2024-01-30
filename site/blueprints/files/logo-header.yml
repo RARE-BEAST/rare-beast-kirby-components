@@ -8,3 +8,14 @@ options:
   delete:
     admin: true
     editor: false
+
+fields:
+  alt:
+    label: Alt Text
+    type: textarea
+    size: small
+    font: monospace
+    buttons: false
+    width: 1/2
+    help: >
+      Helps screen-reading tools describe images to visually impaired readers and allows search engines to better crawl and rank your site.

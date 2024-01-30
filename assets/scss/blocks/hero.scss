@@ -6,18 +6,18 @@
     justify-content: var(--justify-content, center);
 
     &.height--full {
-        min-height: 100vh;
-        min-height: 100svh;
+        min-height: calc(100vh - var(--nav-bar-height));
+        min-height: calc(100svh - var(--nav-bar-height));
     }
 
     &.height--half {
-        min-height: 50vh;
-        min-height: 50svh;
+        min-height: calc(50vh - var(--nav-bar-height));
+        min-height: calc(50svh - var(--nav-bar-height));
     }
 
     &.height--three-quarters {
-        min-height: 75vh;
-        min-height: 75svh;
+        min-height: calc(75vh - var(--nav-bar-height));
+        min-height: calc(75svh - var(--nav-bar-height));
     }
     
     &.height--landscape {

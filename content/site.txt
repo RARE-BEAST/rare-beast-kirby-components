@@ -89,7 +89,7 @@ Logo-fill-color: #ef0f00
 
 ----
 
-Nav-bg-color: #e8d722
+Nav-bg-color: #f7f5e8
 
 ----
 

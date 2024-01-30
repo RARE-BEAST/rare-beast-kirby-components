@@ -9,8 +9,12 @@
 
 
 <!-- PAGE-LEVEL TITLE & META DESCRIPTION -->
+<?php if($page->seo_title()->isNotEmpty()): ?>
 <title><?= $page->seo_title()->html() ?></title>
+<?php endif; ?>
+<?php if($page->meta_description()->isNotEmpty()): ?>
 <meta name="description" content="<?= $page->meta_description()->html() ?>">
+<?php endif; ?>
 
 
 <!-- PAGE-LEVEL SEO: NOINDEX & NOFOLLOW  -->
@@ -42,18 +46,32 @@ if (!empty($robotDirectives)) {
 
 
 <!-- OPEN GRAPH / FACEBOOK -->
-<meta property="og:type" content="website">
+<?php if(!empty($page->url())): ?>
 <meta property="og:url" content="<?= $page->url() ?>">
+<?php endif; ?>
+<?php if($page->seo_title()->isNotEmpty()): ?>
 <meta property="og:title" content="<?= $page->seo_title()->html() ?>">
+<?php endif; ?>
+<?php if($page->meta_description()->isNotEmpty()): ?>
 <meta property="og:description" content="<?= $page->meta_description()->html() ?>">
+<?php endif; ?>
+<?php if($page->og_image()->toFile()): ?>
 <meta property="og:image" content="<?= $page->og_image()->toFile()->url() ?>">
+<?php endif; ?>
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
+<?php if(!empty($page->url())): ?>
 <meta property="twitter:url" content="<?= $page->url() ?>">
+<?php endif; ?>
+<?php if($page->seo_title()->isNotEmpty()): ?>
 <meta property="twitter:title" content="<?= $page->seo_title()->html() ?>">
+<?php endif; ?>
+<?php if($page->meta_description()->isNotEmpty()): ?>
 <meta property="twitter:description" content="<?= $page->meta_description()->html() ?>">
+<?php endif; ?>
+<?php if($page->twitter_image()->toFile()): ?>
 <meta property="twitter:image" content="<?= $page->twitter_image()->toFile()->url() ?>">
+<?php endif; ?>
 
 <!-- Canonical URL -->
 <link rel="canonical" href="<?= $site->url() ?>">
