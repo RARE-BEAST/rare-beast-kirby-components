@@ -32,4 +32,4 @@ fields:
     label: field.blocks.heading.text
     type: writer
     inline: true
-    placeholder: Add a headline...
+    placeholder: field.blocks.heading.placeholder

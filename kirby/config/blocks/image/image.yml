@@ -20,8 +20,7 @@ fields:
     uploads:
       template: blocks/image
     when:
-      media_type: image
-    help: Click the image above to add alt text, image credits, and/or set a focal point for cropping.
+      location: kirby
   src:
     label: field.blocks.image.url
     type: url
@@ -31,7 +30,6 @@ fields:
     label: field.blocks.image.alt
     type: text
     icon: title
-    help: Helps screen-reading tools describe images to visually impaired readers and allows search engines to better crawl and rank your site.
   caption:
     label: field.blocks.image.caption
     type: writer
