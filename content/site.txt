@@ -109,15 +109,15 @@ Company-name: The Rare Beast
 
 ----
 
-Address-line-1: 
+Address-line-1: 123 Cool Street
 
 ----
 
-Address-line-2: 
+Address-line-2: Apt 237
 
 ----
 
-City: 
+City: Cincy
 
 ----
 
@@ -125,7 +125,7 @@ State: OH
 
 ----
 
-Zip: 
+Zip: 12345
 
 ----
 
@@ -137,51 +137,51 @@ Phone: 1.555.555.5555
 
 ----
 
-Include-fax: false
+Include-fax: true
 
 ----
 
-Fax: 
+Fax: 1.555.555.5555
 
 ----
 
-Instagram: 
+Instagram: https://www.instagram.com/
 
 ----
 
-Facebook: 
+Facebook: https://facebook.com/
 
 ----
 
-Twitter: 
+Twitter: https://twitter.com/
 
 ----
 
-Linkedin: 
+Linkedin: https://www.linkedin.com/
 
 ----
 
-Tiktok: 
+Tiktok: https://www.tiktok.com/
 
 ----
 
-Are-na: 
+Are-na: https://are.na/
 
 ----
 
-Youtube: 
+Youtube: https://www.youtube.com/
 
 ----
 
-Vimeo: 
+Vimeo: https://vimeo.com/
 
 ----
 
-Pinterest: 
+Pinterest: https://www.pinterest.com/
 
 ----
 
-Reddit: 
+Reddit: https://www.reddit.com/
 
 ----
 

@@ -460,15 +460,24 @@ main {
 }
 
 .footer {
-  min-height: 85vh;
-  min-height: 85svh;
   display: flex;
   flex-direction: column;
+  gap: 8rem;
   justify-content: space-between;
   position: relative;
   z-index: 1;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 3rem 2rem;
+}
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.footer__content__column {
+  display: flex;
+  flex-direction: column;
+}
+.footer__credits {
+  align-self: center;
 }
 
 .header {

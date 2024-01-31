@@ -1,11 +1,24 @@
 .footer {
-    min-height: 85vh;
-    min-height: 85svh;
     display: flex;
     flex-direction: column;
+    gap: 8rem;
     justify-content: space-between;
     position: relative;
     z-index: 1;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 3rem 2rem;
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+
+        &__column {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__credits {
+        align-self: center;
+    }
 }

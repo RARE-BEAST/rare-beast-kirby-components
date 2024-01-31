@@ -21,13 +21,13 @@ columns:
             label: Address Line 2
             type: text
           city:
+            width: 1/3
             label: City
             type: text
-            width: 1/3
           state:
+            width: 1/3
             label: State
             type: select
-            width: 1/3
             options:
               AL: Alabama
               AK: Alaska
@@ -82,33 +82,33 @@ columns:
               WI: Wisconsin
               WY: Wyoming
           zip:
+            width: 1/3
             label: Zip Code
             type: text
-            width: 1/3
           email:
+            width: 1/2
             label: Email Address
             type: email
-            width: 1/2
             validate:
               email: true
           phone:
+            width: 1/2
             label: Phone Number
             type: tel
-            width: 1/2
             validate:
               phone: true
           include_fax:
+            width: 1/3
             label: Add a Fax Number?
             type: toggle
-            width: 1/3
             default: no
             text:
               - "no"
               - "yes"
           fax:
+            width: 2/3
             label: Fax Number
             type: tel
-            width: 2/3
             validate:
               phone: true
             when:
@@ -135,42 +135,59 @@ columns:
             type: headline
 
           instagram:
+            width: 1/2
             label: Instagram
             type: url
-            width: 1/2
+            icon: instagram
+            placeholder: https://instagram.com/
           facebook:
+            width: 1/2
             label: Facebook
             type: url
-            width: 1/2
+            icon: facebook
+            placeholder: https://facebook.com/
           twitter:
+            width: 1/2
             label: Twitter
             type: url
-            width: 1/2
+            placeholder: https://twitter.com/
           linkedin:
+            width: 1/2
             label: LinkedIn
             type: url
-            width: 1/2
+            icon: linkedin
+            placeholder: https://linkedin.com/
           tiktok:
+            width: 1/2
             label: TikTok
             type: url
+            icon: tiktok
+            placeholder: https://tiktok.com/
+          are_na:
             width: 1/2
-          are.na:
             label: Are.na
             type: url
-            width: 1/2
+            placeholder: https://are.na/
           youtube:
+            width: 1/2
             label: YouTube
             type: url
-            width: 1/2
+            icon: youtube
+            placeholder: https://youtube.com/
           vimeo:
+            width: 1/2
             label: Vimeo
             type: url
-            width: 1/2
+            icon: vimeo
+            placeholder: https://vimeo.com/
           pinterest:
+            width: 1/2
             label: Pinterest
             type: url
-            width: 1/2
+            icon: pinterest
+            placeholder: https://pinterest.com/
           reddit:
+            width: 1/2
             label: Reddit
             type: url
-            width: 1/2
+            placeholder: https://reddit.com/
