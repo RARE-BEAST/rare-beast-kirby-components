@@ -12,6 +12,8 @@ $ratio = $block->ratio()->or('auto')->value();
 $video = $block->video_link()->value();
 $placeholder = $block->placeholder()->toFile();
 
+$spline = $block->spline_link()->value();
+
 $contents = json_decode($block->content()->content(), true);
 
 $alignment = $block->align_content()->value();
@@ -21,7 +23,7 @@ $gap = $block->gap()->value();
 $media_size = $block->media_width()->value();
 ?>
 
-<?php if (!empty($contents) && ($image || $video)) : ?>
+<?php if (!empty($contents) && ($image || $video || $spline)) : ?>
 <section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem;">
   <div class="media-content wrapper wrapper--<?= $wrapper ?> layout-mobile--<?= $mobile ?> layout-desktop--<?= $desktop ?> media--<?= $media_size ?> js-fade-in" style="gap: <?= $gap ?>rem;">
     <div class="media-content__image">
@@ -38,12 +40,17 @@ $media_size = $block->media_width()->value();
 
 
     <?php elseif ($video): ?>
+
       <div class="video <?= 'video--' . $ratio ?>">
           <video muted autoplay loop playsinline poster="<?= $placeholder->url() ?>">
               <source src="<?php echo $video; ?>" type="video/mp4">
           </video>
       </div>
-          
+
+    <?php elseif ($spline) : ?>
+      
+      <spline-viewer url="<?= $spline ?>"></spline-viewer>
+              
     <?php endif; ?>
 
     </div>

@@ -189,6 +189,9 @@ panel.plugin("rare-beast/block-factory", {
                 },
                 video_link() {
                     return this.content.video_link || null;
+                },
+                spline_link() {
+                    return this.content.spline_link || null;
                 }
             },
             template: `
@@ -207,6 +210,9 @@ panel.plugin("rare-beast/block-factory", {
                             Your browser does not support the video tag.
                         </video>
                     </div>
+                    <div v-if="spline_link" style="background-color: #d8d3b134; padding: 2rem; border-radius: 20px;">
+                        <span class="h3">Looks like you added a <span style="color: blue;">Spline object</span> here. Support for previewing 3D objects is coming soon.</span>
+                    </div>
                 </div>
             `
         },
@@ -221,6 +227,9 @@ panel.plugin("rare-beast/block-factory", {
                 },
                 video_link() {
                     return this.content.video_link || null;
+                },
+                spline_link() {
+                    return this.content.spline_link || null;
                 },
                 contentBlocks() {
                     return this.content.content.map(block => {
@@ -246,6 +255,9 @@ panel.plugin("rare-beast/block-factory", {
                                 <source :src="video_link" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
+                        </div>
+                        <div v-if="spline_link" style="background-color: #d8d3b134; padding: 2rem; border-radius: 20px;">
+                            <span class="h3">Looks like you added a <span style="color: blue;">Spline object</span> here. Support for previewing 3D objects is coming soon.</span>
                         </div>
                         <div class="media__content">
                             <div v-for="(block, index) in contentBlocks" :key="index">

@@ -15,9 +15,10 @@ $ratio = $block->ratio()->or('auto')->value();
 $video = $block->video_link()->value();
 $placeholder = $block->placeholder()->toFile();
 
+$spline = $block->spline_link()->value();
 ?>
 
-<?php if ($image || $video) : ?>
+<?php if ($image || $video || $spline) : ?>
 
 <section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem;">
   <div class="media wrapper wrapper--<?= $wrapper ?> align-x--<?= $alignment ?>">
@@ -25,23 +26,31 @@ $placeholder = $block->placeholder()->toFile();
 
       <?php if ($image) : ?>
 
-      <?php if($image->extension() == 'svg'): ?>
+        <?php if($image->extension() == 'svg'): ?>
         <div class="svg svg--<?= $ratio ?>">
           <?= $image->read() ?>
         </div>
-      <?php else: 
-        snippet('responsive-image-loader', ['image' => $image, 'ratio' => $ratio]);
-      endif; ?>
+
+        <?php else: 
+          snippet('responsive-image-loader', ['image' => $image, 'ratio' => $ratio]);
+        endif; ?>
 
       
       <?php elseif ($video): ?>
+        
         <div class="video <?= 'video--' . $ratio ?>">
             <video muted autoplay loop playsinline poster="<?= $placeholder->url() ?>">
                 <source src="<?php echo $video; ?>" type="video/mp4">
             </video>
         </div>
+
+      <?php elseif ($spline) : ?>
+        
+        <spline-viewer url="<?= $spline ?>"></spline-viewer>
                 
       <?php endif; ?>
+
+
 
     </div>
   </div>

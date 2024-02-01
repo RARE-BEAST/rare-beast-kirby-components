@@ -46,6 +46,11 @@ return [
   // 'panel' => [
   //   'css' => 'assets/css/custom-panel.css'
   // ],
+ 
+  // ADD CUSTOM JS TO THE PANEL
+  'panel' => [
+    'js' => 'assets/js/vendor/spline-viewer--panel.js'
+  ],
 
   // DEFINE SOURCE SETS FOR IMAGES
   // If you add more $ratio options to the image block, make sure to add them here, too!

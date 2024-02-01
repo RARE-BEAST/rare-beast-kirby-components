@@ -16,7 +16,7 @@ tabs:
         options:
           image: Image
           video: Video
-          audio: Spline Object
+          spline: Spline Object
 
       image:
         label: Image
@@ -57,6 +57,13 @@ tabs:
         when:
           media_type: video
         help: Set a placeholder image for the video. For visitors with slow internet connections, this image will be displayed until the video is loaded. For best results, use an image with the exact same aspect ratio or pixel dimensions as the video.
+
+      spline_link:
+        width: 1/2
+        label: Spline Link
+        type: url
+        when:
+          media_type: spline
 
   media-settings:
     label: Media Settings
