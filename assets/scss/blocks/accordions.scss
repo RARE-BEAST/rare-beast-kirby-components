@@ -24,7 +24,7 @@
     &__content {
         width: 100%;
         margin: 0 auto;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid var(--accordion-color, $black);
         &--inner {
             padding: 0 4rem 2rem 0;
             p {
@@ -50,7 +50,7 @@
         width: 100%;
         height: 1px;
         position: absolute;
-        background: black;
+        background: var(--accordion-color, $black);
         top: 50%;
         transform: translateY(-50%);
         transition: transform .4s;

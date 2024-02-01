@@ -27,7 +27,7 @@ $placeholder = $block->placeholder()->toFile();
 
       <?php if($image->extension() == 'svg'): ?>
         <div class="svg svg--<?= $ratio ?>">
-        <?= $image->read() ?>
+          <?= $image->read() ?>
         </div>
       <?php else: 
         snippet('responsive-image-loader', ['image' => $image, 'ratio' => $ratio]);

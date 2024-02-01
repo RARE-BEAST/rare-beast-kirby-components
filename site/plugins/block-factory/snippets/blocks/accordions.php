@@ -6,11 +6,12 @@ $padding_bottom = $block->padding_bottom()->value();
 $wrapper = $block->wrapper()->value();
 
 $accordions = $block->content()->get('accordions');
+$accordion_color = $block->accordion_color()->value();
 ?>
 
 <?php if (!empty($accordions)) : ?>
 
-<section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem;">
+<section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem; --accordion-color: <?= $accordion_color ?>;">
     <div class="accordions wrapper wrapper--<?= $wrapper; ?> js-fade-in">
 
       <div class="accordions__content">
