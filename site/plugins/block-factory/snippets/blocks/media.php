@@ -23,11 +23,18 @@ $placeholder = $block->placeholder()->toFile();
   <div class="media wrapper wrapper--<?= $wrapper ?> align-x--<?= $alignment ?>">
     <div class="media__inner js-fade-in"<?= $has_max_width ? ' style="--max-width: ' . $max_width . 'rem;"' : '' ?>>
 
-      <?php if ($image) :
+      <?php if ($image) : ?>
 
+      <?php if($image->extension() == 'svg'): ?>
+        <div class="svg svg--<?= $ratio ?>">
+        <?= $image->read() ?>
+        </div>
+      <?php else: 
         snippet('responsive-image-loader', ['image' => $image, 'ratio' => $ratio]);
+      endif; ?>
+
       
-      elseif ($video): ?>
+      <?php elseif ($video): ?>
         <div class="video <?= 'video--' . $ratio ?>">
             <video muted autoplay loop playsinline poster="<?= $placeholder->url() ?>">
                 <source src="<?php echo $video; ?>" type="video/mp4">

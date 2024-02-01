@@ -26,20 +26,25 @@ $media_size = $block->media_width()->value();
   <div class="media-content wrapper wrapper--<?= $wrapper ?> layout-mobile--<?= $mobile ?> layout-desktop--<?= $desktop ?> media--<?= $media_size ?> js-fade-in" style="gap: <?= $gap ?>rem;">
     <div class="media-content__image">
 
-      <?php if ($image) :
+    <?php if ($image) : ?>
 
-        snippet('responsive-image-loader', ['image' => $image, 'ratio' => $ratio]);
-      
-      elseif ($video): 
-        $video_crop = 'video--' . $ratio;
-      ?>
-        <div class="video <?= $video_crop ?>">
-            <video muted autoplay loop playsinline poster="<?= $placeholder->url() ?>">
-                <source src="<?php echo $video; ?>" type="video/mp4">
-            </video>
-        </div>
-                
-      <?php endif; ?>
+    <?php if($image->extension() == 'svg'): ?>
+      <div class="svg svg--<?= $ratio ?>">
+        <?= $image->read() ?>
+      </div>
+    <?php else: 
+      snippet('responsive-image-loader', ['image' => $image, 'ratio' => $ratio]);
+    endif; ?>
+
+
+    <?php elseif ($video): ?>
+      <div class="video <?= 'video--' . $ratio ?>">
+          <video muted autoplay loop playsinline poster="<?= $placeholder->url() ?>">
+              <source src="<?php echo $video; ?>" type="video/mp4">
+          </video>
+      </div>
+          
+    <?php endif; ?>
 
     </div>
 

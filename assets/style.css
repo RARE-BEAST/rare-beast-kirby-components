@@ -2024,39 +2024,47 @@ input.btn--input {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.media .video {
+.media__inner svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.media .video, .media .svg {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-.media .video--auto {
+.media .video--auto, .media .svg--auto {
   aspect-ratio: unset;
 }
-.media .video--square {
+.media .video--square, .media .svg--square {
   aspect-ratio: 1/1;
 }
-.media .video--two-three {
+.media .video--two-three, .media .svg--two-three {
   aspect-ratio: 2/3;
 }
-.media .video--three-two {
+.media .video--three-two, .media .svg--three-two {
   aspect-ratio: 3/2;
 }
-.media .video--three-four {
+.media .video--three-four, .media .svg--three-four {
   aspect-ratio: 3/4;
 }
-.media .video--four-three {
+.media .video--four-three, .media .svg--four-three {
   aspect-ratio: 4/3;
 }
-.media .video--four-five {
+.media .video--four-five, .media .svg--four-five {
   aspect-ratio: 4/5;
 }
-.media .video--five-four {
+.media .video--five-four, .media .svg--five-four {
   aspect-ratio: 5/4;
 }
-.media .video--sixteen-nine {
+.media .video--sixteen-nine, .media .svg--sixteen-nine {
   aspect-ratio: 16/9;
 }
-.media .video:not(.media .video--auto) video {
+.media .video:not(.media .video--auto, .media .svg--auto) video, .media .svg:not(.media .video--auto, .media .svg--auto) video {
   position: absolute;
   top: 0;
   left: 0;
@@ -2115,39 +2123,47 @@ input.btn--input {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.media-content__image .video {
+.media-content__image svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+.media-content__image .video, .media-content__image .svg {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-.media-content__image .video--auto {
+.media-content__image .video--auto, .media-content__image .svg--auto {
   aspect-ratio: unset;
 }
-.media-content__image .video--square {
+.media-content__image .video--square, .media-content__image .svg--square {
   aspect-ratio: 1/1;
 }
-.media-content__image .video--two-three {
+.media-content__image .video--two-three, .media-content__image .svg--two-three {
   aspect-ratio: 2/3;
 }
-.media-content__image .video--three-two {
+.media-content__image .video--three-two, .media-content__image .svg--three-two {
   aspect-ratio: 3/2;
 }
-.media-content__image .video--three-four {
+.media-content__image .video--three-four, .media-content__image .svg--three-four {
   aspect-ratio: 3/4;
 }
-.media-content__image .video--four-three {
+.media-content__image .video--four-three, .media-content__image .svg--four-three {
   aspect-ratio: 4/3;
 }
-.media-content__image .video--four-five {
+.media-content__image .video--four-five, .media-content__image .svg--four-five {
   aspect-ratio: 4/5;
 }
-.media-content__image .video--five-four {
+.media-content__image .video--five-four, .media-content__image .svg--five-four {
   aspect-ratio: 5/4;
 }
-.media-content__image .video--sixteen-nine {
+.media-content__image .video--sixteen-nine, .media-content__image .svg--sixteen-nine {
   aspect-ratio: 16/9;
 }
-.media-content__image .video:not(.media-content__image .video--auto) video {
+.media-content__image .video:not(.media-content__image .video--auto, .media-content__image .svg--auto) video, .media-content__image .svg:not(.media-content__image .video--auto, .media-content__image .svg--auto) video {
   position: absolute;
   top: 0;
   left: 0;
