@@ -1,5 +1,9 @@
-Uuid: G0QxYSIBCymDq0Vl
+Alt: 
 
 ----
 
-Template: logo-header
+Uuid: t2DzzTMLQqwge2OZ
+
+----
+
+Template: image--header-logo

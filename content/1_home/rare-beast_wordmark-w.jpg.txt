@@ -14,7 +14,7 @@ Uuid: tIUN89SNnkXnt7U0
 
 ----
 
-Template: blocks/image
+Template: image--default
 
 ----
 

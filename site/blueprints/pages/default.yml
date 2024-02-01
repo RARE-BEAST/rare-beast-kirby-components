@@ -19,7 +19,7 @@ tabs:
                     type: group
                     fieldsets:
                       - hero
-                      - split-hero
+                      # - split-hero
                   text:
                     label: Text
                     type: group

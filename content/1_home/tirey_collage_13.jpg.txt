@@ -10,8 +10,8 @@ Uuid: vnGIRsrBm6TU17HG
 
 ----
 
-Template: blocks/image
+Template: image--default
 
 ----
 
-Sort: 5
+Sort: 7

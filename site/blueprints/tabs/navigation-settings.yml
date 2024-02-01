@@ -1,4 +1,4 @@
-title: Navigation Settings
+title: Header & Navigation
 
 columns:
   nav_column_a:
@@ -33,7 +33,7 @@ columns:
                 empty: Leave this field blank to use the page title.
           
           nav_logo_header:
-            label: Navigation/Header Logo
+            label: Header Logo
             type: headline
             help: |
               Upload a logo to display in the header of your site.
@@ -42,11 +42,11 @@ columns:
             label: Add Logo
             type: files
             uploads:
-              template: logo-header
+              template: image--header-logo
             multiple: false
             layout: cardlets
             help : |
-              **Acceptable file types: png, svg.**
+              Acceptable file types: **.png** and **.svg** (under 1MB). If you're using a .png file, make sure it has a _transparent background!_
 
           nav_help:
             label: SVG Hotline!
@@ -66,7 +66,7 @@ columns:
         fields:
           
           nav_styles_header:
-            label: Navigation Styles
+            label: Header / Navigation Styles
             type: headline
             help: |
               Customize the appearance of your site's navigation menu.

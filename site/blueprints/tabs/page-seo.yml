@@ -77,7 +77,7 @@ columns:
             label: Twitter Image
             type: files
             uploads:
-              template: image--twitter
+              template: image--open-graph
             multiple: false
             layout: cardlets
             help : |

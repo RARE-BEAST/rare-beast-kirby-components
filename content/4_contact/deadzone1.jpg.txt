@@ -10,4 +10,4 @@ Uuid: vTCuVCqngbay3JgM
 
 ----
 
-Template: blocks/image
+Template: image--default

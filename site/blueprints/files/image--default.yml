@@ -1,4 +1,12 @@
-title: File
+title: Default Image File
+
+accept:
+  mime: image/jpg, image/jpeg, image/png, image/gif, image/svg+xml, image/webp, image/avif
+  extension: jpg, jpeg, png, gif, svg, webp, avif
+  maxsize: 1000000
+
+image:
+  back: "#f9f9f9"
 
 fields:
 

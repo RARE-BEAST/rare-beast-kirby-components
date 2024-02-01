@@ -81,11 +81,11 @@ Nav-links:
 
 ----
 
-Nav-logo: - file://b0mfUgmmQ7urdy8e
+Nav-logo: - file://hcfkpIicwTSQWe7b
 
 ----
 
-Logo-fill-color: #ef0f00
+Logo-fill-color: #3a8e0f
 
 ----
 

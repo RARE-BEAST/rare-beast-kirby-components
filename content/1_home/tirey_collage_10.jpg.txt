@@ -10,8 +10,8 @@ Uuid: 5RUL5FbVKcuK0Int
 
 ----
 
-Template: blocks/image
+Template: image--default
 
 ----
 
-Sort: 4
+Sort: 6

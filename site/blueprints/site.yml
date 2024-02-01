@@ -10,13 +10,15 @@ tabs:
         image:
           ratio: 5/4
           cover: true
+          back: "#f9f9f9"
+          icon: 🖼️
 
   global-settings:
     label: Global Settings
     extends: tabs/global-settings
 
   navigation-settings:
-    label: Navigation Settings
+    label: Header & Navigation
     extends: tabs/navigation-settings
 
   company-information:

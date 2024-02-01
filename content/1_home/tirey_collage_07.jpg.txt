@@ -10,8 +10,8 @@ Uuid: O1LjVxqmllr3BAgU
 
 ----
 
-Template: blocks/image
+Template: image--default
 
 ----
 
-Sort: 2
+Sort: 4

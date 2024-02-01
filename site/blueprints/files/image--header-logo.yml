@@ -1,8 +1,12 @@
-title: Header Logo
+title: Header Logo Image File
 
 accept:
   mime: image/svg+xml, image/png
   extension: svg, png
+  maxsize: 1000000
+
+image:
+  back: "#f9f9f9"
 
 options:
   delete:

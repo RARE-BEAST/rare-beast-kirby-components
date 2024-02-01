@@ -1,0 +1,32 @@
+title: Slider Image File
+
+accept:
+  mime: image/jpg, image/jpeg, image/png, image/avif, image/webp
+  extension: jpg, jpeg, png, avif, webp
+  maxsize: 1000000
+
+fields:
+
+  alt:
+    label: Alt Text
+    type: textarea
+    size: small
+    font: monospace
+    buttons: false
+    width: 1/2
+    help: >
+      Helps screen-reading tools describe images to visually impaired readers and allows search engines to better crawl and rank your site.
+  
+  credits:
+    label: Credits
+    type: textarea
+    size: small
+    buttons:
+      - italic
+      - bold
+      - '|'
+      - link
+      - email
+    width: 1/2
+    help: >
+      The name of the photographer or artist.

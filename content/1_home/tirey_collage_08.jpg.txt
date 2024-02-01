@@ -10,8 +10,8 @@ Uuid: IpVmhM5ePbdT4VxB
 
 ----
 
-Template: blocks/image
+Template: blocks/imageTemplate: image--default
 
 ----
 
-Sort: 3
+Sort: 5

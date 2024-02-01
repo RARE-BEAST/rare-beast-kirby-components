@@ -10,11 +10,11 @@ Uuid: lo02dc7109CkSgED
 
 ----
 
-Template: blocks/image
+Template: image--default
 
 ----
 
-Sort: 7
+Sort: 9
 
 ----
 

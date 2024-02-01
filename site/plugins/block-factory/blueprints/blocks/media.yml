@@ -21,16 +21,11 @@ tabs:
       image:
         label: Image
         type: files
-        query: model.images
+        query: site.index.images.filterBy('extension', 'in', ['jpg', 'png', 'jpeg', 'gif', 'webp', 'avif', 'svg'])
         multiple: false
-        image:
-          back: black
         uploads:
-          template: blocks/image
-        accept:
-          extension: jpg, jpeg
-        help: |
-          _Only **.jpg** and **.jpeg** files under 1MB are allowed._
+\          template: image--default
+        help: _Only **.jpg**, **.png**, **.gif**, **.avif**, **.webp**, and **.svg** files under 1MB are allowed._
         when:
           media_type: image
 

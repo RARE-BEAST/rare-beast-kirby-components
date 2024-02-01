@@ -1,6 +1,9 @@
 title: Open Graph Image
 
 accept:
-  mime: image/jpg, image/png
-  extension: jpg, png
-query: page.images
+  mime: image/jpg, image/jpeg, image/png
+  extension: jpg, jpeg, png
+  maxsize: 1000000
+
+image:
+  back: "#f9f9f9"
