@@ -7359,14 +7359,6 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/media\/pages\/home\/f63781f5f2-1706287965\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-900x.png.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/media\/pages\/home\/f63781f5f2-1706287965\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-900x.png-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
     "\/media\/pages\/home\/f63781f5f2-1706287965\/.jobs\/screenshot-2023-12-11-at-8.56.11-pm-1200x.png.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -7414,6 +7406,19 @@
       "iS" : 670963,
       "oA" : 0,
       "oAP" : "\/media\/pages\/home\/f63781f5f2-1706287965\/screenshot-2023-12-11-at-8.56.11-pm-600x.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/media\/pages\/home\/f63781f5f2-1706287965\/screenshot-2023-12-11-at-8.56.11-pm-900x.png" : {
+      "ft" : 32768,
+      "iS" : 514233,
+      "oA" : 0,
+      "oAP" : "\/media\/pages\/home\/f63781f5f2-1706287965\/screenshot-2023-12-11-at-8.56.11-pm-900x.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -8159,20 +8164,20 @@
       "oAP" : "\/site\/plugins\/validation-machine\/index.php",
       "oF" : 0
     },
-    "\/site\/sessions\/1706833086.33a60bdcd4928a6c7bf3.sess" : {
+    "\/site\/sessions\/1706892610.2952db75c9ec9e7c1654.sess" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/sessions\/1706833086.33a60bdcd4928a6c7bf3.sess",
+      "oAP" : "\/site\/sessions\/1706892610.2952db75c9ec9e7c1654.sess",
       "oF" : 0
     },
-    "\/site\/sessions\/1706836689.b9a95452999992c8c438.sess" : {
+    "\/site\/sessions\/1706892610.4551c513a1ed0dfb668b.sess" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/sessions\/1706836689.b9a95452999992c8c438.sess",
+      "oAP" : "\/site\/sessions\/1706892610.4551c513a1ed0dfb668b.sess",
       "oF" : 0
     },
     "\/site\/sessions\/index.html" : {

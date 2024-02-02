@@ -49,7 +49,7 @@ $media_size = $block->media_width()->value();
 
     <?php elseif ($spline) : ?>
       
-      <spline-viewer url="<?= $spline ?>"></spline-viewer>
+      <spline-viewer url="<?= $spline ?>" loading="lazy"></spline-viewer>
               
     <?php endif; ?>
 

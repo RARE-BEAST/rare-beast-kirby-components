@@ -10,6 +10,7 @@ tabs:
         label: Add Media.
 
       media_type:
+        width: 1/2
         label: Select Media Type
         type: radio
         default: image
@@ -19,6 +20,7 @@ tabs:
           spline: Spline Object
 
       image:
+        width: 1/2
         label: Image
         type: files
         query: site.index.images.filterBy('extension', 'in', ['jpg', 'png', 'jpeg', 'gif', 'webp', 'avif', 'svg'])
@@ -26,14 +28,16 @@ tabs:
         multiple: false
         uploads:
           template: image--default
-        help: _Only **.jpg**, **.png**, **.gif**, **.avif**, **.webp**, and **.svg** files under 1MB are allowed._
+        help: |
+          _Only **.jpg**, **.png**, **.gif**, **.avif**, **.webp**, and **.svg** files under 1MB are allowed._
         when:
           media_type: image
 
       image_help:
         label: Important!
         type: info
-        text: Don't forget to add **alt text**, **image credits**, and/or **set a focal point** for cropping. You can do this by clicking the image above or in the _Files_ section of the sidebar.
+        text: |
+          Don't forget to add **alt text**, **image credits**, and/or **set a focal point** for cropping. You can do this by clicking the image above or in the _Files_ section of the sidebar.
         when:
           media_type: image
 
@@ -43,26 +47,41 @@ tabs:
         type: url
         when:
           media_type: video
-        help: _Must be a **direct link** to a video file, not an embed code._ We recommend hosting your videos on Vimeo, where the "direct video links" are readily available in the settings for each video.
+        help: |
+          _Must be a **direct link** to a video file, not an embed code._ We recommend hosting your videos on Vimeo, where the "direct video links" are readily available in the settings for each video.
 
       placeholder:
         width: 1/2
         label: Placeholder
         type: files
-        query: model.images
+        query: site.index.images.filterBy('extension', 'in', ['jpg', 'png', 'jpeg', 'gif', 'webp', 'avif', 'svg'])
         multiple: false
+        layout: cards
         image:
           back: black
         uploads:
-          template: blocks/image
+          template: image--default
         when:
           media_type: video
-        help: Set a placeholder image for the video. For visitors with slow internet connections, this image will be displayed until the video is loaded. For best results, use an image with the exact same aspect ratio or pixel dimensions as the video.
+        help: |
+          Set a placeholder image for the video. For visitors with slow internet connections, this image will be displayed until the video is loaded. For best results, use an image with the exact same aspect ratio or pixel dimensions as the video.
       
       spline_link:
         width: 1/2
         label: Spline Link
         type: url
+        when:
+          media_type: spline
+        help: |
+          This creates a `<spline-viewer>` element inside your block. In your Spline project, click _Export->Viewer,_ then **copy the link** (not the html embed code).
+
+      spline_help:
+        label: Spline Hotline!
+        type: info
+        text: |
+          Give yourself some time to experiment with the _Play Settings_ tab in the Spline Export dialog. These settings give you detailed control over how your object behaves and what interactions—if any—users can have with it. At the very least, we recommend setting the _BG Color_ to _Hide_ so the background color of your block becomes the backdrop for your object. **Read more about Play Settings in the (link: https://docs.spline.design/45cce5ff14aa4a4aadfaf85b3954d5a6 text: Spline Documentation target: _blank)**.
+
+          Planning to import multiple Spline objects on a single page? These things are _heavy,_ so make sure you're not overloading your site with too many of them. **Read more about optimizing Spline objects in the (link: https://docs.spline.design/f6351697797e4e41bbf57d62ab905a06 text: Spline Documentation target: _blank)**.
         when:
           media_type: spline
 
@@ -72,7 +91,8 @@ tabs:
       content_headline:
         type: headline
         label: Add Content.
-        help: Build your own content cluster using headers, text blocks, buttons, and CTAs. Or just one of those things. It's up to you.
+        help: |
+          Build your own content cluster using headers, text blocks, buttons, and CTAs. Or just one of those things. It's up to you.
       
       content:
         label: Content
