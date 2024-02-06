@@ -859,6 +859,36 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/assets\/scss\/page-error.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/page-error.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/assets\/scss\/page-legal.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/assets\/scss\/page-legal.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/assets\/scss\/reset.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -8260,6 +8290,14 @@
       "oAP" : "\/site\/sessions\/1707262417.bcd8b5bbd18f9e77526d.sess",
       "oF" : 0
     },
+    "\/site\/sessions\/1707266076.1fe1327148bf7ff0f2cc.sess" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/sessions\/1707266076.1fe1327148bf7ff0f2cc.sess",
+      "oF" : 0
+    },
     "\/site\/sessions\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8346,6 +8384,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/templates\/emails\/email.html.php",
+      "oF" : 0
+    },
+    "\/site\/templates\/error.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/templates\/error.php",
       "oF" : 0
     },
     "\/site\/templates\/project.php" : {

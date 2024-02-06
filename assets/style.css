@@ -296,6 +296,31 @@ main {
   display: none;
 }
 
+.error {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: calc(var(--nav-bar-height, 6rem) + 1.5rem);
+}
+.error__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+@media (min-width: 1024px) {
+  .error__inner {
+    padding: 0;
+  }
+}
+.error__inner .btn {
+  margin: 0 auto;
+}
+
 .skip-link {
   background: var(--background-dark, var(--black, #000));
   color: var(--foreground-light, var(--white, #FFF));
