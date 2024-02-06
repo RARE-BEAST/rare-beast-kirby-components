@@ -549,13 +549,24 @@ main {
   height: 100vh;
   background-color: var(--white, #FFF);
   z-index: 99;
-  overflow: auto;
+  overflow: hidden;
   padding: 0;
 }
 @media (min-width: 1024px) {
   .header .slide-in-menu {
     max-width: 1024px;
   }
+}
+.header .slide-in-menu__close {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 .header .slide-in-menu__inner {
   margin: 4rem 0;

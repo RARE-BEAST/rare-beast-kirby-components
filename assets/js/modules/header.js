@@ -9,12 +9,15 @@ export function initHeader() {
     let header = document.querySelector('.js-header');
     
     if (header) {
-        let headerBg = header.querySelector('.js-header-bg'),
+        let mainEl = document.querySelector('#main'),
+            headerBg = header.querySelector('.js-header-bg'),
             navLinks = header.querySelectorAll('.navigation__links'),
             navLogo = header.querySelector('.navigation__logo'),
             menuToggle = header.querySelector('.js-menu-toggle'),
             slideInMenu = header.querySelector('.js-slide-in-menu'),
             isOpen = false;
+
+        let slideInMenuDialog = new A11yDialog(slideInMenu, mainEl);
 
         // Initially hide the slide-in menu off the left side of the screen
         gsap.set(slideInMenu, {
@@ -36,20 +39,30 @@ export function initHeader() {
         // Update the menuToggle display when the page loads
         updateMenuToggleDisplay();
 
+        // Get all focusable elements in the slideInMenu
+        let focusableElements = slideInMenu.querySelectorAll('a, button, input, textarea, select, details, [tabindex]:not([tabindex="-1"])');
+
         menuToggle.addEventListener('click', () => {
             isOpen = !isOpen;
 
             if (isOpen) {
                 gsap.to('#menuOpen path', {
-                    morphSVG: '#menuClose path',
-                    duration: 0.3275,
-                    ease: 'expo.in' // easing function for "in" animation
-                });
-                
+                            morphSVG: '#menuClose path',
+                            duration: 0.3275,
+                            ease: 'expo.in' // easing function for "in" animation
+                        });
+
                 gsap.to(slideInMenu, {
                     xPercent: 0,
                     duration: 0.5,
-                    ease: 'circle.inOut'
+                    ease: 'circle.inOut',
+                    onComplete: () => {
+                        slideInMenuDialog.show();
+                        // When the slideInMenu is open, remove the tabindex attribute from all focusable elements
+                        focusableElements.forEach(element => {
+                            element.removeAttribute('tabindex');
+                        });
+                    }
                 });
             } else {
                 gsap.to('#menuOpen path', {
@@ -61,12 +74,40 @@ export function initHeader() {
                 gsap.to(slideInMenu, {
                     xPercent: -100,
                     duration: 0.5,
-                    ease: 'power3.inOut'
+                    ease: 'power3.inOut',
+                    onStart: () => {
+                        slideInMenuDialog.hide();
+                        // When the slideInMenu is closed, add tabindex="-1" to all focusable elements
+                        focusableElements.forEach(element => {
+                            element.setAttribute('tabindex', '-1');
+                        });
+                    }
                 });
             }
 
             // Update the menuToggle display after the slideInMenu state changes
             updateMenuToggleDisplay();
+        });
+
+        menuToggle.addEventListener('keydown', (event) => {
+            // Check if the key pressed was the "Enter" key or the "Space" key
+            if (event.key === 'Enter' || event.key === ' ') {
+                // Prevent the default action to stop scrolling when space is pressed
+                event.preventDefault();
+        
+                // Trigger the click event
+                menuToggle.click();
+            }
+        });
+
+        let dialogHideElement = slideInMenu.querySelector('[data-a11y-dialog-hide]');
+
+        dialogHideElement.addEventListener('click', () => {
+            // Check if the slideInMenu is open
+            if (isOpen) {
+                // Trigger the click event on the menuToggle to close the slideInMenu
+                menuToggle.click();
+            }
         });
 
         // Update the menuToggle display when the viewport size changes

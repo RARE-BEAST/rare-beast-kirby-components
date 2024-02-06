@@ -104,11 +104,23 @@
         height: 100vh;
         background-color: $white;
         z-index: 99;
-        overflow: auto;
+        overflow: hidden;
         padding: 0;
 
         @include breakpoint($laptop) {
             max-width: 1024px;
+        }
+
+        &__close {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            white-space: nowrap;
         }
 
         &__inner {

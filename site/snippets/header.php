@@ -38,14 +38,15 @@ $menu_toggle_color = $site->menu_toggle_color()->value();
     
     </nav>
 
-    <div class="navigation__menu-toggle js-menu-toggle" style="--menu-toggle-color: <?= $menu_toggle_color ?>;">
-        <div class="toggle" aria-label="Toggle Navigation" role="button" tabindex="0">
+    <div class="navigation__menu-toggle" style="--menu-toggle-color: <?= $menu_toggle_color ?>;">
+        <div class="toggle js-menu-toggle" aria-label="Toggle Navigation" role="button" tabindex="0" data-a11y-dialog-show>
             <?php snippet('menu-toggle') ?>
         </div>
     </div>
-    
-    <div class="slide-in-menu js-slide-in-menu">
+
+    <div class="slide-in-menu js-slide-in-menu" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="slide-in-menu__inner">
+            
             <ul class="links">
             <?php foreach($nav_links as $link): ?>
                 <li class="link h1">
@@ -53,12 +54,11 @@ $menu_toggle_color = $site->menu_toggle_color()->value();
                         <?= $link->text()->isEmpty() ? $link->link()->toPage()->title() : $link->text() ?>
                     </a>
                 </li>
-            <?php endforeach ?>
+                <?php endforeach ?>
             </ul>
-
+            
+            <button class="slide-in-menu__close" data-a11y-dialog-hide>Close menu</button>
         </div>
-
     </div>
     
-
 </header>
