@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin, GSDevTools);
+
 import { initAccordions } from "./modules/accordions";
 import { initLenis } from "./modules/lenis-smooth-scroll";
 import { initImageSlider } from "./modules/image-slider";
@@ -12,5 +14,5 @@ initHeader();
 
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");
-  // ScrollTrigger.refresh();
+  ScrollTrigger.refresh();
 });

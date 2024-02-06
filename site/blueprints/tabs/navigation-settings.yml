@@ -15,7 +15,7 @@ columns:
               Choose which pages to include in your site's navigation menu. Drag and drop to reorder the links in your navigation menu.
           
           nav_links:
-            label: Add pages to the navigation menu
+            label: Add pages to the header navigation menu
             type: structure
             sortable: true
             fields:
@@ -72,6 +72,7 @@ columns:
               Customize the appearance of your site's navigation menu.
           
           logo_fill_color:
+            width: 1/2
             label: Logo Fill Color
             type: color
             alpha: true
@@ -81,6 +82,18 @@ columns:
               type: query
               query: kirby.option('brand.palette')
             help: Only applies to SVG logos. If you upload a PNG logo, the logo will be displayed as-is.
+
+          menu_toggle_color:
+            width: 1/2
+            label: Menu Toggle Color
+            type: color
+            alpha: true
+            default: "Asphalt"
+            mode: options
+            options:
+              type: query
+              query: kirby.option('brand.palette')
+            help: Only applies to the mobile menu icon.
 
           nav_bg_color:
             width: 1/2

@@ -48,3 +48,8 @@ Icon
 # ---------------
 
 /site/config/.license
+
+# GSAP premium files
+/assets/js/vendor/MorphSVGPlugin.min.js
+/assets/js/vendor/GSDevTools.min.js
+/assets/js/vendor/ScrollTrigger.min.js

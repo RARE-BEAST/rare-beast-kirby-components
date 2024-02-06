@@ -68,6 +68,10 @@ Nav-links:
 
 - 
   link:
+    - page://Elh4tD1EGQBvgijM
+  text: ""
+- 
+  link:
     - page://DJPn1Hg6L8iJkTtk
   text: ""
 - 
@@ -86,6 +90,10 @@ Nav-logo: - file://hcfkpIicwTSQWe7b
 ----
 
 Logo-fill-color: #3a8e0f
+
+----
+
+Menu-toggle-color: #ef0f00
 
 ----
 
@@ -185,6 +193,10 @@ Reddit: https://www.reddit.com/
 
 ----
 
+Menu-icon-color: #ef0f00
+
+----
+
 Nav-text-color: #232220
 
 ----
@@ -226,3 +238,7 @@ Type-scale-custom:
   p: 1
   h5: 2.025
   h6: 1.875
+
+----
+
+Different-mobile-menu: 1

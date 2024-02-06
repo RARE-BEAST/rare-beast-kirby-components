@@ -1,10 +1,12 @@
 <?php
 $bg = $site->nav_bg_color()->value();
 $fg = $site->nav_fg_color()->value();
-$font_size = $site->nav_font_size()->value();
+$nav_font_size = $site->nav_font_size()->value();
 $nav_links = $site->nav_links()->toStructure();
+$mobile_menu_links = $site->mobile_menu_links()->toStructure();
 $logo = $site->nav_logo()->toFile();
 $logo_fill_color = $site->logo_fill_color()->value();
+$menu_toggle_color = $site->menu_toggle_color()->value();
 ?>
 
 <header class="header js-header">
@@ -12,8 +14,8 @@ $logo_fill_color = $site->logo_fill_color()->value();
 
     <div class="header__bg js-header-bg" style="background-color: <?= $bg ?>;"></div>
     
-    <nav class="navigation" style="color: <?= $fg ?>; font-size: <?= $font_size ?>rem;" aria-label="Main Navigation">
-        
+    <nav class="navigation" style="color: <?= $fg ?>; --nav-font-size: <?= $nav_font_size ?>rem; --logo-fill: <?= $logo_fill_color ?>;" aria-label="Main Navigation">
+
         <ul class="navigation__links">
         <?php foreach($nav_links as $link): ?>
             <li class="link">
@@ -24,7 +26,7 @@ $logo_fill_color = $site->logo_fill_color()->value();
         <?php endforeach ?>
         </ul>
 
-        <div class="navigation__logo" style="--logo-fill: <?= $logo_fill_color ?>;">
+        <div class="navigation__logo">
             <a href="<?= $site->url() ?>" class="logo">
                 <?php if($logo->extension() == 'svg'): ?>
                     <?= $logo->read() ?>
@@ -35,5 +37,28 @@ $logo_fill_color = $site->logo_fill_color()->value();
         </div>
     
     </nav>
+
+    <div class="navigation__menu-toggle js-menu-toggle" style="--menu-toggle-color: <?= $menu_toggle_color ?>;">
+        <div class="toggle" aria-label="Toggle Navigation" role="button" tabindex="0">
+            <?php snippet('menu-toggle') ?>
+        </div>
+    </div>
+    
+    <div class="slide-in-menu js-slide-in-menu">
+        <div class="slide-in-menu__inner">
+            <ul class="links">
+            <?php foreach($nav_links as $link): ?>
+                <li class="link h1">
+                    <a href="<?= $link->link()->toPage()->url() ?>">
+                        <?= $link->text()->isEmpty() ? $link->link()->toPage()->title() : $link->text() ?>
+                    </a>
+                </li>
+            <?php endforeach ?>
+            </ul>
+
+        </div>
+
+    </div>
+    
 
 </header>
