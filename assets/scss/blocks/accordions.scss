@@ -27,8 +27,16 @@
         border-bottom: 1px solid var(--accordion-color, $black);
         &--inner {
             padding: 0 4rem 2rem 0;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
             p {
                 margin: 0;
+            }
+            a {
+                text-decoration: underline;
+                text-underline-offset: 2px;
+                text-decoration-thickness: 1px;
             }
         }
     }

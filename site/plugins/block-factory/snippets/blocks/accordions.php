@@ -26,7 +26,7 @@ $accordion_color = $block->accordion_color()->value();
               </div>
               <div class="accordion__content js-accordion-content">
                 <div class="accordion__content--inner">
-                    <?= $accordion['content'] ?>
+                    <?= kirbytext($accordion['content']) ?>
                 </div>
               </div>
           </div>

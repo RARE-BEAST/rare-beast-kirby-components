@@ -8,6 +8,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 
 
+<!-- FAVICONS -->
+<link rel="icon" type="<?= option('favicon.shortcut icon.type') ?>" href="<?= url(option('favicon.shortcut icon.url')) ?>">
+<link rel="alternate icon" type="<?= option('favicon.alternate icon.type') ?>" href="<?= url(option('favicon.alternate icon.url')) ?>">
+<link rel="apple-touch-icon" type="<?= option('favicon.apple-touch-icon.type') ?>" href="<?= url(option('favicon.apple-touch-icon.url')) ?>">
+
+
 <!-- PAGE-LEVEL TITLE & META DESCRIPTION -->
 <?php if($page->seo_title()->isNotEmpty()): ?>
 <title><?= $page->seo_title()->html() ?></title>

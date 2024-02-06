@@ -443,7 +443,7 @@ main {
   justify-content: space-between;
   position: relative;
   z-index: 1;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 0.875rem;
 }
 .footer__content {
   display: grid;
@@ -1581,9 +1581,17 @@ swiper-container .swiper-notification {
 }
 .accordion__content--inner {
   padding: 0 4rem 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .accordion__content--inner p {
   margin: 0;
+}
+.accordion__content--inner a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
 }
 .accordion:last-of-type {
   margin-bottom: 3rem;
