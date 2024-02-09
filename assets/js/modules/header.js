@@ -19,9 +19,8 @@ export function initHeader() {
 
         let slideInMenuDialog = new A11yDialog(slideInMenu, mainEl);
 
-        // Initially hide the slide-in menu off the left side of the screen
-        gsap.set(slideInMenu, {
-            xPercent: -100
+        gsap.set(headerBg, {
+            yPercent: 0
         });
 
         gsap.set('#menuClose', {
@@ -40,7 +39,12 @@ export function initHeader() {
         updateMenuToggleDisplay();
 
         // Get all focusable elements in the slideInMenu
-        let focusableElements = slideInMenu.querySelectorAll('a, button, input, textarea, select, details, [tabindex]:not([tabindex="-1"])');
+        let focusableElements = slideInMenu.querySelectorAll('a, button, input, textarea, select, [tabindex]:not([tabindex="-1"])');
+
+        // Set tabindex="-1" on all focusable elements when the page loads
+        focusableElements.forEach(element => {
+            element.setAttribute('tabindex', '-1');
+        });
 
         menuToggle.addEventListener('click', () => {
             isOpen = !isOpen;
@@ -53,7 +57,7 @@ export function initHeader() {
                         });
 
                 gsap.to(slideInMenu, {
-                    xPercent: 0,
+                    x: '0%',
                     duration: 0.5,
                     ease: 'circle.inOut',
                     onComplete: () => {
@@ -72,7 +76,7 @@ export function initHeader() {
                 });
 
                 gsap.to(slideInMenu, {
-                    xPercent: -100,
+                    x: '-100%',
                     duration: 0.5,
                     ease: 'power3.inOut',
                     onStart: () => {
@@ -112,10 +116,6 @@ export function initHeader() {
 
         // Update the menuToggle display when the viewport size changes
         window.matchMedia('(max-width: 1024px)').addEventListener('change', updateMenuToggleDisplay);
-
-        gsap.set(headerBg, {
-            yPercent: 0
-        });
 
         const tl = gsap.timeline({
             scrollTrigger: {

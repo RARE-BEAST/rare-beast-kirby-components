@@ -4,11 +4,15 @@ return [
   // SET THIS TO FALSE FOR PRODUCTION
   'debug' => true,
 
+
   // MOVE THE PANEL TO A DIFFERENT URL
-  // FOR SECURITY, BUT ALSO FOR FUN OR BRANDING PURPOSES
+  // ADD CUSTOM CSS AND JS TO THE PANEL
   'panel' => [
     'slug' => 'panel'
+    //   'css' => 'assets/css/custom-panel.css'
+    //   'js' => 'assets/js/custom-panel.js'
   ],
+
 
   // ADD CUSTOM FAVICONS
   'favicon' => [
@@ -26,6 +30,7 @@ return [
     ]
   ],
 
+
   // DEFINE COLOR PALETTE
   // Can be accessed in the Color field
   // like so: kirby.option('brand.palette')
@@ -41,17 +46,8 @@ return [
       '#434cf9' => 'Pond',
     ]
   ],
-  
-  // ADD CUSTOM CSS TO THE PANEL
-  // 'panel' => [
-  //   'css' => 'assets/css/custom-panel.css'
-  // ],
- 
-  // ADD CUSTOM JS TO THE PANEL
-  'panel' => [
-    'js' => 'assets/js/vendor/spline-viewer--panel.js'
-  ],
 
+  
   // DEFINE SOURCE SETS FOR IMAGES
   // If you add more $ratio options to the image block, make sure to add them here, too!
   'thumbs' => [

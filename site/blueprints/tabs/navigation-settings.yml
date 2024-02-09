@@ -76,11 +76,11 @@ columns:
             label: Logo Fill Color
             type: color
             alpha: true
-            default: "Poppy"
             mode: options
             options:
               type: query
               query: kirby.option('brand.palette')
+            default: "Poppy"
             help: Only applies to SVG logos. If you upload a PNG logo, the logo will be displayed as-is.
 
           menu_toggle_color:
@@ -88,11 +88,11 @@ columns:
             label: Menu Toggle Color
             type: color
             alpha: true
-            default: "Asphalt"
             mode: options
             options:
               type: query
               query: kirby.option('brand.palette')
+            default: "Asphalt"
             help: Only applies to the mobile menu icon.
 
           nav_bg_color:
@@ -100,22 +100,22 @@ columns:
             label: Background Color
             type: color
             alpha: true
-            default: "Drywall"
             mode: options
             options:
               type: query
               query: kirby.option('brand.palette')
+            default: "Drywall"
           
           nav_fg_color:
             width: 1/2
             label: Text Color
             type: color
             alpha: true
-            default: "Asphalt"
             mode: options
             options:
               type: query
               query: kirby.option('brand.palette')
+            default: "Asphalt"
           
           nav_font_size:
             width: 1/2

@@ -37,11 +37,11 @@ tabs:
         label: Accordion Detail Color
         type: color
         alpha: true
-        default: "Asphalt"
         mode: options
         options:
           type: query
           query: kirby.option('brand.palette')
+        default: "Asphalt"
         help: Set the color of the dividing lines and accordion trigger (+) icons.
   
   block-settings:

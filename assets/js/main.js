@@ -1,16 +1,18 @@
 gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin, GSDevTools);
 
-import { initAccordions } from "./modules/accordions";
 import { initLenis } from "./modules/lenis-smooth-scroll";
+import { initSkipLink } from "./modules/skip-link";
+import { initHeader } from "./modules/header";
+import { initAccordions } from "./modules/accordions";
 import { initImageSlider } from "./modules/image-slider";
 import { initContact } from "./modules/contact";
-import { initHeader } from "./modules/header";
 
-initAccordions();
 initLenis();
+initSkipLink();
+initHeader();
+initAccordions();
 initImageSlider();
 initContact();
-initHeader();
 
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");

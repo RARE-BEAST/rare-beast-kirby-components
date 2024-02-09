@@ -5,12 +5,12 @@
     padding: 1.5rem 1.85rem 2rem;
     border-radius: 0 0 12px 12px;
     position: absolute;
-    transform: translateX(-50%) translateY(-100%);
-    transition: transform 0.3s ease-in-out;
+    top: 0;
+    transform: translate(-50%, -100%);
+    z-index: 100;
 }
 
 .skip-link:focus {
     text-underline-offset: 0.65rem;
     text-decoration-thickness: 3px;
-    transform: translateX(-50%) translateY(0%);
 }

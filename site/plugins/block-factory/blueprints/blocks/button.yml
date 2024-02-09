@@ -1,12 +1,15 @@
 title: Button
 icon: circle-nested
 fields:
+
   btn_url:
     label: Button Link
     type: link
+  
   btn_title:
     label: Button Text
     type: text
+  
   btn_style:
     label: Button Style
     type: radio
@@ -14,6 +17,7 @@ fields:
       primary: Primary
       secondary: Secondary
     default: primary
+  
   btn_target:
     label: Target
     type: radio

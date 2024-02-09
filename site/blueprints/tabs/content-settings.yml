@@ -21,8 +21,8 @@ fields:
     width: 1/2
     label: Align Content
     type: radio
-    default: left
     options:
       left: Left
       center: Center
       right: Right
+    default: left

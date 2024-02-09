@@ -11,18 +11,17 @@ fields:
     width: 1/2
     label: Alignment
     type: radio
-    default: left
     options:
       left: Left
       center: Center
       right: Right
+    default: left
 
   ratio:
     width: 1/2
     label: Ratio
     type: select
     empty: false
-    default: auto
     options:
       auto: Auto
       square: 1:1
@@ -33,16 +32,17 @@ fields:
       four-five: 4:5
       five-four: 5:4
       sixteen-nine: 16:9
+    default: auto
     help: This sets the aspect ratio of your image or video. Select "Auto" to avoid cropping.
 
   include_max_width:
     width: 1/2
     label: Include Max Width?
     type: toggle
-    default: no
     text:
       - "no"
       - "yes"
+    default: no
 
   max_width:
     width: 1/2
@@ -50,8 +50,8 @@ fields:
     type: range
     min: 25
     max: 100
-    default: 50
     step: 1
     after: rem
+    default: 50
     when:
       include_max_width: true

@@ -12,12 +12,12 @@ fields:
   pagination_style:
     label: Pagination Style
     type: radio
-    default: bullets
     columns: 3
     options:
       bullets: Bullets
       fraction: Fraction
       progressbar: Progress Bar
+    default: bullets
 
   line_a:
     type: line
@@ -31,12 +31,12 @@ fields:
     label: Slide Aspect Ratio
     type: select
     empty: false
-    default: portrait
     options:
       unset: Auto
       square: Square (1:1)
       portrait: Portrait (5:7)
       landscape: Landscape (16:9)
+    default: portrait
     help: |
       Applies to all slides. _Note: do not select "Auto" if you have a mix of videos and images._
 
@@ -60,18 +60,18 @@ fields:
     width: 1/2
     label: Slides Per View
     type: range
-    default: 1
     min: 1
     max: 4
+    default: 1
     help: How many slides should be visible at once on mobile?
   
   mobile_space_between:
     width: 1/2
     label: Space Between
     type: range
-    default: 0
     min: 0
     max: 64
+    default: 0
     after: px
     help: Set the gap between each slide on mobile.
 
@@ -87,12 +87,12 @@ fields:
     label: Slide Aspect Ratio
     type: select
     empty: false
-    default: landscape
     options:
       unset: Auto
       square: Square (1:1)
       portrait: Portrait (5:7)
       landscape: Landscape (16:9)
+    default: landscape
     help: |
       Applies to all slides. _Note: do not select "Auto" if you have a mix of videos and images._
 
@@ -116,17 +116,17 @@ fields:
     width: 1/2
     label: Slides Per View
     type: range
-    default: 1
     min: 1
     max: 4
+    default: 1
     help: How many slides should be visible at once on desktop?
   
   desktop_space_between:
     width: 1/2
     label: Space Between
     type: range
-    default: 0
     min: 0
     max: 64
+    default: 0
     after: px
     help: Set the gap between each slide on desktop.

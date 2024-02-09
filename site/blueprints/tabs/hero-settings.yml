@@ -101,7 +101,6 @@ fields:
     label: Content Background
     type: color
     alpha: true
-    default: "Transparent"
     mode: picker
     options:
       "ffffff00": "Transparent"
@@ -112,6 +111,7 @@ fields:
       "#3a8e0f": "Grass"
       "#ef0f00": "Poppy"
       "#434cf9": "Pond"
+    default: "Transparent"
     help: |
       _**Hint:** just leave this transparent if you don't want to add a background color to your content._
 
@@ -141,7 +141,6 @@ fields:
     label: Image/Video Overlay
     type: color
     alpha: true
-    default: "Transparent"
     mode: picker
     options:
       "ffffff00": "Transparent"
@@ -152,5 +151,6 @@ fields:
       "#3a8e0f": "Grass"
       "#ef0f00": "Poppy"
       "#434cf9": "Pond"
+    default: "Transparent"
     when:
       include_overlay: true

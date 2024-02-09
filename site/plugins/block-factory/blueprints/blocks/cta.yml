@@ -1,12 +1,15 @@
 title: Call to Action
 icon: megaphone
 fields:
+  
   cta_url:
     label: CTA Link
     type: link
+  
   cta_title:
     label: CTA Text
     type: text
+  
   cta_style:
     label: CTA Style
     type: radio
@@ -14,6 +17,7 @@ fields:
       primary: Primary
       secondary: Secondary
     default: primary
+  
   cta_target:
     label: Target
     type: radio

@@ -21,9 +21,9 @@ fields:
     width: 1/3
     label: Gap
     type: range
-    default: 2
     min: 0
     max: 8
+    default: 2
     after: rem
     help: Set the gap between your media and content.
 
@@ -31,7 +31,6 @@ fields:
     width: 1/3
     label: Ratio
     type: select
-    default: auto
     empty: false
     options:
       auto: Auto
@@ -43,6 +42,7 @@ fields:
       four-five: 4:5
       five-four: 5:4
       sixteen-nine: 16:9
+    default: auto
     help: This sets the aspect ratio of your image or video. Select "Auto" to avoid cropping.
 
   headline_b:
@@ -79,4 +79,5 @@ fields:
       default: Default (50%)
       two-thirds: Two-Thirds (66%)
       three-quarters: Three-Quarters (75%)
+    default: default
     columns: 3

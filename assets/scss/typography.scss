@@ -79,6 +79,10 @@ h5, .h5 {
     font-size: var(--body);
 }
 
-small, .text_small {
+.body--small {
+    font-size: calc(var(--body) - 0.175em);
+}
+
+small, .text--small {
     font-size: var(--h6);
 }

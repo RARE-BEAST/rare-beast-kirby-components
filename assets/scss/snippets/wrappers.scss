@@ -5,18 +5,6 @@
     margin-right: auto;
 }
 
-
-.wrapper--page-width {
-    padding-left: 2rem; 
-    padding-right: 2rem;
-    @include breakpoint(1300px) {
-        padding-left: 0;
-        padding-right: 0;
-        max-width: var(--page-width, 1300px);
-        margin: 0 auto;
-    } 
-}
-
 .wrapper--page-width {
     @include breakpoint(calc(1300px + 4rem)) {
         padding-left: 0;

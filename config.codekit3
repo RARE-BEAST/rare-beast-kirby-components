@@ -594,6 +594,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/assets\/js\/modules\/skip-link.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/modules\/skip-link-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/assets\/js\/modules\/sticky-content-gallery.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -8274,28 +8285,44 @@
       "oAP" : "\/site\/plugins\/validation-machine\/index.php",
       "oF" : 0
     },
-    "\/site\/sessions\/1707258816.89a3aaee582bb6bdc4ad.sess" : {
+    "\/site\/sessions\/1707325515.b388b85139408125f553.sess" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/sessions\/1707258816.89a3aaee582bb6bdc4ad.sess",
+      "oAP" : "\/site\/sessions\/1707325515.b388b85139408125f553.sess",
       "oF" : 0
     },
-    "\/site\/sessions\/1707262417.bcd8b5bbd18f9e77526d.sess" : {
+    "\/site\/sessions\/1707329175.30b2919d847017d4c4f0.sess" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/sessions\/1707262417.bcd8b5bbd18f9e77526d.sess",
+      "oAP" : "\/site\/sessions\/1707329175.30b2919d847017d4c4f0.sess",
       "oF" : 0
     },
-    "\/site\/sessions\/1707266076.1fe1327148bf7ff0f2cc.sess" : {
+    "\/site\/sessions\/1707332835.f2cb2a5de519b79a5f6e.sess" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/sessions\/1707266076.1fe1327148bf7ff0f2cc.sess",
+      "oAP" : "\/site\/sessions\/1707332835.f2cb2a5de519b79a5f6e.sess",
+      "oF" : 0
+    },
+    "\/site\/sessions\/1707525445.17a4378fc28ea7752eb8.sess" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/sessions\/1707525445.17a4378fc28ea7752eb8.sess",
+      "oF" : 0
+    },
+    "\/site\/sessions\/1707525445.5514d3fcca67b397e17c.sess" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/sessions\/1707525445.5514d3fcca67b397e17c.sess",
       "oF" : 0
     },
     "\/site\/sessions\/index.html" : {
@@ -10865,8 +10892,8 @@
   },
   "projectAttributes" : {
     "creationDate" : 722917737.065732,
-    "displayValue" : "rare-beast-kirby-components",
-    "displayValueWasSetByUser" : 0,
+    "displayValue" : "Rare Beast Block Factory",
+    "displayValueWasSetByUser" : 1,
     "iconImageName" : "\/media\/panel\/804879af3577ffc462dba2bf74cceb6b\/apple-touch-icon.png",
     "iconImageWasSetByUser" : 0
   },
