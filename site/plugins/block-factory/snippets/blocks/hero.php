@@ -133,7 +133,8 @@ $slide_interval = $block->slide_interval()->value();
                     <a
                     class="btn btn--<?= $content['content']['btn_style'] ?> hero__content--btn"
                     href="<?= $content['content']['btn_url'] ?>"
-                    target="<?= $content['content']['btn_target'] ?>">
+                    target="<?= $content['content']['btn_target'] ?>"
+                    aria-label="<?= $content['content']['btn_aria_label'] ?>">
                         <?= $content['content']['btn_title'] ?>
                     </a>
     
@@ -141,7 +142,8 @@ $slide_interval = $block->slide_interval()->value();
                     <a 
                     class="cta cta--<?= $content['content']['cta_style'] ?> hero__content--cta" 
                     href="<?= $content['content']['cta_url'] ?>"
-                    target="<?= $content['content']['cta_target'] ?>">
+                    target="<?= $content['content']['cta_target'] ?>"
+                    aria-label="<?= $content['content']['cta_aria_label'] ?>">
                         <?= $content['content']['cta_title'] ?>
                     </a>
 

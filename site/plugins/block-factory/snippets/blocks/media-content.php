@@ -78,7 +78,8 @@ $media_size = $block->media_width()->value();
                 <a
                 class="btn btn--<?= $content['content']['btn_style'] ?>"
                 href="<?= $content['content']['btn_url'] ?>"
-                target="<?= $content['content']['btn_target'] ?>">
+                target="<?= $content['content']['btn_target'] ?>"
+                aria-label="<?= $content['content']['btn_aria_label'] ?>">
                     <?= $content['content']['btn_title'] ?>
                 </a>
 
@@ -86,7 +87,8 @@ $media_size = $block->media_width()->value();
                 <a 
                 class="cta cta--<?= $content['content']['cta_style'] ?>" 
                 href="<?= $content['content']['cta_url'] ?>"
-                target="<?= $content['content']['cta_target'] ?>">
+                target="<?= $content['content']['cta_target'] ?>"
+                aria-label="<?= $content['content']['cta_aria_label'] ?>">
                     <?= $content['content']['cta_title'] ?>
                 </a>
 

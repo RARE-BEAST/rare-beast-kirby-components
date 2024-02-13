@@ -35,7 +35,8 @@ $contents = json_decode($block->content()->content(), true);
                 <a
                 class="btn btn--<?= $content['content']['btn_style'] ?>"
                 href="<?= url($content['content']['btn_url']) ?>"
-                target="<?= $content['content']['btn_target'] ?>">
+                target="<?= $content['content']['btn_target'] ?>"
+                aria-label="<?= $content['content']['btn_aria_label'] ?>">
                     <?= $content['content']['btn_title'] ?>
                 </a>
 
@@ -43,7 +44,8 @@ $contents = json_decode($block->content()->content(), true);
                 <a 
                 class="cta cta--<?= $content['content']['cta_style'] ?>" 
                 href="<?= url($content['content']['cta_url']) ?>"
-                target="<?= $content['content']['cta_target'] ?>">
+                target="<?= $content['content']['cta_target'] ?>"
+                aria-label="<?= $content['content']['cta_aria_label'] ?>">
                     <?= $content['content']['cta_title'] ?>
                 </a>
 

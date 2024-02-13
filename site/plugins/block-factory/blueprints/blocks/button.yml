@@ -3,14 +3,17 @@ icon: circle-nested
 fields:
 
   btn_url:
+    width: 1/2
     label: Button Link
     type: link
   
   btn_title:
+    width: 1/2
     label: Button Text
     type: text
   
   btn_style:
+    width: 1/2
     label: Button Style
     type: radio
     options:
@@ -19,11 +22,32 @@ fields:
     default: primary
   
   btn_target:
+    width: 1/2
     label: Target
     type: radio
     options:
       _self: Open link in same tab
       _blank: Open link in new tab
     default: _self
+  
+  btn_aria_label:
+    label: Aria Label
+    type: text
+    help: |
+      **_NOTE: aria labels are important for Accessibility and SEO_**. It should be a _**brief and clear description of the link's purpose**._ This label will not appear on your website; it just lives behind the scenes.
+    required: true
+
+  btn_aria_label_info:
+    type: info
+    theme: positive
+    label: |
+      Some good examples of descriptive aria labels:
+    text: | 
+      - "Learn more about our services."
+      - "Follow us on Instagram."
+      - "Download our latest quarterly report."
+      - "Sign up for our newsletter."
+      - "Get in touch with our team."
+      - "Read our latest blog post."
 
 label: "{{ btn_title }} ({{ btn_url }})"
