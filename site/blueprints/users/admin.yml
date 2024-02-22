@@ -1,0 +1,11 @@
+title: Admin
+description: You have free reign over everything. Enjoy!
+home: /panel/site
+
+permissions:
+  access:
+    users: true
+  users: true
+  user:
+    delete: true
+    changeRole: true

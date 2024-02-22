@@ -1,0 +1,11 @@
+title: Editor
+description: Can edit all pages and (most) settings.
+home: /panel/site
+
+permissions:
+  access:
+    users: true
+  users: false
+  user:
+    delete: false
+    changeRole: false
