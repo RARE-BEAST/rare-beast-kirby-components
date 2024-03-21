@@ -5,8 +5,6 @@
     <?php foreach ($page->blocks()->toBlocks() as $block): ?>
         <?= $block ?>
     <?php endforeach ?>
-    
-    <?php snippet('form-contact'); ?>
 
 </main>
 
