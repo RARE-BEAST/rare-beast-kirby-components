@@ -25,8 +25,8 @@ $media_size = $block->media_width()->value();
 
 <?php if (!empty($contents) && ($image || $video || $spline)) : ?>
 <section class="section background--<?= $bg ?> foreground--<?= $fg ?>" style="--padding-top: <?= $padding_top ?>rem; --padding-bottom: <?= $padding_bottom ?>rem;">
-  <div class="media-content wrapper wrapper--<?= $wrapper ?> layout-mobile--<?= $mobile ?> layout-desktop--<?= $desktop ?> media--<?= $media_size ?> js-fade-in" style="gap: <?= $gap ?>rem;">
-    <div class="media-content__image">
+  <div class="media-content wrapper wrapper--<?= $wrapper ?> layout-mobile--<?= $mobile ?> layout-desktop--<?= $desktop ?> media--<?= $media_size ?>" style="gap: <?= $gap ?>rem;">
+    <div class="media-content__image js-fade-in">
 
     <?php if ($image) : ?>
 
@@ -61,22 +61,22 @@ $media_size = $block->media_width()->value();
 
             <?php if($content['type'] == 'headline'): ?>
         
-                <<?= $content['content']['level'] ?> class="<?= $content['content']['level'] ?>">
+                <<?= $content['content']['level'] ?> class="<?= $content['content']['level'] ?> js-fade-in">
                     <?= $content['content']['text'] ?>
                 </<?= $content['content']['level'] ?>>
             
             <?php elseif($content['type'] == 'subheadline'): ?>
         
-                <<?= $content['content']['level'] ?> class="subheadline h4">
+                <<?= $content['content']['level'] ?> class="subheadline h4 js-fade-in">
                     <?= $content['content']['text'] ?>
                 </<?= $content['content']['level'] ?>>
             
             <?php elseif($content['type'] == 'copy'): ?>
-                <p class="body"><?= $content['content']['text'] ?></p>
+                <div class="body js-fade-in"><?= $content['content']['text'] ?></div>
 
             <?php elseif($content['type'] == 'button'): ?>
                 <a
-                class="btn btn--<?= $content['content']['btn_style'] ?>"
+                class="btn btn--<?= $content['content']['btn_style'] ?> js-fade-in"
                 href="<?= url($content['content']['btn_url']) ?>"
                 target="<?= $content['content']['btn_target'] ?>"
                 aria-label="<?= $content['content']['btn_aria_label'] ?>">
@@ -85,7 +85,7 @@ $media_size = $block->media_width()->value();
 
             <?php elseif($content['type'] == 'cta'): ?>
                 <a 
-                class="cta cta--<?= $content['content']['cta_style'] ?>" 
+                class="cta cta--<?= $content['content']['cta_style'] ?> js-fade-in" 
                 href="<?= url($content['content']['cta_url']) ?>"
                 target="<?= $content['content']['cta_target'] ?>"
                 aria-label="<?= $content['content']['cta_aria_label'] ?>">
