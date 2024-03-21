@@ -78,10 +78,6 @@ Nav-links:
   link:
     - page://Vkb9kSGnHig3C4DM
   text: Everything
-- 
-  link:
-    - page://W0YUKnmDyTuOJvRh
-  text: ""
 
 ----
 
