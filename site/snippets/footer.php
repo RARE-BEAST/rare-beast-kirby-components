@@ -52,8 +52,14 @@ $reddit = $site->reddit()->url();
     </div>
 </footer>
 
+
+<!-- END SMOOTH CONTENT -->
 </div>
+
+<!-- END SMOOTH WRAPPER -->
 </div>
+
+<!-- END FADE CONTAINER -->
 </div>
 
 <?= js('assets/js/vendor/gsap.min.js') ?>
