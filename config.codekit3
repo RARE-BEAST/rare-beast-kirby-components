@@ -3372,6 +3372,14 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/kirby\/panel\/.prettierignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/kirby\/panel\/.prettierignore",
+      "oF" : 0
+    },
     "\/kirby\/panel\/dist\/apple-touch-icon.png" : {
       "ft" : 32768,
       "iS" : 4115,
@@ -3550,14 +3558,6 @@
       "oF" : 1,
       "sC" : 3,
       "tS" : 0
-    },
-    "\/kirby\/panel\/vite.config.mjs" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/kirby\/panel\/vite.config.mjs",
-      "oF" : 0
     },
     "\/kirby\/README.md" : {
       "cB" : 0,
