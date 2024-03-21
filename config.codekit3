@@ -1344,6 +1344,14 @@
       "oAP" : "\/content\/4_faq\/faq.txt",
       "oF" : 1
     },
+    "\/content\/5_reviews\/reviews.txt" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/content\/5_reviews\/reviews.txt",
+      "oF" : 0
+    },
     "\/content\/abm_logo_2.png" : {
       "ft" : 32768,
       "iS" : 117263,
@@ -7585,6 +7593,14 @@
       "oAP" : "\/site\/blueprints\/pages\/default.yml",
       "oF" : 0
     },
+    "\/site\/blueprints\/pages\/reviews.yml" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/blueprints\/pages\/reviews.yml",
+      "oF" : 0
+    },
     "\/site\/blueprints\/site.yml" : {
       "cB" : 0,
       "ft" : 8192,
@@ -7709,6 +7725,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/config\/config.php",
+      "oF" : 0
+    },
+    "\/site\/models\/reviews.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/models\/reviews.php",
       "oF" : 0
     },
     "\/site\/plugins\/block-factory\/blueprints\/blocks\/accordions.yml" : {
@@ -7966,28 +7990,20 @@
       "oAP" : "\/site\/plugins\/validation-machine\/index.php",
       "oF" : 0
     },
-    "\/site\/sessions\/1711042657.2a4468ffef44ae84d2a7.sess" : {
+    "\/site\/sessions\/1711057187.5efeb551476e75de1b8d.sess" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/sessions\/1711042657.2a4468ffef44ae84d2a7.sess",
+      "oAP" : "\/site\/sessions\/1711057187.5efeb551476e75de1b8d.sess",
       "oF" : 0
     },
-    "\/site\/sessions\/1711046317.c277f5dac60ba0afabaa.sess" : {
+    "\/site\/sessions\/1711060837.5774bcf34d8a3f3d9ce1.sess" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/site\/sessions\/1711046317.c277f5dac60ba0afabaa.sess",
-      "oF" : 0
-    },
-    "\/site\/sessions\/1711049918.3533400348291c72178e.sess" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/site\/sessions\/1711049918.3533400348291c72178e.sess",
+      "oAP" : "\/site\/sessions\/1711060837.5774bcf34d8a3f3d9ce1.sess",
       "oF" : 0
     },
     "\/site\/sessions\/index.html" : {
@@ -8060,6 +8076,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/templates\/error.php",
+      "oF" : 0
+    },
+    "\/site\/templates\/review.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/templates\/review.php",
+      "oF" : 0
+    },
+    "\/site\/templates\/reviews.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/templates\/reviews.php",
       "oF" : 0
     },
     "\/vendor\/autoload.php" : {

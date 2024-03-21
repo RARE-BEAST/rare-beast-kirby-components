@@ -1,0 +1,12 @@
+title: Reviews
+
+sections:
+  reviews:
+    type: fields
+    fields:
+      reviews_headline:
+        label: Reviews
+        type: headline
+        help: |
+          Hey, there's nothing for you to edit here.
+          Reviews for this page are being pulled in via the free _New York Times_ movie reviews API.
