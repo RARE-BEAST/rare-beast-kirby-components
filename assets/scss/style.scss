@@ -12,8 +12,11 @@ Version: 1.0
 @import "typography";
 @import "animations";
 @import "global";
-@import "page-error";
-@import "page-legal";
+
+
+// PAGES
+@import 'pages/error.scss';
+@import 'pages/legal.scss';
 
 
 // SNIPPETS
@@ -23,7 +26,6 @@ Version: 1.0
 @import 'snippets/colors.scss';
 @import "snippets/footer.scss";
 @import "snippets/header.scss";
-@import 'snippets/lenis.scss';
 @import 'snippets/loading.scss';
 @import 'snippets/wrappers.scss';
 
@@ -36,7 +38,6 @@ Version: 1.0
 @import 'blocks/audio.scss';
 @import 'blocks/accordions.scss';
 @import 'blocks/content.scss';
-@import 'blocks/form-contact.scss';
 @import 'blocks/gallery.scss';
 @import 'blocks/hero.scss';
 @import 'blocks/image-slider.scss';

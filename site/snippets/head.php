@@ -216,4 +216,5 @@ $accent_4 = site()->accent_4()->value();
 
 </head>
 
-<body class="<?= $typography ?>">
+<body class="<?= $typography ?> page page--<?= $page->title()->slug() ?>">
+    <div class="fade-container">

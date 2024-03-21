@@ -561,17 +561,6 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/assets\/js\/modules\/lenis-smooth-scroll.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 1,
-      "oAP" : "\/assets\/js\/modules\/lenis-smooth-scroll-min.js",
-      "oF" : 1,
-      "sC" : 3,
-      "tS" : 0
-    },
     "\/assets\/js\/modules\/menu.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -580,6 +569,17 @@
       "oA" : 1,
       "oAP" : "\/assets\/js\/modules\/menu-min.js",
       "oF" : 1,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/modules\/scroll-smoother.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/assets\/js\/modules\/scroll-smoother-min.js",
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -634,6 +634,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/assets\/js\/vendor\/MorphSVGPlugin.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/assets\/js\/vendor\/ScrollSmoother.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/vendor\/ScrollSmoother.min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -704,21 +715,6 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/assets\/scss\/blocks\/content.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/assets\/scss\/blocks\/form-contact.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/scss\/blocks\/form-contact.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -859,7 +855,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/scss\/page-error.scss" : {
+    "\/assets\/scss\/pages\/error.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -868,13 +864,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/scss\/page-error.css",
-      "oF" : 0,
+      "oAP" : "\/assets\/scss\/pages\/error.css",
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/assets\/scss\/page-legal.scss" : {
+    "\/assets\/scss\/pages\/legal.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -883,8 +879,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/assets\/scss\/page-legal.css",
-      "oF" : 0,
+      "oAP" : "\/assets\/scss\/pages\/legal.css",
+      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -1005,21 +1001,6 @@
       "oA" : 1,
       "oAP" : "\/assets\/scss\/snippets\/header.css",
       "oF" : 0,
-      "oS" : 0,
-      "pg" : 0,
-      "sct" : 0
-    },
-    "\/assets\/scss\/snippets\/lenis.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "co" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/assets\/scss\/snippets\/lenis.css",
-      "oF" : 1,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -7995,6 +7976,22 @@
       "oAP" : "\/site\/sessions\/1711035387.bb203aaf259c1b8e004d.sess",
       "oF" : 0
     },
+    "\/site\/sessions\/1711038997.016f379bed0b766f4a3a.sess" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/sessions\/1711038997.016f379bed0b766f4a3a.sess",
+      "oF" : 0
+    },
+    "\/site\/sessions\/1711042657.2a4468ffef44ae84d2a7.sess" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/site\/sessions\/1711042657.2a4468ffef44ae84d2a7.sess",
+      "oF" : 0
+    },
     "\/site\/sessions\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8051,14 +8048,6 @@
       "oAP" : "\/site\/snippets\/responsive-image-loader.php",
       "oF" : 0
     },
-    "\/site\/templates\/contact.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/site\/templates\/contact.php",
-      "oF" : 0
-    },
     "\/site\/templates\/default.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -8073,22 +8062,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/site\/templates\/error.php",
-      "oF" : 0
-    },
-    "\/site\/templates\/project.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/site\/templates\/project.php",
-      "oF" : 0
-    },
-    "\/site\/templates\/projects.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/site\/templates\/projects.php",
       "oF" : 0
     },
     "\/vendor\/autoload.php" : {

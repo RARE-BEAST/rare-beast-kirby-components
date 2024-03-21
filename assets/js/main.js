@@ -1,13 +1,13 @@
-gsap.registerPlugin(ScrollTrigger, MorphSVGPlugin, GSDevTools);
+gsap.registerPlugin(ScrollSmoother, ScrollTrigger, MorphSVGPlugin, GSDevTools);
 
-import { initLenis } from "./modules/lenis-smooth-scroll";
 import { initSkipLink } from "./modules/skip-link";
+import { initScrollSmoother } from "./modules/scroll-smoother";
 import { initHeader } from "./modules/header";
 import { initAccordions } from "./modules/accordions";
 import { initImageSlider } from "./modules/image-slider";
 
-initLenis();
 initSkipLink();
+initScrollSmoother();
 initHeader();
 initAccordions();
 initImageSlider();

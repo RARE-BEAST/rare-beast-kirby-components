@@ -51,9 +51,14 @@ $reddit = $site->reddit()->url();
         Site by RARE BEAST, <?= date('Y') ?>.
     </div>
 </footer>
-<script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+</div>
+</div>
+</div>
+
 <?= js('assets/js/vendor/gsap.min.js') ?>
 <?= js('assets/js/vendor/ScrollTrigger.min.js') ?>
+<?= js('assets/js/vendor/ScrollSmoother.min.js') ?>
 <?= js('assets/js/vendor/MorphSVGPlugin.min.js') ?>
 <?= js('assets/js/vendor/GSDevTools.min.js') ?>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
